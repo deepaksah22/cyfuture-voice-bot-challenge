@@ -34,7 +34,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 max-w-4xl bg-clip-text text-transparent bg-gradient-to-r from-cyfuture-primary via-cyfuture-secondary to-cyfuture-accent"
           >
-            Revolutionizing Call Centers with AI Voice Bots
+            Innovating Across Multiple Domains with AI
           </motion.h1>
           
           <motion.p
@@ -43,7 +43,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-foreground/80 mb-8 max-w-3xl"
           >
-            Join us for an immersive 24-hour hackathon experience to build the next generation of AI-powered voice bots that will transform customer service operations.
+            Join us for an immersive 24-hour hackathon experience to build AI-powered solutions across Voice Bots, Finance, Healthcare, Sustainability, and Education domains. Solve real-world challenges and showcase your innovation.
           </motion.p>
           
           <motion.div
