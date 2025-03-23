@@ -106,42 +106,42 @@ const TimelineEvent = ({ date, title, description, position, index }: TimelineEv
 
 const timelineEvents = [
   {
-    date: "August 25, 2023",
+    date: "April 5, 2025",
     title: "Registration Opens",
     description: "Registration for the Cyfuture AI Hackathon 1.0 begins. Form your teams and prepare for an exciting challenge!"
   },
   {
-    date: "September 5, 2023",
+    date: "April 25, 2025",
     title: "Registration Closes",
     description: "Last day to register your team for the hackathon. Make sure to complete your registration before the deadline."
   },
   {
-    date: "September 8, 2023",
+    date: "May 5, 2025",
     title: "Team Selection Announcement",
     description: "Top 15 teams will be selected and notified for participation in the grand finale at Cyfuture headquarters."
   },
   {
-    date: "September 15, 2023 - 10:00 AM",
+    date: "May 15, 2025 - 10:00 AM",
     title: "Hackathon Kick-off",
     description: "The 24-hour hackathon begins! Teams gather at Cyfuture India Pvt Ltd, NSEZ, Noida for the opening ceremony."
   },
   {
-    date: "September 15-16, 2023",
+    date: "May 15-16, 2025",
     title: "Hacking Period",
-    description: "Teams work on their Voice Bot solutions for 24 hours straight. Mentors will be available to provide guidance and support."
+    description: "Teams work on their solutions for 24 hours straight. Mentors will be available to provide guidance and support."
   },
   {
-    date: "September 16, 2023 - 10:00 AM",
+    date: "May 16, 2025 - 10:00 AM",
     title: "Project Submission",
     description: "All teams must submit their final projects, including code, documentation, and presentation materials."
   },
   {
-    date: "September 16, 2023 - 11:00 AM",
+    date: "May 16, 2025 - 11:00 AM",
     title: "Presentations & Judging",
     description: "Teams present their solutions to a panel of judges from Cyfuture and industry experts."
   },
   {
-    date: "September 16, 2023 - 4:00 PM",
+    date: "May 16, 2025 - 4:00 PM",
     title: "Awards Ceremony",
     description: "Winners will be announced and prizes will be awarded during the closing ceremony."
   }

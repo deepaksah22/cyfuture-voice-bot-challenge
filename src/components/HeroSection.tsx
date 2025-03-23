@@ -72,7 +72,7 @@ const HeroSection = () => {
             <Calendar className="h-6 w-6 text-primary mr-4" />
             <div>
               <h3 className="font-medium text-sm text-foreground/60">Date</h3>
-              <p className="font-medium">September 15-16, 2023</p>
+              <p className="font-medium">May 15-16, 2025</p>
             </div>
           </div>
           
