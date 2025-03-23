@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { CheckCircle2, FileText, Users, Trophy } from "lucide-react";
+import { CheckCircle2, FileText, Trophy } from "lucide-react";
 
 const TimelineSection = () => {
   return (
@@ -167,25 +167,6 @@ const TimelineSection = () => {
             </div>
           </TabsContent>
         </Tabs>
-        
-        <div className="relative">
-          {/* Timeline Line */}
-          <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-0.5 bg-border" />
-          
-          {/* Timeline Events */}
-          <div className="space-y-12">
-            {timelineEvents.map((event, index) => (
-              <TimelineEvent 
-                key={index}
-                date={event.date}
-                title={event.title}
-                description={event.description}
-                position={index % 2 === 0 ? "left" : "right"}
-                index={index}
-              />
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );
