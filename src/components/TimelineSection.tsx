@@ -1,6 +1,8 @@
 
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { CheckCircle2, FileText, Users, Trophy } from "lucide-react";
 
 const TimelineSection = () => {
   return (
@@ -39,6 +41,132 @@ const TimelineSection = () => {
             Mark your calendars! Here's the complete timeline for the Cyfuture AI Hackathon 1.0
           </motion.p>
         </div>
+
+        <Tabs defaultValue="timeline" className="mb-12">
+          <TabsList className="grid grid-cols-2 max-w-md mx-auto mb-8">
+            <TabsTrigger value="timeline">Timeline</TabsTrigger>
+            <TabsTrigger value="evaluation">Evaluation Criteria</TabsTrigger>
+          </TabsList>
+          
+          <TabsContent value="timeline">
+            <div className="relative">
+              {/* Timeline Line */}
+              <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-0.5 bg-border" />
+              
+              {/* Timeline Events */}
+              <div className="space-y-12">
+                {timelineEvents.map((event, index) => (
+                  <TimelineEvent 
+                    key={index}
+                    date={event.date}
+                    title={event.title}
+                    description={event.description}
+                    position={index % 2 === 0 ? "left" : "right"}
+                    index={index}
+                  />
+                ))}
+              </div>
+            </div>
+          </TabsContent>
+          
+          <TabsContent value="evaluation">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Phase 1 Evaluation */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.5 }}
+                className="bg-glass rounded-3xl p-8 backdrop-blur-sm shadow-glass"
+              >
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
+                    <FileText className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="text-2xl font-bold">Phase 1: Idea Submission</h3>
+                </div>
+                
+                <p className="text-foreground/80 mb-6">
+                  The first round of evaluation will be based on your idea submission through a presentation. The top 15 teams will be selected to participate in the grand finale.
+                </p>
+                
+                <h4 className="text-lg font-semibold mb-3">Evaluation Criteria:</h4>
+                
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Innovation and Originality (25%): Uniqueness and novelty of the proposed solution</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Technical Feasibility (25%): Viability of implementation within the hackathon timeframe</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Problem-Solution Fit (20%): How well the solution addresses the chosen challenge</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Potential Impact (20%): Expected benefits and scale of impact</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Presentation Quality (10%): Clarity and organization of the idea presentation</span>
+                  </li>
+                </ul>
+              </motion.div>
+              
+              {/* Phase 2 Evaluation */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.5, delay: 0.2 }}
+                className="bg-glass rounded-3xl p-8 backdrop-blur-sm shadow-glass"
+              >
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
+                    <Trophy className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="text-2xl font-bold">Phase 2: Grand Finale</h3>
+                </div>
+                
+                <p className="text-foreground/80 mb-6">
+                  Selected teams will participate in the 24-hour onsite hackathon at Cyfuture India Pvt Ltd, NSEZ, Noida, where they will build and demonstrate their solutions.
+                </p>
+                
+                <h4 className="text-lg font-semibold mb-3">Evaluation Criteria:</h4>
+                
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Functionality (25%): Working solution that fulfills the stated objectives</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Technical Implementation (25%): Quality of code, architecture, and use of AI technologies</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span>User Experience (15%): Usability, interface design, and user journey</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Innovation and Creativity (15%): Unique approaches and creative problem-solving</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Presentation and Demo (10%): Clarity of explanation and effective demonstration</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Business Potential (10%): Scalability, market potential, and business viability</span>
+                  </li>
+                </ul>
+              </motion.div>
+            </div>
+          </TabsContent>
+        </Tabs>
         
         <div className="relative">
           {/* Timeline Line */}
@@ -116,14 +244,19 @@ const timelineEvents = [
     description: "Last day to register your team for the hackathon. Make sure to complete your registration before the deadline."
   },
   {
+    date: "April 28, 2025",
+    title: "Idea Submission Deadline",
+    description: "All teams must submit their project ideas and presentation slides for Phase 1 evaluation by this date."
+  },
+  {
     date: "May 5, 2025",
     title: "Team Selection Announcement",
-    description: "Top 15 teams will be selected and notified for participation in the grand finale at Cyfuture headquarters."
+    description: "Top 15 teams will be selected based on idea submissions and notified for participation in the grand finale at Cyfuture headquarters."
   },
   {
     date: "May 15, 2025 - 10:00 AM",
     title: "Hackathon Kick-off",
-    description: "The 24-hour hackathon begins! Teams gather at Cyfuture India Pvt Ltd, NSEZ, Noida for the opening ceremony."
+    description: "The 24-hour hackathon begins! Selected teams gather at Cyfuture India Pvt Ltd, NSEZ, Noida for the opening ceremony."
   },
   {
     date: "May 15-16, 2025",
