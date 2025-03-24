@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Sparkles, Phone, HeadphonesIcon, Bot, Braces, Cpu, HeartPulse, Coins, Leaf, GraduationCap } from "lucide-react";
+import { Sparkles, Phone, HeadphonesIcon, Bot, Braces, Cpu, HeartPulse, Coins, Leaf, GraduationCap, Lightbulb } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const ChallengeSection = () => {
@@ -42,7 +42,7 @@ const ChallengeSection = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-3xl md:text-4xl font-bold mb-6"
           >
-            Hackathon Challenge Tracks
+            Empowering Industries with AI Innovation
           </motion.h2>
           
           <motion.p
@@ -52,7 +52,7 @@ const ChallengeSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg text-foreground/80 max-w-3xl mx-auto mb-6"
           >
-            Choose from multiple challenge tracks and develop AI-powered solutions that can revolutionize industries. The top teams from each track will be invited to the grand finale at Cyfuture India Pvt Ltd.
+            In an era of rapid technological advancement, industries face unique challenges that demand smarter, more efficient, and scalable solutions. AI has the potential to revolutionize these sectors, but unlocking this potential requires creative, practical, and impactful applications tailored to real-world needs.
           </motion.p>
 
           <motion.div
@@ -69,40 +69,40 @@ const ChallengeSection = () => {
           </motion.div>
         </div>
         
-        <Tabs defaultValue="voicebot" className="mb-16">
+        <Tabs defaultValue="callcenter" className="mb-16">
           <TabsList className="grid grid-cols-2 md:grid-cols-5 max-w-4xl mx-auto mb-8">
-            <TabsTrigger value="voicebot">Voice Bot</TabsTrigger>
+            <TabsTrigger value="callcenter">Call Centers</TabsTrigger>
             <TabsTrigger value="finance">Finance</TabsTrigger>
             <TabsTrigger value="healthcare">Healthcare</TabsTrigger>
             <TabsTrigger value="sustainability">Sustainability</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
           </TabsList>
           
-          <TabsContent value="voicebot">
+          <TabsContent value="callcenter">
             <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
               <h3 className="text-2xl font-bold mb-6 flex items-center">
-                <Sparkles className="h-6 w-6 text-primary mr-3" />
-                Voice Bot Solution for Call Centers
+                <Phone className="h-6 w-6 text-primary mr-3" />
+                Call Centers
               </h3>
               
               <div className="space-y-6 text-foreground/90">
                 <p>
-                  Design an AI-powered voice bot that can handle customer service calls, understand different accents, and resolve common queries without human intervention.
+                  Improve customer service efficiency, reduce wait times, enhance agent performance, or personalize customer interactions using AI technologies.
                 </p>
                 
                 <h4 className="text-xl font-bold mt-6 mb-3">Problem Statement:</h4>
                 
                 <p className="mb-4">
-                  Call centers face challenges with high call volumes, repetitive customer queries, and staffing limitations. Traditional IVR systems are often frustrating for customers, leading to poor experiences and inefficient operations.
+                  Call centers face challenges with high call volumes, agent burnout, and maintaining service quality. Traditional solutions often lead to customer frustration and operational inefficiencies.
                 </p>
                 
                 <h4 className="text-xl font-bold mt-6 mb-3">Your Challenge:</h4>
                 
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>Create a voice bot that can understand natural conversations across accents</li>
-                  <li>Develop a system that can resolve common customer queries automatically</li>
-                  <li>Implement a seamless handoff to human agents when needed</li>
-                  <li>Design analytics to track performance and customer satisfaction</li>
+                  <li>Design AI solutions that can understand natural language and different accents</li>
+                  <li>Create systems to automatically resolve common customer queries</li>
+                  <li>Develop tools to assist agents in real-time during complex interactions</li>
+                  <li>Build analytics dashboards to identify improvement opportunities</li>
                 </ul>
               </div>
             </div>
@@ -112,27 +112,27 @@ const ChallengeSection = () => {
             <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
               <h3 className="text-2xl font-bold mb-6 flex items-center">
                 <Coins className="h-6 w-6 text-primary mr-3" />
-                AI-Powered Financial Solutions
+                Finance
               </h3>
               
               <div className="space-y-6 text-foreground/90">
                 <p>
-                  Create an AI solution that democratizes financial services, improves financial literacy, or enhances financial decision-making for college students and young adults.
+                  Streamline fraud detection, optimize investment strategies, automate financial planning, or improve risk assessment through AI innovations.
                 </p>
                 
                 <h4 className="text-xl font-bold mt-6 mb-3">Problem Statement:</h4>
                 
                 <p className="mb-4">
-                  Many young adults and students lack access to financial education and tools, leading to poor financial decisions that can have long-term consequences.
+                  Financial institutions struggle with fraud prevention, personalized financial advice, and making financial services accessible to all demographics, especially students and young adults.
                 </p>
                 
                 <h4 className="text-xl font-bold mt-6 mb-3">Your Challenge:</h4>
                 
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>Develop a solution for personalized financial education</li>
-                  <li>Create tools for budgeting and financial planning for students</li>
-                  <li>Design AI systems to help with basic investment decisions</li>
-                  <li>Implement safeguards to prevent financial mistakes</li>
+                  <li>Create AI tools for detecting unusual financial activities</li>
+                  <li>Develop applications that provide personalized financial education</li>
+                  <li>Build systems that simplify financial planning for students</li>
+                  <li>Design solutions that make investing more accessible</li>
                 </ul>
               </div>
             </div>
@@ -142,27 +142,27 @@ const ChallengeSection = () => {
             <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
               <h3 className="text-2xl font-bold mb-6 flex items-center">
                 <HeartPulse className="h-6 w-6 text-primary mr-3" />
-                Healthcare Accessibility Solutions
+                Healthcare
               </h3>
               
               <div className="space-y-6 text-foreground/90">
                 <p>
-                  Create an AI application that improves healthcare accessibility, provides health education, or supports mental health for college students.
+                  Enhance patient care, predict disease outbreaks, optimize resource allocation, or simplify medical record management with AI solutions.
                 </p>
                 
                 <h4 className="text-xl font-bold mt-6 mb-3">Problem Statement:</h4>
                 
                 <p className="mb-4">
-                  Students often neglect their health due to busy schedules, limited resources, or lack of awareness about healthcare options available to them.
+                  Healthcare providers face challenges with resource constraints, timely diagnosis, and making healthcare accessible to all. Students often neglect their health due to limited awareness and busy schedules.
                 </p>
                 
                 <h4 className="text-xl font-bold mt-6 mb-3">Your Challenge:</h4>
                 
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>Build a solution for mental health support and stress management</li>
-                  <li>Create a system for basic health assessment and guidance</li>
-                  <li>Develop tools for medication and health appointment reminders</li>
-                  <li>Design accessible health education resources</li>
+                  <li>Build solutions for mental health support and stress management</li>
+                  <li>Develop systems for early health issue detection</li>
+                  <li>Create applications that improve healthcare accessibility</li>
+                  <li>Design tools to simplify health record management</li>
                 </ul>
               </div>
             </div>
@@ -172,27 +172,27 @@ const ChallengeSection = () => {
             <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
               <h3 className="text-2xl font-bold mb-6 flex items-center">
                 <Leaf className="h-6 w-6 text-primary mr-3" />
-                Campus Sustainability Solutions
+                Sustainability
               </h3>
               
               <div className="space-y-6 text-foreground/90">
                 <p>
-                  Develop an AI solution that helps college campuses become more sustainable by reducing waste, conserving energy, or promoting eco-friendly practices.
+                  Tackle climate change, optimize energy consumption, reduce waste, or promote eco-friendly practices using AI technologies.
                 </p>
                 
                 <h4 className="text-xl font-bold mt-6 mb-3">Problem Statement:</h4>
                 
                 <p className="mb-4">
-                  Many college campuses face challenges with resource consumption, waste management, and implementing sustainable practices across large student populations.
+                  Educational institutions and businesses struggle with implementing sustainable practices, reducing carbon footprints, and making environmental initiatives practical and measurable.
                 </p>
                 
                 <h4 className="text-xl font-bold mt-6 mb-3">Your Challenge:</h4>
                 
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>Create a solution for tracking and reducing energy usage</li>
-                  <li>Design systems for optimizing campus waste management</li>
-                  <li>Develop tools to incentivize sustainable behaviors</li>
-                  <li>Build applications that connect sustainability initiatives</li>
+                  <li>Create solutions for tracking and reducing energy consumption</li>
+                  <li>Develop applications that optimize waste management</li>
+                  <li>Build systems that encourage sustainable behaviors</li>
+                  <li>Design tools to measure environmental impact of activities</li>
                 </ul>
               </div>
             </div>
@@ -202,27 +202,27 @@ const ChallengeSection = () => {
             <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
               <h3 className="text-2xl font-bold mb-6 flex items-center">
                 <GraduationCap className="h-6 w-6 text-primary mr-3" />
-                Enhanced Learning Experiences
+                Education
               </h3>
               
               <div className="space-y-6 text-foreground/90">
                 <p>
-                  Create an AI solution that enhances learning experiences, improves accessibility to educational content, or helps students master difficult concepts.
+                  Personalize learning experiences, automate administrative tasks, improve accessibility, or predict student performance with innovative AI solutions.
                 </p>
                 
                 <h4 className="text-xl font-bold mt-6 mb-3">Problem Statement:</h4>
                 
                 <p className="mb-4">
-                  Traditional education approaches don't always accommodate different learning styles, paces, or accessibility needs, making it difficult for some students to succeed.
+                  Educational institutions face challenges with personalized learning, identifying at-risk students, and making education accessible to diverse learning styles and needs.
                 </p>
                 
                 <h4 className="text-xl font-bold mt-6 mb-3">Your Challenge:</h4>
                 
                 <ul className="list-disc pl-6 space-y-2">
-                  <li>Develop a personalized learning assistant for challenging courses</li>
-                  <li>Create tools for converting educational content into accessible formats</li>
-                  <li>Design AI systems that can answer subject-specific questions</li>
-                  <li>Build collaborative learning platforms powered by AI</li>
+                  <li>Design AI tutors that adapt to individual learning paces</li>
+                  <li>Create systems that identify concepts students struggle with</li>
+                  <li>Build tools that make educational content more accessible</li>
+                  <li>Develop applications that streamline administrative tasks</li>
                 </ul>
               </div>
             </div>
@@ -260,34 +260,34 @@ const ChallengeSection = () => {
 
 const features = [
   {
-    icon: Phone,
-    title: "Natural Conversation",
-    description: "Create voice bots that can maintain natural, flowing conversations with customers, understanding context and responding appropriately."
-  },
-  {
-    icon: HeadphonesIcon,
-    title: "Call Center Integration",
-    description: "Design solutions that seamlessly integrate with existing call center infrastructure and telephony systems."
+    icon: Lightbulb,
+    title: "Innovation Focus",
+    description: "Develop novel AI solutions that address real problems faced by industries and demonstrate creative thinking."
   },
   {
     icon: Bot,
     title: "AI-Powered Understanding",
-    description: "Implement advanced NLP and machine learning to accurately understand customer intent across accents and languages."
+    description: "Implement advanced machine learning to accurately understand context, data patterns, and user needs."
+  },
+  {
+    icon: Phone,
+    title: "User-Centered Design",
+    description: "Create solutions that prioritize user experience and make complex technologies accessible to everyday users."
   },
   {
     icon: Braces,
-    title: "Custom Workflows",
-    description: "Create flexible workflows that can be customized for different industries and customer service scenarios."
+    title: "Technical Feasibility",
+    description: "Build prototypes that demonstrate technical viability and can be implemented within the hackathon timeframe."
   },
   {
     icon: Cpu,
-    title: "Real-time Analytics",
-    description: "Develop dashboards that provide insights into call metrics, customer satisfaction, and bot performance."
+    title: "Impact Assessment",
+    description: "Showcase how your solution can drive meaningful impact and provide measurable improvements."
   },
   {
     icon: Sparkles,
-    title: "Continuous Learning",
-    description: "Build systems that learn from each interaction to improve response accuracy and customer satisfaction over time."
+    title: "Presentation Quality",
+    description: "Communicate your ideas effectively through clear, compelling presentations that highlight your solution's value."
   }
 ];
 
