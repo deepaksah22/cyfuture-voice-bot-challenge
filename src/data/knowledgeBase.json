@@ -1,0 +1,272 @@
+
+{
+  "hackathonInfo": {
+    "name": "Cyfuture AI Hackathon 1.0",
+    "organizer": "Cyfuture India Pvt Ltd",
+    "location": "Cyfuture India Pvt Ltd, NSEZ, Noida, Uttar Pradesh, India",
+    "contactEmail": "hackathon@cyfuture.com",
+    "contactPhone": "+91 9821764691",
+    "description": "An immersive 24-hour hackathon experience to build the next generation of AI-powered solutions that will transform various industries."
+  },
+  "problemStatement": {
+    "title": "Empowering Industries with AI Innovation",
+    "overview": "In an era of rapid technological advancement, industries such as call centers, finance, healthcare, sustainability, and education face unique challenges that demand smarter, more efficient, and scalable solutions. Artificial Intelligence (AI) has the potential to revolutionize these sectors by enhancing customer experiences, optimizing operations, improving decision-making, and addressing pressing global issues. However, unlocking this potential requires creative, practical, and impactful applications tailored to real-world needs.",
+    "domains": [
+      {
+        "name": "Call Centers",
+        "description": "Improve customer service efficiency, reduce wait times, enhance agent performance, or personalize customer interactions."
+      },
+      {
+        "name": "Finance",
+        "description": "Streamline fraud detection, optimize investment strategies, automate financial planning, or improve risk assessment."
+      },
+      {
+        "name": "Healthcare",
+        "description": "Enhance patient care, predict disease outbreaks, optimize resource allocation, or simplify medical record management."
+      },
+      {
+        "name": "Sustainability",
+        "description": "Tackle climate change, optimize energy consumption, reduce waste, or promote eco-friendly practices."
+      },
+      {
+        "name": "Education",
+        "description": "Personalize learning experiences, automate administrative tasks, improve accessibility, or predict student performance."
+      },
+      {
+        "name": "Other Industries",
+        "description": "Propose an innovative AI solution for an industry of your choice (e.g., retail, logistics, entertainment) that solves a pressing problem or creates new opportunities."
+      }
+    ]
+  },
+  "eligibility": {
+    "participants": "Students, professionals, and AI enthusiasts",
+    "teamSize": "2-4 members",
+    "registrationFee": "Free"
+  },
+  "timeline": [
+    {
+      "event": "Registration Opens",
+      "date": "April 5, 2025",
+      "description": "Registration for the Cyfuture AI Hackathon 1.0 begins. Form your teams and prepare for an exciting challenge!"
+    },
+    {
+      "event": "Registration Closes",
+      "date": "April 25, 2025",
+      "description": "Last day to register your team for the hackathon. Make sure to complete your registration before the deadline."
+    },
+    {
+      "event": "Idea Submission Deadline",
+      "date": "April 28, 2025",
+      "description": "All teams must submit their project ideas and presentation slides for Phase 1 evaluation by this date."
+    },
+    {
+      "event": "Team Selection Announcement",
+      "date": "May 5, 2025",
+      "description": "Top 15 teams will be selected based on idea submissions and notified for participation in the grand finale at Cyfuture headquarters."
+    },
+    {
+      "event": "Hackathon Kick-off",
+      "date": "May 15, 2025 - 10:00 AM",
+      "description": "The 24-hour hackathon begins! Selected teams gather at Cyfuture India Pvt Ltd, NSEZ, Noida for the opening ceremony."
+    },
+    {
+      "event": "Hacking Period",
+      "date": "May 15-16, 2025",
+      "description": "Teams work on their solutions for 24 hours straight. Mentors will be available to provide guidance and support."
+    },
+    {
+      "event": "Project Submission",
+      "date": "May 16, 2025 - 10:00 AM",
+      "description": "All teams must submit their final projects, including code, documentation, and presentation materials."
+    },
+    {
+      "event": "Presentations & Judging",
+      "date": "May 16, 2025 - 11:00 AM",
+      "description": "Teams present their solutions to a panel of judges from Cyfuture and industry experts."
+    },
+    {
+      "event": "Awards Ceremony",
+      "date": "May 16, 2025 - 4:00 PM",
+      "description": "Winners will be announced and prizes will be awarded during the closing ceremony."
+    }
+  ],
+  "evaluation": {
+    "phase1": {
+      "title": "Phase 1: Idea Submission",
+      "description": "The first round of evaluation will be based on your idea submission through a presentation. The top 15 teams will be selected to participate in the grand finale.",
+      "criteria": [
+        {
+          "name": "Innovation and Originality",
+          "weight": "25%",
+          "description": "Uniqueness and novelty of the proposed solution"
+        },
+        {
+          "name": "Technical Feasibility",
+          "weight": "25%",
+          "description": "Viability of implementation within the hackathon timeframe"
+        },
+        {
+          "name": "Problem-Solution Fit",
+          "weight": "20%",
+          "description": "How well the solution addresses the chosen challenge"
+        },
+        {
+          "name": "Potential Impact",
+          "weight": "20%",
+          "description": "Expected benefits and scale of impact"
+        },
+        {
+          "name": "Presentation Quality",
+          "weight": "10%",
+          "description": "Clarity and organization of the idea presentation"
+        }
+      ]
+    },
+    "phase2": {
+      "title": "Phase 2: Grand Finale",
+      "description": "Selected teams will participate in the 24-hour onsite hackathon at Cyfuture India Pvt Ltd, NSEZ, Noida, where they will build and demonstrate their solutions.",
+      "criteria": [
+        {
+          "name": "Functionality",
+          "weight": "25%",
+          "description": "Working solution that fulfills the stated objectives"
+        },
+        {
+          "name": "Technical Implementation",
+          "weight": "25%",
+          "description": "Quality of code, architecture, and use of AI technologies"
+        },
+        {
+          "name": "User Experience",
+          "weight": "15%",
+          "description": "Usability, interface design, and user journey"
+        },
+        {
+          "name": "Innovation and Creativity",
+          "weight": "15%",
+          "description": "Unique approaches and creative problem-solving"
+        },
+        {
+          "name": "Presentation and Demo",
+          "weight": "10%",
+          "description": "Clarity of explanation and effective demonstration"
+        },
+        {
+          "name": "Business Potential",
+          "weight": "10%",
+          "description": "Scalability, market potential, and business viability"
+        }
+      ]
+    }
+  },
+  "prizes": {
+    "firstPrize": {
+      "amount": "₹1,00,000",
+      "description": "Cash prize, trophy, certificates, and potential internship/job opportunities at Cyfuture"
+    },
+    "secondPrize": {
+      "amount": "₹50,000",
+      "description": "Cash prize, trophy, certificates, and mentorship opportunities"
+    },
+    "thirdPrize": {
+      "amount": "₹25,000",
+      "description": "Cash prize, trophy, and certificates"
+    },
+    "specialMentions": {
+      "description": "Additional prizes for Most Innovative Solution, Best UI/UX, and Best Technical Implementation"
+    }
+  },
+  "faq": [
+    {
+      "question": "Who can participate in the Cyfuture AI Hackathon?",
+      "answer": "The hackathon is open to students, professionals, and AI enthusiasts. Participants can form teams of 2-4 members. We welcome individuals with diverse skill sets including AI/ML, software development, UX/UI design, and business acumen."
+    },
+    {
+      "question": "Is there any registration fee?",
+      "answer": "No, there is no registration fee to participate in the Cyfuture AI Hackathon. It's completely free to join!"
+    },
+    {
+      "question": "How will the top 15 teams be selected?",
+      "answer": "The top 15 teams will be selected based on their initial idea submission, technical feasibility, innovation potential, and relevance to the problem statement. Each submission will be reviewed by our panel of judges."
+    },
+    {
+      "question": "What should we bring to the hackathon?",
+      "answer": "Participants should bring their own laptops, chargers, and any specific hardware they might need for their project. Food and refreshments will be provided during the event. For those participating in the grand finale at Cyfuture headquarters, accommodation arrangements will be communicated separately."
+    },
+    {
+      "question": "Do we need to have a solution ready before the hackathon?",
+      "answer": "No, you don't need to have a ready solution before the hackathon. However, it's beneficial to brainstorm ideas and do some preliminary research on AI technologies. The actual development will happen during the 24-hour hackathon period."
+    },
+    {
+      "question": "What technologies can we use for our solution?",
+      "answer": "You are free to use any technology stack of your choice. This includes but is not limited to AI/ML libraries, cloud services, and programming languages. We encourage innovative use of technologies to solve the problem statement."
+    },
+    {
+      "question": "Will there be mentors available during the hackathon?",
+      "answer": "Yes, industry experts and mentors from Cyfuture and partner companies will be available throughout the hackathon to provide guidance and technical support."
+    },
+    {
+      "question": "What are the judging criteria?",
+      "answer": "Projects will be judged based on technical implementation, innovation, relevance to the problem statement, user experience, scalability, and business potential. The presentation quality and demonstration of the working prototype will also be considered."
+    }
+  ],
+  "sponsorsAndPartners": {
+    "title": "Sponsors and Partners",
+    "description": "The Cyfuture AI Hackathon 1.0 is supported by leading technology companies and academic institutions committed to fostering innovation in AI.",
+    "categories": [
+      {
+        "title": "Platinum Sponsors",
+        "sponsors": ["Tech Giant Corp", "AI Solutions Inc"]
+      },
+      {
+        "title": "Gold Sponsors",
+        "sponsors": ["Data Analytics Pro", "Cloud Services Ltd"]
+      },
+      {
+        "title": "Silver Sponsors",
+        "sponsors": ["StartUp Innovations", "Tech Academy"]
+      },
+      {
+        "title": "Academic Partners",
+        "sponsors": ["University of Technology", "Institute of AI Research"]
+      },
+      {
+        "title": "Community Partners",
+        "sponsors": ["Developers Community", "Women in Tech"]
+      }
+    ]
+  },
+  "resources": {
+    "title": "Resources for Participants",
+    "description": "To help you prepare for the hackathon, we've compiled a list of useful resources.",
+    "items": [
+      {
+        "title": "AI Development Frameworks",
+        "description": "Popular frameworks and libraries for AI development, including TensorFlow, PyTorch, and Hugging Face."
+      },
+      {
+        "title": "UX/UI Design Tools",
+        "description": "Tools for designing user interfaces and experiences, such as Figma, Adobe XD, and Sketch."
+      },
+      {
+        "title": "Data Sources",
+        "description": "Public datasets and APIs that can be used for training and testing AI models."
+      },
+      {
+        "title": "Learning Resources",
+        "description": "Online courses, tutorials, and documentation to help you learn about AI technologies."
+      }
+    ]
+  },
+  "termsAndConditions": {
+    "title": "Terms and Conditions",
+    "items": [
+      "All participants must register and agree to the hackathon rules and code of conduct.",
+      "Teams must consist of 2-4 members.",
+      "All code developed during the hackathon must be original or properly attributed if using open-source components.",
+      "Teams retain ownership of their intellectual property but grant Cyfuture a non-exclusive license to showcase their projects.",
+      "Judges' decisions are final and cannot be appealed.",
+      "Cyfuture reserves the right to disqualify any team found to be violating the rules or code of conduct."
+    ]
+  }
+}
