@@ -44,7 +44,8 @@ const HeroSection = () => {
             className="text-lg md:text-xl text-foreground/80 mb-8 max-w-3xl"
           >
             Build cutting-edge AI-powered solutions in Voice Bots, Finance, Healthcare, Sustainability, and Education. Solve real-world challenges, showcase your innovation, and compete with the best minds!
-
+ </motion.p>
+          >
 🔹 Who Can Participate? Startups & College Students
 🏆 Rewards for Top 3 Teams:
 ✅ Full-fledged product development support
