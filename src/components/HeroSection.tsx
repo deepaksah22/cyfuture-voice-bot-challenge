@@ -52,7 +52,10 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="flex flex-col sm:flex-row items-center gap-4 mb-12"
           >
-            <Button className="h-12 px-8 bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent text-white rounded-full text-lg font-medium shadow-glow hover:shadow-none transition-all">
+            <Button 
+              className="h-12 px-8 bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent text-white rounded-full text-lg font-medium shadow-glow hover:shadow-none transition-all"
+              onClick={() => window.open('https://forms.gle/RgFmduC1seRnN4F5A', '_blank')}
+            >
               Register Now
             </Button>
             <Button variant="outline" className="h-12 px-8 rounded-full text-lg font-medium border-2">

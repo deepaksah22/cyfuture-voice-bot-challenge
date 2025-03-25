@@ -20,6 +20,10 @@ const Navbar = () => {
 
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
+  const handleRegisterClick = () => {
+    window.open('https://forms.gle/RgFmduC1seRnN4F5A', '_blank');
+  };
+
   return (
     <header 
       className={cn(
@@ -48,6 +52,7 @@ const Navbar = () => {
           <NavLink href="#faq">FAQ</NavLink>
           <Button 
             className="bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent text-white font-medium px-6 py-2 rounded-full shadow-sm hover:shadow-md transition-all"
+            onClick={handleRegisterClick}
           >
             Register Now
           </Button>
@@ -83,7 +88,10 @@ const Navbar = () => {
           <MobileNavLink href="#faq" onClick={() => setMobileMenuOpen(false)}>FAQ</MobileNavLink>
           <Button 
             className="w-full bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent text-white font-medium px-8 py-3 rounded-full shadow-sm hover:shadow-md transition-all"
-            onClick={() => setMobileMenuOpen(false)}
+            onClick={() => {
+              setMobileMenuOpen(false);
+              handleRegisterClick();
+            }}
           >
             Register Now
           </Button>
