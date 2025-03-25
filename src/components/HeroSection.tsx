@@ -48,20 +48,6 @@ const HeroSection = () => {
   Solve real-world challenges, showcase your innovation, and compete with the best minds!  
 </motion.p>
 
-<motion.p>
-  🔹 Who Can Participate? Startups & College Students  
-</motion.p>
-
-<motion.p>
-  🏆 Rewards for Top 3 Teams: 
-  ✅ Full-fledged product development support 
-  ✅ Cloud infrastructure & marketing assistance  
-  ✅ Seed funding up to ₹50 Lakhs  
-</motion.p>
-
-<motion.p>
-  Don't miss this opportunity to turn your startup dream into reality!🚀  
-</motion.p>
           
           <motion.div
             initial={{ opacity: 0, y: 20 }}
