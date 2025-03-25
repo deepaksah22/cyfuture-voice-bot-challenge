@@ -43,17 +43,25 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-foreground/80 mb-8 max-w-3xl"
           >
-            Build cutting-edge AI-powered solutions in Voice Bots, Finance, Healthcare, Sustainability, and Education Domains. Solve real-world challenges, showcase your innovation, and compete with the best minds!\n
- </motion.p>
-          >
-🔹 Who Can Participate? Startups & College Students \n
-🏆 Rewards for Top 3 Teams:\n
-✅ Full-fledged product development support\n
-✅ Cloud infrastructure & marketing assistance\n
-✅ Seed funding up to ₹50 Lakhs\n
-          
-Don't miss this opportunity to turn your startup dream into reality! 🚀
-          </motion.p>
+           <motion.p>
+  Build cutting-edge AI-powered solutions in Call Center, Finance, Healthcare, Sustainability, and Education domains.  
+  Solve real-world challenges, showcase your innovation, and compete with the best minds!  
+</motion.p>
+
+<motion.p>
+  🔹 Who Can Participate? Startups & College Students  
+</motion.p>
+
+<motion.p>
+  🏆 Rewards for Top 3 Teams: 
+  ✅ Full-fledged product development support 
+  ✅ Cloud infrastructure & marketing assistance  
+  ✅ Seed funding up to ₹50 Lakhs  
+</motion.p>
+
+<motion.p>
+  Don't miss this opportunity to turn your startup dream into reality!🚀  
+</motion.p>
           
           <motion.div
             initial={{ opacity: 0, y: 20 }}
