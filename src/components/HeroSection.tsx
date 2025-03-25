@@ -43,7 +43,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-foreground/80 mb-8 max-w-3xl"
           >
-           <motion.p>
+          
   Build cutting-edge AI-powered solutions in Call Center, Finance, Healthcare, Sustainability, and Education domains.  
   Solve real-world challenges, showcase your innovation, and compete with the best minds!  
 </motion.p>
