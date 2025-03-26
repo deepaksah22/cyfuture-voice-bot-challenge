@@ -183,6 +183,18 @@ const juryMembers: JuryMember[] = [
     }
   },
   {
+    name: "Monu Kumar",
+    title: "Innovation Director",
+    company: "Cyfuture Labs",
+    initials: "MK",
+    bio: "Technology visionary with expertise in AI/ML applications and a track record of mentoring successful tech startups in emerging markets.",
+    social: {
+      linkedin: "https://linkedin.com",
+      twitter: "https://twitter.com",
+      website: "https://example.com"
+    }
+  },
+  {
     name: "Priya Patel",
     title: "VP of Innovation",
     company: "Global Technologies",

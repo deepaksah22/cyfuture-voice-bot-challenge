@@ -43,8 +43,8 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-foreground/80 mb-8 max-w-3xl"
           >
-            Build cutting-edge AI-powered solutions in Call Center, Finance, Healthcare, Sustainability, and Education domains.  
-            Solve real-world challenges, showcase your innovation, and compete with the best minds!  
+            Build cutting-edge AI solutions for Call Center, Finance, Healthcare, Sustainability, and Education. 
+            Showcase your innovation, compete with top minds, and launch your next big startup!
           </motion.p>
 
           {/* Startup Opportunity */}
