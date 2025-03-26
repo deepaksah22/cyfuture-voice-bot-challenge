@@ -43,7 +43,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-foreground/80 mb-8 max-w-3xl"
           >
-            Build innovative AI solutions for real-world challenges and turn your prototype into a startup with our revenue-sharing partnership, cloud hosting & marketing support, and up to ₹50 Lakhs seed funding.
+            Build innovative AI solutions for real-world challenges, Showcase your project at Grand AI hackathon event at Cyfuture and turn your prototype into a startup with our revenue-sharing partnership, cloud hosting & marketing support, and up to ₹50 Lakhs seed funding.
           </motion.p>
           
           <motion.div
