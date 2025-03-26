@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -70,52 +69,7 @@ const TimelineSection = () => {
           </TabsContent>
           
           <TabsContent value="evaluation">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Phase 1 Evaluation */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.5 }}
-                className="bg-glass rounded-3xl p-8 backdrop-blur-sm shadow-glass"
-              >
-                <div className="flex items-center gap-3 mb-6">
-                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
-                    <FileText className="h-5 w-5 text-primary" />
-                  </div>
-                  <h3 className="text-2xl font-bold">Phase 1: Idea Submission</h3>
-                </div>
-                
-                <p className="text-foreground/80 mb-6">
-                  The first round of evaluation will be based on your idea submission through a presentation. The top 15 teams will be selected to participate in the grand finale.
-                </p>
-                
-                <h4 className="text-lg font-semibold mb-3">Evaluation Criteria:</h4>
-                
-                <ul className="space-y-3">
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Innovation and Originality (25%): Uniqueness and novelty of the proposed solution</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Technical Feasibility (25%): Viability of implementation within the hackathon timeframe</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Problem-Solution Fit (20%): How well the solution addresses the chosen challenge</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Potential Impact (20%): Expected benefits and scale of impact</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Presentation Quality (10%): Clarity and organization of the idea presentation</span>
-                  </li>
-                </ul>
-              </motion.div>
-              
+            <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
               {/* Phase 2 Evaluation */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -128,7 +82,7 @@ const TimelineSection = () => {
                   <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
                     <Trophy className="h-5 w-5 text-primary" />
                   </div>
-                  <h3 className="text-2xl font-bold">Phase 2: Grand Finale</h3>
+                  <h3 className="text-2xl font-bold">Grand Finale Evaluation Criteria</h3>
                 </div>
                 
                 <p className="text-foreground/80 mb-6">

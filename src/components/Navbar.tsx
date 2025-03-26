@@ -48,6 +48,7 @@ const Navbar = () => {
           <NavLink href="#challenges">Challenges</NavLink>
           <NavLink href="#timeline">Timeline</NavLink>
           <NavLink href="#prizes">Prizes</NavLink>
+          <NavLink href="#jury">Jury</NavLink>
           <NavLink href="#sponsors">Sponsors</NavLink>
           <NavLink href="#faq">FAQ</NavLink>
           <Button 
@@ -84,6 +85,7 @@ const Navbar = () => {
           <MobileNavLink href="#challenges" onClick={() => setMobileMenuOpen(false)}>Challenges</MobileNavLink>
           <MobileNavLink href="#timeline" onClick={() => setMobileMenuOpen(false)}>Timeline</MobileNavLink>
           <MobileNavLink href="#prizes" onClick={() => setMobileMenuOpen(false)}>Prizes</MobileNavLink>
+          <MobileNavLink href="#jury" onClick={() => setMobileMenuOpen(false)}>Jury</MobileNavLink>
           <MobileNavLink href="#sponsors" onClick={() => setMobileMenuOpen(false)}>Sponsors</MobileNavLink>
           <MobileNavLink href="#faq" onClick={() => setMobileMenuOpen(false)}>FAQ</MobileNavLink>
           <Button 
