@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, MapPin } from "lucide-react";
+import { Calendar, Clock, MapPin, Rocket, CloudLightning, DollarSign } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -43,8 +43,7 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-foreground/80 mb-8 max-w-3xl"
           >
-            Build innovative AI solutions for real-world challenges. Compete with top minds
-            and showcase your expertise in this premier AI hackathon event.
+            Build innovative AI solutions for real-world challenges and turn your prototype into a startup with our revenue-sharing partnership, cloud hosting & marketing support, and up to ₹50 Lakhs seed funding.
           </motion.p>
           
           <motion.div
@@ -93,6 +92,38 @@ const HeroSection = () => {
             <div>
               <h3 className="font-medium text-sm text-foreground/60">Venue</h3>
               <p className="font-medium">Cyfuture India Pvt Ltd, NSEZ, Noida</p>
+            </div>
+          </div>
+        </motion.div>
+        
+        {/* Startup opportunity brief */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mt-6"
+        >
+          <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft flex items-center">
+            <Rocket className="h-6 w-6 text-primary mr-4" />
+            <div>
+              <h3 className="font-medium text-sm text-foreground/60">Partnership</h3>
+              <p className="font-medium">Revenue Sharing Model</p>
+            </div>
+          </div>
+          
+          <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft flex items-center">
+            <CloudLightning className="h-6 w-6 text-primary mr-4" />
+            <div>
+              <h3 className="font-medium text-sm text-foreground/60">Support</h3>
+              <p className="font-medium">Cloud Hosting & Marketing</p>
+            </div>
+          </div>
+          
+          <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft flex items-center">
+            <DollarSign className="h-6 w-6 text-primary mr-4" />
+            <div>
+              <h3 className="font-medium text-sm text-foreground/60">Funding</h3>
+              <p className="font-medium">Up to ₹50 Lakhs Seed</p>
             </div>
           </div>
         </motion.div>

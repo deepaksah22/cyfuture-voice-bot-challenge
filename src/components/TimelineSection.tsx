@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -69,7 +70,52 @@ const TimelineSection = () => {
           </TabsContent>
           
           <TabsContent value="evaluation">
-            <div className="grid grid-cols-1 md:grid-cols-1 gap-8">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              {/* Phase 1 Evaluation */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, margin: "-50px" }}
+                transition={{ duration: 0.5, delay: 0.1 }}
+                className="bg-glass rounded-3xl p-8 backdrop-blur-sm shadow-glass"
+              >
+                <div className="flex items-center gap-3 mb-6">
+                  <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
+                    <FileText className="h-5 w-5 text-primary" />
+                  </div>
+                  <h3 className="text-2xl font-bold">Phase 1: Idea Submission</h3>
+                </div>
+                
+                <p className="text-foreground/80 mb-6">
+                  Teams must submit their project ideas and presentation slides. The top 15 ideas will be selected for the grand finale.
+                </p>
+                
+                <h4 className="text-lg font-semibold mb-3">Evaluation Criteria:</h4>
+                
+                <ul className="space-y-3">
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Problem Statement Clarity (25%): Clear identification of the problem being solved</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Innovation & Novelty (25%): Uniqueness and creativity of the proposed solution</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Technical Feasibility (20%): Whether the solution can be technically implemented</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Market Potential (15%): Commercial viability and scalability</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <span>Team Composition (15%): Skillset diversity and relevance to the project</span>
+                  </li>
+                </ul>
+              </motion.div>
+              
               {/* Phase 2 Evaluation */}
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
