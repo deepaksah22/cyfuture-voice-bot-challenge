@@ -1,7 +1,7 @@
 
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, MapPin } from "lucide-react";
+import { Calendar, Clock, MapPin, Rocket } from "lucide-react";
 
 const HeroSection = () => {
   return (
@@ -43,11 +43,26 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-foreground/80 mb-8 max-w-3xl"
           >
-          
-  Build cutting-edge AI-powered solutions in Call Center, Finance, Healthcare, Sustainability, and Education domains.  
-  Solve real-world challenges, showcase your innovation, and compete with the best minds!  
-</motion.p>
+            Build cutting-edge AI-powered solutions in Call Center, Finance, Healthcare, Sustainability, and Education domains.  
+            Solve real-world challenges, showcase your innovation, and compete with the best minds!  
+          </motion.p>
 
+          {/* Startup Opportunity */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.25 }}
+            className="bg-primary/10 rounded-lg p-4 mb-8 max-w-3xl"
+          >
+            <div className="flex items-center gap-3 mb-2">
+              <Rocket className="h-5 w-5 text-primary" />
+              <h3 className="text-lg font-semibold text-primary">Launch Your Startup with Cyfuture</h3>
+            </div>
+            <p className="text-foreground/90">
+              Top 3 teams will get the chance to build a startup in partnership with Cyfuture in a revenue-sharing model. 
+              Benefit from cloud hosting, marketing support, and initial seed funding up to ₹50 Lakhs!
+            </p>
+          </motion.div>
           
           <motion.div
             initial={{ opacity: 0, y: 20 }}

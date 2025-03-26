@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { Trophy, Award, Medal } from "lucide-react";
+import { Trophy, Award, Medal, Rocket, CloudLightning, DollarSign } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const PrizesSection = () => {
@@ -74,6 +74,54 @@ const PrizesSection = () => {
             delay={0.2}
           />
         </div>
+
+        {/* Startup Partnership Opportunity */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5, delay: 0.3 }}
+          className="mb-16"
+        >
+          <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md border border-primary/20">
+            <div className="flex flex-col md:flex-row items-center gap-6 md:gap-10 mb-8">
+              <div className="h-24 w-24 rounded-2xl flex items-center justify-center bg-gradient-to-br from-cyan-500 to-blue-600 shadow-glow">
+                <Rocket className="h-12 w-12 text-white" />
+              </div>
+              <div className="text-center md:text-left">
+                <h2 className="text-2xl md:text-3xl font-bold mb-2 bg-clip-text text-transparent bg-gradient-to-r from-primary to-cyan-400">
+                  Launch Your Startup with Cyfuture
+                </h2>
+                <p className="text-xl text-foreground/80">
+                  Turn your hackathon project into a real-world business
+                </p>
+              </div>
+            </div>
+            
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <StartupPerkCard 
+                icon={Rocket}
+                title="Revenue Sharing Partnership"
+                description="Top 3 teams will get the opportunity to build their startup in partnership with Cyfuture in a revenue-sharing model, with industry experts guiding you every step of the way."
+                delay={0.1}
+              />
+              
+              <StartupPerkCard 
+                icon={CloudLightning}
+                title="Cloud Hosting & Marketing"
+                description="Get complimentary cloud infrastructure and marketing support to launch and scale your solution, with direct access to Cyfuture's extensive network and customer base."
+                delay={0.2}
+              />
+              
+              <StartupPerkCard 
+                icon={DollarSign}
+                title="Seed Funding"
+                description="Receive initial seed funding of up to ₹50 Lakhs to transform your prototype into a market-ready product, with investment decisions made on-the-spot at the hackathon finale."
+                delay={0.3}
+              />
+            </div>
+          </div>
+        </motion.div>
         
         <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
           <h3 className="text-2xl font-bold mb-6">Additional Rewards</h3>
@@ -145,6 +193,31 @@ const PrizeCard = ({ position, title, amount, icon: Icon, color, iconColor, dela
           <p className="text-foreground/80">Plus additional benefits including mentorship, networking opportunities, and more!</p>
         </div>
       </div>
+    </motion.div>
+  );
+};
+
+interface StartupPerkCardProps {
+  icon: React.ElementType;
+  title: string;
+  description: string;
+  delay: number;
+}
+
+const StartupPerkCard = ({ icon: Icon, title, description, delay }: StartupPerkCardProps) => {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 20 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true, margin: "-50px" }}
+      transition={{ duration: 0.5, delay }}
+      className="bg-card/50 rounded-2xl p-6 border border-white/10 shadow-soft h-full"
+    >
+      <div className="h-12 w-12 rounded-full bg-primary/10 flex items-center justify-center mb-4">
+        <Icon className="h-6 w-6 text-primary" />
+      </div>
+      <h3 className="text-xl font-bold mb-2">{title}</h3>
+      <p className="text-foreground/80">{description}</p>
     </motion.div>
   );
 };
