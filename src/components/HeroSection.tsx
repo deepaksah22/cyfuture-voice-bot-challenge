@@ -85,7 +85,7 @@ const HeroSection = () => {
               className="flex items-center gap-4"
             >
               <Button variant="outline" className="h-12 px-8 rounded-full text-lg font-medium border-2">
-                Learn More
+                <a href="#roadmap">Learn More</a>
               </Button>
             </motion.div>
           </div>
