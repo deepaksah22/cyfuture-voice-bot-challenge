@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
@@ -45,59 +46,8 @@ const HeroSection = () => {
       </div>
 
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
-          {/* Left Side with Countdown */}
-          <motion.div 
-            initial={{ opacity: 0, x: -20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="w-full md:w-2/5 flex flex-col items-center md:items-start"
-          >
-            {/* Enhanced Countdown Timer */}
-            <div className="relative z-10 mb-8">
-              <h3 className="text-xl font-bold text-foreground/80 mb-4 text-center md:text-left">Time Remaining</h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-                <CountdownItem value={timeLeft.days} label="Days" />
-                <CountdownItem value={timeLeft.hours} label="Hours" />
-                <CountdownItem value={timeLeft.minutes} label="Minutes" />
-                <CountdownItem value={timeLeft.seconds} label="Seconds" />
-              </div>
-              <div className="absolute -inset-4 bg-gradient-to-r from-cyfuture-primary/20 to-cyfuture-accent/20 rounded-xl blur-xl -z-10"></div>
-            </div>
-            
-            {/* Enhanced Register Now Button */}
-            <motion.div
-              className="relative group"
-              whileHover={{ scale: 1.05 }}
-              animate={{ 
-                y: [0, -8, 0],
-              }}
-              transition={{
-                y: {
-                  duration: 2,
-                  repeat: Infinity,
-                  repeatType: "reverse"
-                }
-              }}
-            >
-              <Button 
-                className="h-14 px-10 bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent text-white rounded-full text-lg font-medium transition-all overflow-hidden group"
-                onClick={() => window.open('https://forms.gle/RgFmduC1seRnN4F5A', '_blank')}
-              >
-                <span className="relative z-10 flex items-center gap-2">
-                  <Rocket className="w-5 h-5" />
-                  Register Now
-                </span>
-                <span className="absolute inset-0 bg-white/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
-              </Button>
-              
-              {/* Button glow effect */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full opacity-70 group-hover:opacity-100 blur transition duration-300 group-hover:blur-xl -z-10"></div>
-              <div className="absolute -inset-0.5 bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent rounded-full opacity-0 group-hover:opacity-100 transition duration-300 -z-10"></div>
-            </motion.div>
-          </motion.div>
-          
-          {/* Right Side with Text Content */}
+        <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
+          {/* Left Side with Text Content */}
           <div className="w-full md:w-3/5">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -132,31 +82,82 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="flex items-center gap-4 mb-8"
+              className="flex items-center gap-4 mb-0"
             >
               <Button variant="outline" className="h-12 px-8 rounded-full text-lg font-medium border-2">
                 Learn More
               </Button>
             </motion.div>
           </div>
+          
+          {/* Right Side with Countdown and Register Button */}
+          <motion.div 
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5, delay: 0.3 }}
+            className="w-full md:w-2/5 flex flex-col items-center"
+          >
+            {/* Enhanced Countdown Timer with black glossy professional design */}
+            <div className="relative z-10 mb-8 p-6 rounded-2xl bg-black/80 backdrop-blur-md border border-white/10 shadow-2xl">
+              <h3 className="text-xl font-bold text-white mb-6 text-center">Time Remaining</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <CountdownItem value={timeLeft.days} label="Days" />
+                <CountdownItem value={timeLeft.hours} label="Hours" />
+                <CountdownItem value={timeLeft.minutes} label="Minutes" />
+                <CountdownItem value={timeLeft.seconds} label="Seconds" />
+              </div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-cyfuture-primary/30 to-cyfuture-accent/30 rounded-2xl blur-lg -z-10"></div>
+            </div>
+            
+            {/* Enhanced Register Now Button with more glossy professional look */}
+            <motion.div
+              className="relative group"
+              whileHover={{ scale: 1.05 }}
+              animate={{ 
+                y: [0, -8, 0],
+              }}
+              transition={{
+                y: {
+                  duration: 2,
+                  repeat: Infinity,
+                  repeatType: "reverse"
+                }
+              }}
+            >
+              <Button 
+                className="h-14 px-10 bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent text-white rounded-full text-lg font-medium transition-all overflow-hidden group"
+                onClick={() => window.open('https://forms.gle/RgFmduC1seRnN4F5A', '_blank')}
+              >
+                <span className="relative z-10 flex items-center gap-2">
+                  <Rocket className="w-5 h-5" />
+                  Register Now
+                </span>
+                <span className="absolute inset-0 bg-white/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
+              </Button>
+              
+              {/* Enhanced button glow effect for more glossy look */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full opacity-70 group-hover:opacity-100 blur-md transition duration-300 group-hover:blur-xl -z-10"></div>
+              <div className="absolute -inset-px bg-gradient-to-r from-white/50 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition duration-300 -z-5"></div>
+            </motion.div>
+          </motion.div>
         </div>
       </div>
     </section>
   );
 };
 
-// Enhanced Countdown Item Component
+// Enhanced Countdown Item Component with glossy black professional design
 const CountdownItem = ({ value, label }: { value: number, label: string }) => {
   return (
     <div className="flex flex-col items-center">
-      <div className="bg-gradient-to-br from-cyfuture-primary to-cyfuture-accent p-[2px] rounded-lg shadow-glow overflow-hidden">
-        <div className="bg-background/90 backdrop-blur-sm h-20 w-20 flex items-center justify-center rounded-lg">
-          <span className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent">
+      <div className="bg-gradient-to-br from-cyfuture-primary/80 to-cyfuture-accent/80 p-[1px] rounded-lg shadow-xl overflow-hidden">
+        <div className="bg-black/90 backdrop-blur-sm h-16 w-16 flex items-center justify-center rounded-lg">
+          <span className="text-2xl font-bold text-white">
             {value}
           </span>
         </div>
       </div>
-      <span className="mt-2 text-foreground/90 font-medium text-sm">{label}</span>
+      <span className="mt-2 text-white/90 font-medium text-xs uppercase tracking-wider">{label}</span>
     </div>
   );
 };
