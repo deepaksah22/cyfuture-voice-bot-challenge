@@ -44,9 +44,9 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground relative overflow-hidden">
       <Navbar />
       <HeroSection />
+      <PrizesSection />
       <ChallengeSection />
       <TimelineSection />
-      <PrizesSection />
       <JurySection />
       <SponsorsSection />
       <FaqSection />
