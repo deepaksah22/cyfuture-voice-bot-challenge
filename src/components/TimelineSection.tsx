@@ -1,12 +1,11 @@
-
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { CheckCircle2, FileText, Trophy } from "lucide-react";
+import { CheckCircle2, FileText, Trophy, Calendar, Clock, MapPin, Rocket, CloudLightning, DollarSign } from "lucide-react";
 
 const TimelineSection = () => {
   return (
-    <section id="timeline" className="section-padding px-4">
+    <section id="timeline" className="section-padding px-4 py-20">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <motion.div
@@ -167,6 +166,72 @@ const TimelineSection = () => {
             </div>
           </TabsContent>
         </Tabs>
+        
+        {/* Event Details Cards moved here from HeroSection */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5, delay: 0.5 }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mt-16"
+        >
+          <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft flex items-center">
+            <Calendar className="h-6 w-6 text-primary mr-4" />
+            <div>
+              <h3 className="font-medium text-sm text-foreground/60">Date</h3>
+              <p className="font-medium">May 15-16, 2025</p>
+            </div>
+          </div>
+          
+          <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft flex items-center">
+            <Clock className="h-6 w-6 text-primary mr-4" />
+            <div>
+              <h3 className="font-medium text-sm text-foreground/60">Duration</h3>
+              <p className="font-medium">24 Hours</p>
+            </div>
+          </div>
+          
+          <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft flex items-center">
+            <MapPin className="h-6 w-6 text-primary mr-4" />
+            <div>
+              <h3 className="font-medium text-sm text-foreground/60">Venue</h3>
+              <p className="font-medium">Cyfuture India Pvt Ltd, NSEZ, Noida</p>
+            </div>
+          </div>
+        </motion.div>
+        
+        {/* Startup opportunity brief moved here from HeroSection */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+          className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mt-6"
+        >
+          <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft flex items-center">
+            <Rocket className="h-6 w-6 text-primary mr-4" />
+            <div>
+              <h3 className="font-medium text-sm text-foreground/60">Partnership</h3>
+              <p className="font-medium">Revenue Sharing Model</p>
+            </div>
+          </div>
+          
+          <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft flex items-center">
+            <CloudLightning className="h-6 w-6 text-primary mr-4" />
+            <div>
+              <h3 className="font-medium text-sm text-foreground/60">Support</h3>
+              <p className="font-medium">Cloud Hosting & Marketing</p>
+            </div>
+          </div>
+          
+          <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft flex items-center">
+            <DollarSign className="h-6 w-6 text-primary mr-4" />
+            <div>
+              <h3 className="font-medium text-sm text-foreground/60">Funding</h3>
+              <p className="font-medium">Up to ₹50 Lakhs Seed</p>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

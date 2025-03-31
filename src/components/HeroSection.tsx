@@ -1,8 +1,7 @@
-
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, MapPin, Rocket, CloudLightning, DollarSign } from "lucide-react";
+import { Rocket } from "lucide-react";
 
 const HeroSection = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -46,169 +45,118 @@ const HeroSection = () => {
       </div>
 
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col items-center text-center mb-12">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="inline-block mb-4"
-          >
-            <span className="px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium">
-              Cyfuture AI Hackathon 1.0
-            </span>
-          </motion.div>
-          
-          <motion.h1
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 max-w-4xl bg-clip-text text-transparent bg-gradient-to-r from-cyfuture-primary via-cyfuture-secondary to-cyfuture-accent"
-          >
-            Innovating Across Multiple Domains with AI
-          </motion.h1>
-          
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-lg md:text-xl text-foreground/80 mb-8 max-w-3xl"
-          >
-            Develop cutting-edge AI solutions for real-world problems and present your project at the Grand AI Hackathon by Cyfuture. Win prizes up to ₹5 Lakhs, plus startup opportunities with revenue-sharing, cloud hosting, marketing support, and seed funding up to ₹50 Lakhs.
-          </motion.p>
-          
-          {/* Countdown Timer */}
+        <div className="flex flex-col md:flex-row items-center gap-8 mb-12">
+          {/* Left Side with Countdown */}
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
-            className="flex flex-wrap justify-center gap-4 mb-10"
+            className="w-full md:w-2/5 flex flex-col items-center md:items-start"
           >
-            <CountdownItem value={timeLeft.days} label="Days" />
-            <CountdownItem value={timeLeft.hours} label="Hours" />
-            <CountdownItem value={timeLeft.minutes} label="Minutes" />
-            <CountdownItem value={timeLeft.seconds} label="Seconds" />
-          </motion.div>
-          
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            className="flex flex-col sm:flex-row items-center gap-4 mb-12"
-          >
-            {/* Enhanced Register Now Button with Animation */}
+            {/* Enhanced Countdown Timer */}
+            <div className="relative z-10 mb-8">
+              <h3 className="text-xl font-bold text-foreground/80 mb-4 text-center md:text-left">Time Remaining</h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <CountdownItem value={timeLeft.days} label="Days" />
+                <CountdownItem value={timeLeft.hours} label="Hours" />
+                <CountdownItem value={timeLeft.minutes} label="Minutes" />
+                <CountdownItem value={timeLeft.seconds} label="Seconds" />
+              </div>
+              <div className="absolute -inset-4 bg-gradient-to-r from-cyfuture-primary/20 to-cyfuture-accent/20 rounded-xl blur-xl -z-10"></div>
+            </div>
+            
+            {/* Enhanced Register Now Button */}
             <motion.div
+              className="relative group"
+              whileHover={{ scale: 1.05 }}
               animate={{ 
                 y: [0, -8, 0],
-                boxShadow: [
-                  "0 0 10px rgba(79, 70, 229, 0.5)",
-                  "0 0 20px rgba(79, 70, 229, 0.7)",
-                  "0 0 10px rgba(79, 70, 229, 0.5)"
-                ]
               }}
               transition={{
-                duration: 2,
-                repeat: Infinity,
-                repeatType: "reverse"
+                y: {
+                  duration: 2,
+                  repeat: Infinity,
+                  repeatType: "reverse"
+                }
               }}
             >
               <Button 
-                className="h-12 px-8 bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent text-white rounded-full text-lg font-medium transition-all relative overflow-hidden group"
+                className="h-14 px-10 bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent text-white rounded-full text-lg font-medium transition-all overflow-hidden group"
                 onClick={() => window.open('https://forms.gle/RgFmduC1seRnN4F5A', '_blank')}
               >
-                <span className="relative z-10">Register Now</span>
+                <span className="relative z-10 flex items-center gap-2">
+                  <Rocket className="w-5 h-5" />
+                  Register Now
+                </span>
                 <span className="absolute inset-0 bg-white/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
-                <span className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300 
-                  bg-gradient-to-r from-cyan-400 to-blue-500 
-                  blur-xl rounded-full scale-150 -z-10"></span>
               </Button>
+              
+              {/* Button glow effect */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full opacity-70 group-hover:opacity-100 blur transition duration-300 group-hover:blur-xl -z-10"></div>
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent rounded-full opacity-0 group-hover:opacity-100 transition duration-300 -z-10"></div>
+            </motion.div>
+          </motion.div>
+          
+          {/* Right Side with Text Content */}
+          <div className="w-full md:w-3/5">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5 }}
+              className="inline-block mb-4"
+            >
+              <span className="px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium">
+                Cyfuture AI Hackathon 1.0
+              </span>
             </motion.div>
             
-            <Button variant="outline" className="h-12 px-8 rounded-full text-lg font-medium border-2">
-              Learn More
-            </Button>
-          </motion.div>
+            <motion.h1
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 max-w-4xl bg-clip-text text-transparent bg-gradient-to-r from-cyfuture-primary via-cyfuture-secondary to-cyfuture-accent"
+            >
+              Innovating Across Multiple Domains with AI
+            </motion.h1>
+            
+            <motion.p
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+              className="text-lg md:text-xl text-foreground/80 mb-8 max-w-3xl"
+            >
+              Develop cutting-edge AI solutions for real-world problems and present your project at the Grand AI Hackathon by Cyfuture. Win prizes up to ₹5 Lakhs, plus startup opportunities with revenue-sharing, cloud hosting, marketing support, and seed funding up to ₹50 Lakhs.
+            </motion.p>
+            
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.4 }}
+              className="flex items-center gap-4 mb-8"
+            >
+              <Button variant="outline" className="h-12 px-8 rounded-full text-lg font-medium border-2">
+                Learn More
+              </Button>
+            </motion.div>
+          </div>
         </div>
-        
-        {/* Event Details Cards */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto"
-        >
-          <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft flex items-center">
-            <Calendar className="h-6 w-6 text-primary mr-4" />
-            <div>
-              <h3 className="font-medium text-sm text-foreground/60">Date</h3>
-              <p className="font-medium">May 15-16, 2025</p>
-            </div>
-          </div>
-          
-          <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft flex items-center">
-            <Clock className="h-6 w-6 text-primary mr-4" />
-            <div>
-              <h3 className="font-medium text-sm text-foreground/60">Duration</h3>
-              <p className="font-medium">24 Hours</p>
-            </div>
-          </div>
-          
-          <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft flex items-center">
-            <MapPin className="h-6 w-6 text-primary mr-4" />
-            <div>
-              <h3 className="font-medium text-sm text-foreground/60">Venue</h3>
-              <p className="font-medium">Cyfuture India Pvt Ltd, NSEZ, Noida</p>
-            </div>
-          </div>
-        </motion.div>
-        
-        {/* Startup opportunity brief */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mt-6"
-        >
-          <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft flex items-center">
-            <Rocket className="h-6 w-6 text-primary mr-4" />
-            <div>
-              <h3 className="font-medium text-sm text-foreground/60">Partnership</h3>
-              <p className="font-medium">Revenue Sharing Model</p>
-            </div>
-          </div>
-          
-          <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft flex items-center">
-            <CloudLightning className="h-6 w-6 text-primary mr-4" />
-            <div>
-              <h3 className="font-medium text-sm text-foreground/60">Support</h3>
-              <p className="font-medium">Cloud Hosting & Marketing</p>
-            </div>
-          </div>
-          
-          <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft flex items-center">
-            <DollarSign className="h-6 w-6 text-primary mr-4" />
-            <div>
-              <h3 className="font-medium text-sm text-foreground/60">Funding</h3>
-              <p className="font-medium">Up to ₹50 Lakhs Seed</p>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
 };
 
-// New Countdown Item Component
+// Enhanced Countdown Item Component
 const CountdownItem = ({ value, label }: { value: number, label: string }) => {
   return (
-    <div className="flex flex-col items-center mx-2">
-      <div className="bg-gradient-to-br from-cyfuture-primary to-cyfuture-accent p-0.5 rounded-xl shadow-glow">
-        <div className="bg-background h-20 w-20 flex items-center justify-center rounded-xl">
+    <div className="flex flex-col items-center">
+      <div className="bg-gradient-to-br from-cyfuture-primary to-cyfuture-accent p-[2px] rounded-lg shadow-glow overflow-hidden">
+        <div className="bg-background/90 backdrop-blur-sm h-20 w-20 flex items-center justify-center rounded-lg">
           <span className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent">
             {value}
           </span>
         </div>
       </div>
-      <span className="mt-2 text-foreground/80 font-medium text-sm">{label}</span>
+      <span className="mt-2 text-foreground/90 font-medium text-sm">{label}</span>
     </div>
   );
 };
