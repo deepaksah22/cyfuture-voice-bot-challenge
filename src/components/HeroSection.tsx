@@ -64,7 +64,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 max-w-4xl bg-clip-text text-transparent bg-gradient-to-r from-cyfuture-primary via-cyfuture-secondary to-cyfuture-accent"
+              className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 max-w-4xl bg-clip-text text-transparent bg-gradient-to-r from-cyfuture-primary via-cyfuture-secondary to-cyfuture-accent"
             >
               Innovating Across Multiple Domains with AI
             </motion.h1>
@@ -82,7 +82,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="flex items-center gap-4 mb-0"
+              className="flex items-center gap-4"
             >
               <Button variant="outline" className="h-12 px-8 rounded-full text-lg font-medium border-2">
                 Learn More
@@ -99,7 +99,7 @@ const HeroSection = () => {
           >
             {/* Enhanced Countdown Timer with black glossy professional design */}
             <div className="relative z-10 mb-8 p-6 rounded-2xl bg-black/80 backdrop-blur-md border border-white/10 shadow-2xl">
-              <h3 className="text-xl font-bold text-white mb-6 text-center">Time Remaining</h3>
+              <h3 className="text-2xl font-bold text-white mb-6 text-center">Countdown</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <CountdownItem value={timeLeft.days} label="Days" />
                 <CountdownItem value={timeLeft.hours} label="Hours" />

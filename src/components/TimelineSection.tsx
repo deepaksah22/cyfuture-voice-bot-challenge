@@ -1,11 +1,16 @@
+
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { CheckCircle2, FileText, Trophy, Calendar, Clock, MapPin, Rocket, CloudLightning, DollarSign } from "lucide-react";
+import { CheckCircle2, FileText, Trophy, Calendar, Clock, MapPin, Rocket, CloudLightning, DollarSign, Flag, Target, Award } from "lucide-react";
 
 const TimelineSection = () => {
   return (
-    <section id="timeline" className="section-padding px-4 py-20">
+    <section id="timeline" className="section-padding px-4 py-20 relative">
+      {/* Background elements for depth */}
+      <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-background to-background z-[-1]" />
+      <div className="absolute -top-20 left-0 right-0 h-40 bg-gradient-to-b from-transparent to-background/50 z-[-1]" />
+      
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <motion.div
@@ -16,7 +21,7 @@ const TimelineSection = () => {
             className="inline-block mb-4"
           >
             <span className="px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium">
-              Event Schedule
+              Journey to Innovation
             </span>
           </motion.div>
           
@@ -25,9 +30,9 @@ const TimelineSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-3xl md:text-4xl font-bold mb-6"
+            className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent"
           >
-            Hackathon Timeline
+            Hackathon Roadmap
           </motion.h2>
           
           <motion.p
@@ -35,22 +40,26 @@ const TimelineSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-lg text-foreground/80 max-w-3xl mx-auto mb-12"
+            className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mb-12"
           >
-            Mark your calendars! Here's the complete timeline for the Cyfuture AI Hackathon 1.0
+            Mark your calendars! From registration to the grand finale, here's your complete guide to the Cyfuture AI Hackathon 1.0
           </motion.p>
         </div>
 
         <Tabs defaultValue="timeline" className="mb-12">
           <TabsList className="grid grid-cols-2 max-w-md mx-auto mb-8">
-            <TabsTrigger value="timeline">Timeline</TabsTrigger>
-            <TabsTrigger value="evaluation">Evaluation Criteria</TabsTrigger>
+            <TabsTrigger value="timeline" className="text-base">Roadmap Stages</TabsTrigger>
+            <TabsTrigger value="evaluation" className="text-base">Evaluation Criteria</TabsTrigger>
           </TabsList>
           
           <TabsContent value="timeline">
             <div className="relative">
-              {/* Timeline Line */}
-              <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-0.5 bg-border" />
+              {/* Decorative Timeline Elements */}
+              <div className="absolute left-0 top-0 w-20 h-20 bg-primary/5 rounded-full blur-2xl" />
+              <div className="absolute right-0 bottom-0 w-40 h-40 bg-accent/5 rounded-full blur-3xl" />
+              
+              {/* Timeline Line with Glow Effect */}
+              <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary/50 via-secondary/50 to-accent/50 shadow-glow" />
               
               {/* Timeline Events */}
               <div className="space-y-12">
@@ -60,6 +69,7 @@ const TimelineSection = () => {
                     date={event.date}
                     title={event.title}
                     description={event.description}
+                    icon={event.icon}
                     position={index % 2 === 0 ? "left" : "right"}
                     index={index}
                   />
@@ -69,15 +79,15 @@ const TimelineSection = () => {
           </TabsContent>
           
           <TabsContent value="evaluation">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-50px" }}
+              transition={{ duration: 0.5, delay: 0.1 }}
+              className="grid grid-cols-1 md:grid-cols-2 gap-8"
+            >
               {/* Phase 1 Evaluation */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.5, delay: 0.1 }}
-                className="bg-glass rounded-3xl p-8 backdrop-blur-sm shadow-glass"
-              >
+              <div className="bg-glass rounded-3xl p-8 backdrop-blur-sm shadow-glass">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
                     <FileText className="h-5 w-5 text-primary" />
@@ -113,16 +123,10 @@ const TimelineSection = () => {
                     <span>Team Composition (15%): Skillset diversity and relevance to the project</span>
                   </li>
                 </ul>
-              </motion.div>
+              </div>
               
               {/* Phase 2 Evaluation */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true, margin: "-50px" }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="bg-glass rounded-3xl p-8 backdrop-blur-sm shadow-glass"
-              >
+              <div className="bg-glass rounded-3xl p-8 backdrop-blur-sm shadow-glass">
                 <div className="flex items-center gap-3 mb-6">
                   <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
                     <Trophy className="h-5 w-5 text-primary" />
@@ -162,12 +166,12 @@ const TimelineSection = () => {
                     <span>Business Potential (10%): Scalability, market potential, and business viability</span>
                   </li>
                 </ul>
-              </motion.div>
-            </div>
+              </div>
+            </motion.div>
           </TabsContent>
         </Tabs>
         
-        {/* Event Details Cards moved here from HeroSection */}
+        {/* Event Details Cards */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -200,7 +204,7 @@ const TimelineSection = () => {
           </div>
         </motion.div>
         
-        {/* Startup opportunity brief moved here from HeroSection */}
+        {/* Startup opportunity brief */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -241,11 +245,25 @@ interface TimelineEventProps {
   date: string;
   title: string;
   description: string;
+  icon: string;
   position: "left" | "right";
   index: number;
 }
 
-const TimelineEvent = ({ date, title, description, position, index }: TimelineEventProps) => {
+const TimelineEvent = ({ date, title, description, icon, position, index }: TimelineEventProps) => {
+  // Map for dynamic icon selection
+  const iconMap: Record<string, React.ReactNode> = {
+    "register": <Rocket className="h-5 w-5 text-white" />,
+    "deadline": <Clock className="h-5 w-5 text-white" />,
+    "submission": <FileText className="h-5 w-5 text-white" />,
+    "selection": <CheckCircle2 className="h-5 w-5 text-white" />,
+    "kickoff": <Flag className="h-5 w-5 text-white" />,
+    "hacking": <Target className="h-5 w-5 text-white" />,
+    "project": <FileText className="h-5 w-5 text-white" />,
+    "judging": <Trophy className="h-5 w-5 text-white" />,
+    "awards": <Award className="h-5 w-5 text-white" />
+  };
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -257,8 +275,13 @@ const TimelineEvent = ({ date, title, description, position, index }: TimelineEv
         position === "right" ? "md:flex-row-reverse" : "md:flex-row"
       )}
     >
-      {/* Timeline Dot */}
-      <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 w-5 h-5 rounded-full bg-primary shadow-glow z-10" />
+      {/* Timeline Point with Icon */}
+      <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 flex items-center justify-center z-10">
+        <div className="w-10 h-10 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center shadow-glow z-20">
+          {iconMap[icon]}
+        </div>
+        <div className="absolute w-16 h-16 bg-primary/10 rounded-full animate-ping opacity-50" />
+      </div>
       
       {/* Content */}
       <div className={cn(
@@ -266,7 +289,7 @@ const TimelineEvent = ({ date, title, description, position, index }: TimelineEv
         position === "right" ? "md:pl-12 md:pr-0" : "md:pr-12 md:pl-0",
         "pl-8"
       )}>
-        <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft hover:shadow-md transition-all duration-300">
+        <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft hover:shadow-md transition-all duration-300 border border-white/10">
           <span className="inline-block px-3 py-1 rounded-full bg-primary/10 text-primary text-sm font-medium mb-3">
             {date}
           </span>
@@ -282,47 +305,56 @@ const timelineEvents = [
   {
     date: "April 5, 2025",
     title: "Registration Opens",
-    description: "Registration for the Cyfuture AI Hackathon 1.0 begins. Form your teams and prepare for an exciting challenge!"
+    description: "Registration for the Cyfuture AI Hackathon 1.0 begins. Form your teams and prepare for an exciting challenge!",
+    icon: "register"
   },
   {
     date: "April 25, 2025",
     title: "Registration Closes",
-    description: "Last day to register your team for the hackathon. Make sure to complete your registration before the deadline."
+    description: "Last day to register your team for the hackathon. Make sure to complete your registration before the deadline.",
+    icon: "deadline"
   },
   {
     date: "April 28, 2025",
     title: "Idea Submission Deadline",
-    description: "All teams must submit their project ideas and presentation slides for Phase 1 evaluation by this date."
+    description: "All teams must submit their project ideas and presentation slides for Phase 1 evaluation by this date.",
+    icon: "submission"
   },
   {
     date: "May 5, 2025",
     title: "Team Selection Announcement",
-    description: "Top 15 teams will be selected based on idea submissions and notified for participation in the grand finale at Cyfuture headquarters."
+    description: "Top 15 teams will be selected based on idea submissions and notified for participation in the grand finale at Cyfuture headquarters.",
+    icon: "selection"
   },
   {
     date: "May 15, 2025 - 10:00 AM",
     title: "Hackathon Kick-off",
-    description: "The 24-hour hackathon begins! Selected teams gather at Cyfuture India Pvt Ltd, NSEZ, Noida for the opening ceremony."
+    description: "The 24-hour hackathon begins! Selected teams gather at Cyfuture India Pvt Ltd, NSEZ, Noida for the opening ceremony.",
+    icon: "kickoff"
   },
   {
     date: "May 15-16, 2025",
     title: "Hacking Period",
-    description: "Teams work on their solutions for 24 hours straight. Mentors will be available to provide guidance and support."
+    description: "Teams work on their solutions for 24 hours straight. Mentors will be available to provide guidance and support.",
+    icon: "hacking"
   },
   {
     date: "May 16, 2025 - 10:00 AM",
     title: "Project Submission",
-    description: "All teams must submit their final projects, including code, documentation, and presentation materials."
+    description: "All teams must submit their final projects, including code, documentation, and presentation materials.",
+    icon: "project"
   },
   {
     date: "May 16, 2025 - 11:00 AM",
     title: "Presentations & Judging",
-    description: "Teams present their solutions to a panel of judges from Cyfuture and industry experts."
+    description: "Teams present their solutions to a panel of judges from Cyfuture and industry experts.",
+    icon: "judging"
   },
   {
     date: "May 16, 2025 - 4:00 PM",
     title: "Awards Ceremony",
-    description: "Winners will be announced and prizes will be awarded during the closing ceremony."
+    description: "Winners will be announced and prizes will be awarded during the closing ceremony.",
+    icon: "awards"
   }
 ];
 
