@@ -6,13 +6,13 @@ import { CheckCircle2, FileText, Trophy, Calendar, Clock, MapPin, Rocket, CloudL
 
 const TimelineSection = () => {
   return (
-    <section id="timeline" className="section-padding px-4 py-20 relative">
+    <section id="timeline" className="section-padding px-4 py-16 relative">
       {/* Background elements for depth */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-background to-background z-[-1]" />
       <div className="absolute -top-20 left-0 right-0 h-40 bg-gradient-to-b from-transparent to-background/50 z-[-1]" />
       
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -40,7 +40,7 @@ const TimelineSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mb-12"
+            className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mb-10"
           >
             Mark your calendars! From registration to the grand finale, here's your complete guide to the Cyfuture AI Hackathon 1.0
           </motion.p>
@@ -177,13 +177,13 @@ const TimelineSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mt-16"
+          className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mt-12"
         >
           <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft flex items-center">
             <Calendar className="h-6 w-6 text-primary mr-4" />
             <div>
               <h3 className="font-medium text-sm text-foreground/60">Date</h3>
-              <p className="font-medium">May 15-16, 2025</p>
+              <p className="font-medium">June 20, 2025</p>
             </div>
           </div>
           
@@ -309,49 +309,49 @@ const timelineEvents = [
     icon: "register"
   },
   {
-    date: "April 25, 2025",
+    date: "May 20, 2025",
     title: "Registration Closes",
     description: "Last day to register your team for the hackathon. Make sure to complete your registration before the deadline.",
     icon: "deadline"
   },
   {
-    date: "April 28, 2025",
+    date: "May 25, 2025",
     title: "Idea Submission Deadline",
     description: "All teams must submit their project ideas and presentation slides for Phase 1 evaluation by this date.",
     icon: "submission"
   },
   {
-    date: "May 5, 2025",
+    date: "June 5, 2025",
     title: "Team Selection Announcement",
     description: "Top 15 teams will be selected based on idea submissions and notified for participation in the grand finale at Cyfuture headquarters.",
     icon: "selection"
   },
   {
-    date: "May 15, 2025 - 10:00 AM",
+    date: "June 20, 2025 - 10:00 AM",
     title: "Hackathon Kick-off",
     description: "The 24-hour hackathon begins! Selected teams gather at Cyfuture India Pvt Ltd, NSEZ, Noida for the opening ceremony.",
     icon: "kickoff"
   },
   {
-    date: "May 15-16, 2025",
+    date: "June 20-21, 2025",
     title: "Hacking Period",
     description: "Teams work on their solutions for 24 hours straight. Mentors will be available to provide guidance and support.",
     icon: "hacking"
   },
   {
-    date: "May 16, 2025 - 10:00 AM",
+    date: "June 21, 2025 - 10:00 AM",
     title: "Project Submission",
     description: "All teams must submit their final projects, including code, documentation, and presentation materials.",
     icon: "project"
   },
   {
-    date: "May 16, 2025 - 11:00 AM",
+    date: "June 21, 2025 - 11:00 AM",
     title: "Presentations & Judging",
     description: "Teams present their solutions to a panel of judges from Cyfuture and industry experts.",
     icon: "judging"
   },
   {
-    date: "May 16, 2025 - 4:00 PM",
+    date: "June 21, 2025 - 4:00 PM",
     title: "Awards Ceremony",
     description: "Winners will be announced and prizes will be awarded during the closing ceremony.",
     icon: "awards"

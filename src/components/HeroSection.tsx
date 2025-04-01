@@ -84,7 +84,13 @@ const HeroSection = () => {
               transition={{ duration: 0.5, delay: 0.4 }}
               className="flex items-center gap-4"
             >
-              <Button variant="outline" className="h-12 px-8 rounded-full text-lg font-medium border-2">
+              <Button 
+                variant="outline" 
+                className="h-12 px-8 rounded-full text-lg font-medium border-2"
+                onClick={() => {
+                  document.getElementById('timeline')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }}
+              >
                 Learn More
               </Button>
             </motion.div>
