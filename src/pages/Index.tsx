@@ -9,7 +9,6 @@ import JurySection from "@/components/JurySection";
 import SponsorsSection from "@/components/SponsorsSection";
 import FaqSection from "@/components/FaqSection";
 import Footer from "@/components/Footer";
-import RoadmapSection from "@/components/RoadmapSection";
 
 const Index = () => {
   useEffect(() => {
@@ -45,7 +44,6 @@ const Index = () => {
     <div className="min-h-screen bg-background text-foreground relative overflow-hidden">
       <Navbar />
       <HeroSection />
-      <RoadmapSection />
       <TimelineSection />
       <PrizesSection />
       <ChallengeSection />
