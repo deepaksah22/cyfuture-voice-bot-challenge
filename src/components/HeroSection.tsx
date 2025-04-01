@@ -35,7 +35,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="pt-24 pb-16 md:pt-32 md:pb-24 px-4 relative overflow-hidden">
+    <section className="pt-24 pb-8 md:pt-32 md:pb-12 px-4 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-background z-[-1]" />
       
       {/* Animated Background Elements */}
@@ -46,7 +46,7 @@ const HeroSection = () => {
       </div>
 
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
+        <div className="flex flex-col md:flex-row items-center gap-8 mb-4">
           {/* Left Side with Text Content */}
           <div className="w-full md:w-3/5">
             <motion.div
@@ -82,13 +82,13 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.4 }}
-              className="flex items-center gap-4"
+              className="flex items-center gap-4 mb-2"
             >
               <Button 
                 variant="outline" 
                 className="h-12 px-8 rounded-full text-lg font-medium border-2"
                 onClick={() => {
-                  document.getElementById('timeline')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  document.getElementById('prizes')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }}
               >
                 Learn More
@@ -103,19 +103,19 @@ const HeroSection = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="w-full md:w-2/5 flex flex-col items-center"
           >
-            {/* Enhanced Countdown Timer with black glossy professional design */}
-            <div className="relative z-10 mb-8 p-6 rounded-2xl bg-black/80 backdrop-blur-md border border-white/10 shadow-2xl">
-              <h3 className="text-2xl font-bold text-white mb-6 text-center">Countdown</h3>
+            {/* Enhanced Countdown Timer with more professional design */}
+            <div className="relative z-10 mb-8 p-6 rounded-2xl bg-black/90 border border-white/10 shadow-2xl backdrop-blur-md">
+              <h3 className="text-2xl font-bold text-white mb-6 text-center">Registration Closing In</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <CountdownItem value={timeLeft.days} label="Days" />
                 <CountdownItem value={timeLeft.hours} label="Hours" />
                 <CountdownItem value={timeLeft.minutes} label="Minutes" />
                 <CountdownItem value={timeLeft.seconds} label="Seconds" />
               </div>
-              <div className="absolute -inset-1 bg-gradient-to-r from-cyfuture-primary/30 to-cyfuture-accent/30 rounded-2xl blur-lg -z-10"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 to-blue-700/20 rounded-2xl blur-lg -z-10"></div>
             </div>
             
-            {/* Enhanced Register Now Button with more glossy professional look */}
+            {/* Enhanced Register Now Button */}
             <motion.div
               className="relative group"
               whileHover={{ scale: 1.05 }}
@@ -141,7 +141,7 @@ const HeroSection = () => {
                 <span className="absolute inset-0 bg-white/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
               </Button>
               
-              {/* Enhanced button glow effect for more glossy look */}
+              {/* Enhanced button glow effect */}
               <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full opacity-70 group-hover:opacity-100 blur-md transition duration-300 group-hover:blur-xl -z-10"></div>
               <div className="absolute -inset-px bg-gradient-to-r from-white/50 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition duration-300 -z-5"></div>
             </motion.div>
@@ -152,12 +152,12 @@ const HeroSection = () => {
   );
 };
 
-// Enhanced Countdown Item Component with glossy black professional design
+// Enhanced Countdown Item Component
 const CountdownItem = ({ value, label }: { value: number, label: string }) => {
   return (
     <div className="flex flex-col items-center">
-      <div className="bg-gradient-to-br from-cyfuture-primary/80 to-cyfuture-accent/80 p-[1px] rounded-lg shadow-xl overflow-hidden">
-        <div className="bg-black/90 backdrop-blur-sm h-16 w-16 flex items-center justify-center rounded-lg">
+      <div className="bg-gradient-to-br from-cyan-500 to-blue-700 p-[1px] rounded-lg shadow-xl overflow-hidden">
+        <div className="bg-black h-16 w-16 flex items-center justify-center rounded-lg">
           <span className="text-2xl font-bold text-white">
             {value}
           </span>

@@ -44,25 +44,11 @@ const JurySection = () => {
           </motion.p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
           {juryMembers.map((member, index) => (
             <JuryMemberCard key={index} member={member} index={index} />
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className="text-center"
-        >
-          <div className="inline-block bg-glass rounded-full px-6 py-3 backdrop-blur-md shadow-glass">
-            <p className="text-foreground/80">
-              Additional jury members will be announced soon!
-            </p>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
@@ -161,33 +147,33 @@ const JuryMemberCard = ({ member, index }: JuryMemberCardProps) => {
 
 const juryMembers: JuryMember[] = [
   {
-    name: "Dr. Ananya Sharma",
-    title: "Chief AI Officer",
+    name: "Anuj Bairathi",
+    title: "CEO",
     company: "Cyfuture India Pvt Ltd",
-    initials: "AS",
-    bio: "Expert in artificial intelligence with over 15 years of experience building enterprise AI solutions across multiple industries.",
+    initials: "AB",
+    bio: "Leading the innovation and digital transformation initiatives at Cyfuture with a focus on emerging technologies and enterprise solutions.",
     social: {
       linkedin: "https://linkedin.com",
       twitter: "https://twitter.com"
     }
   },
   {
-    name: "Rajiv Mehta",
-    title: "CEO & Founder",
-    company: "TechVentures Inc",
-    initials: "RM",
-    bio: "Serial entrepreneur who has founded three successful tech startups with expertise in scaling businesses and product development.",
+    name: "Ajai Rai",
+    title: "CTO",
+    company: "Cyfuture India Pvt Ltd",
+    initials: "AR",
+    bio: "Technology visionary driving the technical strategy and innovation roadmap for Cyfuture's suite of AI and cloud solutions.",
     social: {
       linkedin: "https://linkedin.com",
       website: "https://example.com"
     }
   },
   {
-    name: "Monu Kumar",
-    title: "Innovation Director",
-    company: "Cyfuture Labs",
-    initials: "MK",
-    bio: "Technology visionary with expertise in AI/ML applications and a track record of mentoring successful tech startups in emerging markets.",
+    name: "Ravish Sharma",
+    title: "COO",
+    company: "Cyfuture India Pvt Ltd",
+    initials: "RS",
+    bio: "Operations leader overseeing the execution and delivery of Cyfuture's services and ensuring operational excellence across the organization.",
     social: {
       linkedin: "https://linkedin.com",
       twitter: "https://twitter.com",
@@ -195,43 +181,11 @@ const juryMembers: JuryMember[] = [
     }
   },
   {
-    name: "Priya Patel",
-    title: "VP of Innovation",
-    company: "Global Technologies",
-    initials: "PP",
-    bio: "Innovation strategist focused on emerging technologies with experience in evaluating and investing in early-stage startups.",
-    social: {
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com"
-    }
-  },
-  {
-    name: "Dr. Vikram Singh",
-    title: "Director of Research",
-    company: "National Institute of AI",
-    initials: "VS",
-    bio: "Leading researcher in machine learning and computer vision with multiple patents and publications in top AI conferences.",
-    social: {
-      linkedin: "https://linkedin.com",
-      website: "https://example.com"
-    }
-  },
-  {
-    name: "Meena Krishnan",
-    title: "CTO",
-    company: "HealthTech Solutions",
-    initials: "MK",
-    bio: "Technology leader specializing in healthcare AI applications with a background in implementing large-scale ML systems.",
-    social: {
-      linkedin: "https://linkedin.com"
-    }
-  },
-  {
-    name: "Arun Joshi",
-    title: "Managing Partner",
-    company: "Accel Ventures",
-    initials: "AJ",
-    bio: "Venture capitalist with a portfolio of over 30 AI startups and deep expertise in identifying promising technology ventures.",
+    name: "Rana Roy",
+    title: "CBO",
+    company: "Cyfuture India Pvt Ltd",
+    initials: "RR",
+    bio: "Business development expert responsible for expanding Cyfuture's market presence and forging strategic partnerships across industries.",
     social: {
       linkedin: "https://linkedin.com",
       twitter: "https://twitter.com"
