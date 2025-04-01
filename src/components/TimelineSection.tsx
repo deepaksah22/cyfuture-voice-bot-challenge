@@ -1,3 +1,4 @@
+
 import { motion } from "framer-motion";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
@@ -37,7 +38,7 @@ const TimelineSection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto"
           >
-            Mark your calendars! Here’s your complete guide to the Cyfuture AI Hackathon 1.0.
+            Mark your calendars! Here's your complete guide to the Cyfuture AI Hackathon 1.0.
           </motion.p>
         </div>
 
@@ -80,11 +81,14 @@ const TimelineEvent = ({ date, title, description, icon, index }) => {
       transition={{ duration: 0.5, delay: 0.1 * index }}
       className="relative flex items-center"
     >
-      <div className="w-10 h-10 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center">
-        {icon}
+      <div className="w-12 h-12 rounded-full bg-gradient-to-r from-primary to-accent flex items-center justify-center p-0.5 shadow-lg">
+        <div className="w-full h-full rounded-full bg-black/90 flex items-center justify-center relative overflow-hidden">
+          <div className="absolute inset-0 opacity-20 bg-gradient-to-t from-transparent to-white/20"></div>
+          <div className="relative z-10 text-white">{icon}</div>
+        </div>
       </div>
       <div className="ml-6">
-        <span className="text-sm font-medium text-primary">{date}</span>
+        <span className="text-sm font-medium text-primary/90">{date}</span>
         <h3 className="text-xl font-bold">{title}</h3>
         <p className="text-foreground/80">{description}</p>
       </div>
@@ -117,21 +121,25 @@ const EvaluationCriteria = () => {
 
 const EvaluationCard = ({ title, icon, criteria }) => {
   return (
-    <div className="bg-glass rounded-3xl p-8 backdrop-blur-sm shadow-glass">
-      <div className="flex items-center gap-3 mb-6">
-        <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
-          {icon}
+    <div className="bg-glass rounded-xl p-8 backdrop-blur-sm shadow-glass relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-gray-50/80 to-gray-100/80 dark:from-gray-900/80 dark:to-gray-800/80"></div>
+      <div className="absolute inset-0 opacity-5 bg-grid-black dark:bg-grid-white bg-[size:20px_20px]"></div>
+      <div className="relative z-10">
+        <div className="flex items-center gap-3 mb-6">
+          <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
+            {icon}
+          </div>
+          <h3 className="text-2xl font-bold">{title}</h3>
         </div>
-        <h3 className="text-2xl font-bold">{title}</h3>
+        <ul className="space-y-3">
+          {criteria.map((criterion, index) => (
+            <li key={index} className="flex items-start gap-2">
+              <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+              <span>{criterion}</span>
+            </li>
+          ))}
+        </ul>
       </div>
-      <ul className="space-y-3">
-        {criteria.map((criterion, index) => (
-          <li key={index} className="flex items-start gap-2">
-            <CheckCircle2 className="h-5 w-5 text-primary mt-0.5" />
-            <span>{criterion}</span>
-          </li>
-        ))}
-      </ul>
     </div>
   );
 };

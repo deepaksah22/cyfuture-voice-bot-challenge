@@ -90,26 +90,31 @@ const HeroSection = () => {
             </motion.div>
           </div>
           
-          {/* Right Side with Countdown and Register Button */}
+          {/* Right Side with Enhanced Professional Countdown and Register Button */}
           <motion.div 
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.3 }}
             className="w-full md:w-2/5 flex flex-col items-center"
           >
-            {/* Enhanced Countdown Timer with black glossy professional design */}
-            <div className="relative z-10 mb-8 p-6 rounded-2xl bg-black/80 backdrop-blur-md border border-white/10 shadow-2xl">
-              <h3 className="text-2xl font-bold text-white mb-6 text-center">Countdown</h3>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+            {/* Premium Professional Countdown Timer with glossy black design */}
+            <div className="relative z-10 mb-8 p-8 rounded-xl bg-black shadow-2xl">
+              <div className="absolute inset-0 rounded-xl overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-br from-gray-900 to-black"></div>
+                <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-gray-800/30 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:20px_20px]"></div>
+              </div>
+              <h3 className="text-2xl font-bold text-white mb-6 text-center relative z-10">Countdown</h3>
+              <div className="grid grid-cols-4 gap-4 relative z-10">
                 <CountdownItem value={timeLeft.days} label="Days" />
                 <CountdownItem value={timeLeft.hours} label="Hours" />
                 <CountdownItem value={timeLeft.minutes} label="Minutes" />
                 <CountdownItem value={timeLeft.seconds} label="Seconds" />
               </div>
-              <div className="absolute -inset-1 bg-gradient-to-r from-cyfuture-primary/30 to-cyfuture-accent/30 rounded-2xl blur-lg -z-10"></div>
+              <div className="absolute -inset-0.5 bg-gradient-to-r from-cyfuture-primary/50 to-cyfuture-accent/50 rounded-xl blur-lg -z-10"></div>
             </div>
             
-            {/* Enhanced Register Now Button with more glossy professional look */}
+            {/* Enhanced Register Now Button with premium glossy look */}
             <motion.div
               className="relative group"
               whileHover={{ scale: 1.05 }}
@@ -146,18 +151,21 @@ const HeroSection = () => {
   );
 };
 
-// Enhanced Countdown Item Component with glossy black professional design
+// Enhanced Professional Countdown Item Component with glossy black design
 const CountdownItem = ({ value, label }: { value: number, label: string }) => {
   return (
     <div className="flex flex-col items-center">
-      <div className="bg-gradient-to-br from-cyfuture-primary/80 to-cyfuture-accent/80 p-[1px] rounded-lg shadow-xl overflow-hidden">
-        <div className="bg-black/90 backdrop-blur-sm h-16 w-16 flex items-center justify-center rounded-lg">
-          <span className="text-2xl font-bold text-white">
-            {value}
+      <div className="relative">
+        <div className="absolute -inset-0.5 bg-gradient-to-br from-cyfuture-primary/60 to-cyfuture-accent/60 rounded-lg blur-sm"></div>
+        <div className="bg-gradient-to-br from-gray-800 to-gray-900 h-16 w-16 flex items-center justify-center rounded-lg relative overflow-hidden">
+          <div className="absolute inset-0 opacity-30 bg-grid-white/[0.05] bg-[size:8px_8px]"></div>
+          <div className="absolute inset-0 opacity-20 bg-gradient-to-t from-transparent to-white/10"></div>
+          <span className="text-2xl font-bold text-white relative z-10 font-mono tracking-tight">
+            {value.toString().padStart(2, '0')}
           </span>
         </div>
       </div>
-      <span className="mt-2 text-white/90 font-medium text-xs uppercase tracking-wider">{label}</span>
+      <span className="mt-2 text-white/90 font-medium text-xs uppercase tracking-widest">{label}</span>
     </div>
   );
 };
