@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Sparkles, Phone, HeadphonesIcon, Bot, Braces, Cpu, HeartPulse, Coins, Leaf, GraduationCap, Lightbulb } from "lucide-react";
@@ -42,31 +41,8 @@ const ChallengeSection = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-3xl md:text-4xl font-bold mb-6"
           >
-            Empowering Industries with AI Innovation
+            Challenge Tracks
           </motion.h2>
-          
-          <motion.p
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-lg text-foreground/80 max-w-3xl mx-auto mb-6"
-          >
-            In an era of rapid technological advancement, industries face unique challenges that demand smarter, more efficient, and scalable solutions. AI has the potential to revolutionize these sectors, but unlocking this potential requires creative, practical, and impactful applications tailored to real-world needs.
-          </motion.p>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            className="max-w-3xl mx-auto mb-12 bg-glass p-6 rounded-xl shadow-soft"
-          >
-            <h3 className="text-xl font-semibold mb-2 text-primary">Phase 1: Idea Submission</h3>
-            <p className="text-foreground/80">
-              Teams are required to submit a presentation (PPT) explaining their solution idea, approach, and implementation plan. Based on these submissions, the top 15 teams will be selected for Phase 2 (the grand finale).
-            </p>
-          </motion.div>
         </div>
         
         <Tabs defaultValue="callcenter" className="mb-16">
