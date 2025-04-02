@@ -22,23 +22,11 @@ const ChallengeSection = () => {
       
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.5 }}
-            className="inline-block mb-4"
-          >
-            <span className="px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium">
-              Challenge Tracks
-            </span>
-          </motion.div>
-          
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
-            transition={{ duration: 0.5, delay: 0.1 }}
+            transition={{ duration: 0.5 }}
             className="text-3xl md:text-4xl font-bold mb-6"
           >
             Challenge Tracks
