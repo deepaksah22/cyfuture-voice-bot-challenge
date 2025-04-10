@@ -38,7 +38,7 @@ const Navbar = () => {
           onClick={() => setMobileMenuOpen(false)}
         >
           <img 
-            src="/lovable-uploads/f5be76c4-1ecc-4494-81cf-26a4b4bf00ac.png" 
+            src="/lovable-uploads/de9b3980-e28f-45e1-a108-56e073fa024e.png" 
             alt="Cyfuture AI Hackathon" 
             className="h-10 md:h-12" 
           />
@@ -85,7 +85,7 @@ const Navbar = () => {
       >
         <div className="flex flex-col items-center justify-center h-full space-y-8 p-4">
           <img 
-            src="/lovable-uploads/f5be76c4-1ecc-4494-81cf-26a4b4bf00ac.png" 
+            src="/lovable-uploads/de9b3980-e28f-45e1-a108-56e073fa024e.png" 
             alt="Cyfuture AI Hackathon" 
             className="h-12 mb-4" 
           />

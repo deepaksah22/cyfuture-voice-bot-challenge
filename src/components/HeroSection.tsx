@@ -55,7 +55,7 @@ const HeroSection = () => {
               transition={{ duration: 0.5, delay: 0.1 }}
               className="text-5xl md:text-7xl lg:text-8xl font-bold mb-5 max-w-4xl bg-clip-text text-transparent bg-gradient-to-r from-cyfuture-primary via-cyfuture-secondary to-cyfuture-accent"
             >
-              Innovating Across Multiple Domains with AI
+              Innovate with Intelligence: Solving Industry Challenges with Cyfuture AI Hackathon
             </motion.h1>
             
             <motion.p
@@ -66,23 +66,6 @@ const HeroSection = () => {
             >
               Develop cutting-edge AI solutions for real-world problems and present your project at the Grand AI Hackathon by Cyfuture. Win prizes up to ₹5 Lakhs, plus startup opportunities with revenue-sharing, cloud hosting, marketing support, and seed funding up to ₹50 Lakhs.
             </motion.p>
-            
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.4 }}
-              className="flex items-center gap-4 mb-2"
-            >
-              <Button 
-                variant="outline" 
-                className="h-12 px-8 rounded-full text-lg font-medium border-2"
-                onClick={() => {
-                  document.getElementById('eligibility')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }}
-              >
-                Learn More
-              </Button>
-            </motion.div>
           </div>
           
           {/* Right Side with Countdown and Register Button */}
