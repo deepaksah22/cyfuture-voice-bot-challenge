@@ -14,7 +14,7 @@ const HeroSection = () => {
 
   useEffect(() => {
     const calculateTimeLeft = () => {
-      const targetDate = new Date("June 20, 2025 00:00:00");
+      const targetDate = new Date("July 5, 2025 00:00:00");
       const now = new Date();
       const difference = targetDate.getTime() - now.getTime();
       
@@ -35,7 +35,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="pt-24 pb-8 md:pt-32 md:pb-12 px-4 relative overflow-hidden">
+    <section className="pt-20 pb-6 md:pt-28 md:pb-10 px-4 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-background z-[-1]" />
       
       {/* Animated Background Elements */}
@@ -46,7 +46,7 @@ const HeroSection = () => {
       </div>
 
       <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row items-center gap-8 mb-4">
+        <div className="flex flex-col md:flex-row items-center gap-6 mb-3">
           {/* Left Side with Text Content */}
           <div className="w-full md:w-3/5">
             <motion.div
@@ -56,7 +56,7 @@ const HeroSection = () => {
               className="inline-block mb-4"
             >
               <span className="px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium">
-                Cyfuture AI Hackathon 1.0
+                July 5-6, 2025
               </span>
             </motion.div>
             
@@ -64,7 +64,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-5xl md:text-7xl lg:text-8xl font-bold mb-6 max-w-4xl bg-clip-text text-transparent bg-gradient-to-r from-cyfuture-primary via-cyfuture-secondary to-cyfuture-accent"
+              className="text-5xl md:text-7xl lg:text-8xl font-bold mb-5 max-w-4xl bg-clip-text text-transparent bg-gradient-to-r from-cyfuture-primary via-cyfuture-secondary to-cyfuture-accent"
             >
               Innovating Across Multiple Domains with AI
             </motion.h1>
@@ -73,7 +73,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-lg md:text-xl text-foreground/80 mb-8 max-w-3xl"
+              className="text-lg md:text-xl text-foreground/80 mb-6 max-w-3xl"
             >
               Develop cutting-edge AI solutions for real-world problems and present your project at the Grand AI Hackathon by Cyfuture. Win prizes up to ₹5 Lakhs, plus startup opportunities with revenue-sharing, cloud hosting, marketing support, and seed funding up to ₹50 Lakhs.
             </motion.p>
@@ -104,7 +104,7 @@ const HeroSection = () => {
             className="w-full md:w-2/5 flex flex-col items-center"
           >
             {/* Enhanced Countdown Timer with more professional design */}
-            <div className="relative z-10 mb-8 p-6 rounded-2xl bg-black/90 border border-white/10 shadow-2xl backdrop-blur-md">
+            <div className="relative z-10 mb-6 p-6 rounded-2xl bg-black/90 border border-white/10 shadow-2xl backdrop-blur-md">
               <h3 className="text-2xl font-bold text-white mb-6 text-center">Registration Closing In</h3>
               <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
                 <CountdownItem value={timeLeft.days} label="Days" />

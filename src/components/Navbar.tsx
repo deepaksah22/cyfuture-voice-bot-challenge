@@ -37,9 +37,11 @@ const Navbar = () => {
           className="flex items-center space-x-2"
           onClick={() => setMobileMenuOpen(false)}
         >
-          <span className="font-display font-bold text-xl md:text-2xl bg-gradient-to-r from-cyfuture-primary to-cyfuture-secondary bg-clip-text text-transparent">
-            Cyfuture AI Hackathon 1.0
-          </span>
+          <img 
+            src="/lovable-uploads/e79a9902-b32a-4d7e-a707-c24e9def20ae.png" 
+            alt="Cyfuture AI Hackathon 1.0" 
+            className="h-10 md:h-12" 
+          />
         </Link>
 
         {/* Desktop Navigation */}
@@ -81,6 +83,11 @@ const Navbar = () => {
         )}
       >
         <div className="flex flex-col items-center justify-center h-full space-y-8 p-4">
+          <img 
+            src="/lovable-uploads/e79a9902-b32a-4d7e-a707-c24e9def20ae.png" 
+            alt="Cyfuture AI Hackathon 1.0" 
+            className="h-12 mb-4" 
+          />
           <MobileNavLink href="#about" onClick={() => setMobileMenuOpen(false)}>About</MobileNavLink>
           <MobileNavLink href="#challenges" onClick={() => setMobileMenuOpen(false)}>Challenges</MobileNavLink>
           <MobileNavLink href="#timeline" onClick={() => setMobileMenuOpen(false)}>Timeline</MobileNavLink>

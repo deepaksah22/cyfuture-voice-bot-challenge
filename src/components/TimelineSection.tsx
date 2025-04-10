@@ -2,17 +2,17 @@
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { CheckCircle2, FileText, Trophy, Calendar, Clock, MapPin, Rocket, CloudLightning, DollarSign, Flag, Target, Award } from "lucide-react";
+import { CheckCircle2, FileText, Trophy, Calendar, Clock, MapPin, Rocket, Award, Flag, Target } from "lucide-react";
 
 const TimelineSection = () => {
   return (
-    <section id="timeline" className="section-padding px-4 py-16 relative">
+    <section id="timeline" className="section-padding px-4 py-12 relative">
       {/* Background elements for depth */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-background to-background z-[-1]" />
       <div className="absolute -top-20 left-0 right-0 h-40 bg-gradient-to-b from-transparent to-background/50 z-[-1]" />
       
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
+        <div className="text-center mb-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -30,7 +30,7 @@ const TimelineSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-4xl md:text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent"
+            className="text-4xl md:text-5xl font-bold mb-5 bg-clip-text text-transparent bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent"
           >
             Hackathon Roadmap
           </motion.h2>
@@ -40,13 +40,13 @@ const TimelineSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mb-10"
+            className="text-lg md:text-xl text-foreground/80 max-w-3xl mx-auto mb-8"
           >
             Mark your calendars! From registration to the grand finale, here's your complete guide to the Cyfuture AI Hackathon 1.0
           </motion.p>
         </div>
 
-        <Tabs defaultValue="timeline" className="mb-12">
+        <Tabs defaultValue="timeline" className="mb-10">
           <TabsList className="grid grid-cols-2 max-w-md mx-auto mb-8">
             <TabsTrigger value="timeline" className="text-base">Roadmap Stages</TabsTrigger>
             <TabsTrigger value="evaluation" className="text-base">Evaluation Criteria</TabsTrigger>
@@ -62,7 +62,7 @@ const TimelineSection = () => {
               <div className="absolute left-0 md:left-1/2 transform md:-translate-x-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary/50 via-secondary/50 to-accent/50 shadow-glow" />
               
               {/* Timeline Events */}
-              <div className="space-y-12">
+              <div className="space-y-8">
                 {timelineEvents.map((event, index) => (
                   <TimelineEvent 
                     key={index}
@@ -177,13 +177,13 @@ const TimelineSection = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mt-12"
+          className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mt-10"
         >
           <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft flex items-center">
             <Calendar className="h-6 w-6 text-primary mr-4" />
             <div>
               <h3 className="font-medium text-sm text-foreground/60">Date</h3>
-              <p className="font-medium">June 20, 2025</p>
+              <p className="font-medium">July 5-6, 2025</p>
             </div>
           </div>
           
@@ -200,39 +200,6 @@ const TimelineSection = () => {
             <div>
               <h3 className="font-medium text-sm text-foreground/60">Venue</h3>
               <p className="font-medium">Cyfuture India Pvt Ltd, NSEZ, Noida</p>
-            </div>
-          </div>
-        </motion.div>
-        
-        {/* Startup opportunity brief */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5, delay: 0.6 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mt-6"
-        >
-          <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft flex items-center">
-            <Rocket className="h-6 w-6 text-primary mr-4" />
-            <div>
-              <h3 className="font-medium text-sm text-foreground/60">Partnership</h3>
-              <p className="font-medium">Revenue Sharing Model</p>
-            </div>
-          </div>
-          
-          <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft flex items-center">
-            <CloudLightning className="h-6 w-6 text-primary mr-4" />
-            <div>
-              <h3 className="font-medium text-sm text-foreground/60">Support</h3>
-              <p className="font-medium">Cloud Hosting & Marketing</p>
-            </div>
-          </div>
-          
-          <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft flex items-center">
-            <DollarSign className="h-6 w-6 text-primary mr-4" />
-            <div>
-              <h3 className="font-medium text-sm text-foreground/60">Funding</h3>
-              <p className="font-medium">Up to ₹50 Lakhs Seed</p>
             </div>
           </div>
         </motion.div>
@@ -321,37 +288,37 @@ const timelineEvents = [
     icon: "submission"
   },
   {
-    date: "June 5, 2025",
+    date: "June 25, 2025",
     title: "Team Selection Announcement",
     description: "Top 15 teams will be selected based on idea submissions and notified for participation in the grand finale at Cyfuture headquarters.",
     icon: "selection"
   },
   {
-    date: "June 20, 2025 - 10:00 AM",
+    date: "July 5, 2025 - 10:00 AM",
     title: "Hackathon Kick-off",
     description: "The 24-hour hackathon begins! Selected teams gather at Cyfuture India Pvt Ltd, NSEZ, Noida for the opening ceremony.",
     icon: "kickoff"
   },
   {
-    date: "June 20-21, 2025",
+    date: "July 5-6, 2025",
     title: "Hacking Period",
     description: "Teams work on their solutions for 24 hours straight. Mentors will be available to provide guidance and support.",
     icon: "hacking"
   },
   {
-    date: "June 21, 2025 - 10:00 AM",
+    date: "July 6, 2025 - 10:00 AM",
     title: "Project Submission",
     description: "All teams must submit their final projects, including code, documentation, and presentation materials.",
     icon: "project"
   },
   {
-    date: "June 21, 2025 - 11:00 AM",
+    date: "July 6, 2025 - 11:00 AM",
     title: "Presentations & Judging",
     description: "Teams present their solutions to a panel of judges from Cyfuture and industry experts.",
     icon: "judging"
   },
   {
-    date: "June 21, 2025 - 4:00 PM",
+    date: "July 6, 2025 - 4:00 PM",
     title: "Awards Ceremony",
     description: "Winners will be announced and prizes will be awarded during the closing ceremony.",
     icon: "awards"
