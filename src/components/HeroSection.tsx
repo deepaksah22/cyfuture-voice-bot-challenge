@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Rocket, Calendar } from "lucide-react";
+import { Rocket, Calendar, MapPin } from "lucide-react";
 
 const HeroSection = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -77,7 +77,7 @@ const HeroSection = () => {
                 variant="outline" 
                 className="h-12 px-8 rounded-full text-lg font-medium border-2"
                 onClick={() => {
-                  document.getElementById('prizes')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                  document.getElementById('eligibility')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
                 }}
               >
                 Learn More
@@ -137,9 +137,15 @@ const HeroSection = () => {
               </motion.div>
               
               {/* Event Date Badge Below Registration Button */}
-              <div className="flex items-center gap-2 py-2 px-4 bg-black/70 text-white rounded-full border border-white/10 shadow-md">
-                <Calendar className="w-4 h-4" />
-                <span className="text-sm font-medium">July 5-6, 2025</span>
+              <div className="flex flex-col items-center gap-1">
+                <div className="flex items-center gap-2 py-2 px-4 bg-black/70 text-white rounded-full border border-white/10 shadow-md">
+                  <Calendar className="w-4 h-4" />
+                  <span className="text-sm font-medium">Demo Day: July 5-6, 2025</span>
+                </div>
+                <div className="flex items-center gap-2 py-2 px-4 bg-black/70 text-white rounded-full border border-white/10 shadow-md mt-2">
+                  <MapPin className="w-4 h-4" />
+                  <span className="text-sm font-medium">Cyfuture Premise, Noida</span>
+                </div>
               </div>
             </div>
           </motion.div>
