@@ -2,7 +2,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
-import { Rocket } from "lucide-react";
+import { Rocket, Calendar } from "lucide-react";
 
 const HeroSection = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -49,17 +49,6 @@ const HeroSection = () => {
         <div className="flex flex-col md:flex-row items-center gap-6 mb-3">
           {/* Left Side with Text Content */}
           <div className="w-full md:w-3/5">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5 }}
-              className="inline-block mb-4"
-            >
-              <span className="px-4 py-1.5 rounded-full bg-primary/10 text-primary text-sm font-medium">
-                July 5-6, 2025
-              </span>
-            </motion.div>
-            
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -115,36 +104,44 @@ const HeroSection = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 to-blue-700/20 rounded-2xl blur-lg -z-10"></div>
             </div>
             
-            {/* Enhanced Register Now Button */}
-            <motion.div
-              className="relative group"
-              whileHover={{ scale: 1.05 }}
-              animate={{ 
-                y: [0, -8, 0],
-              }}
-              transition={{
-                y: {
-                  duration: 2,
-                  repeat: Infinity,
-                  repeatType: "reverse"
-                }
-              }}
-            >
-              <Button 
-                className="h-14 px-10 bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent text-white rounded-full text-lg font-medium transition-all overflow-hidden group"
-                onClick={() => window.open('https://forms.gle/RgFmduC1seRnN4F5A', '_blank')}
+            {/* Enhanced Register Now Button with Date Below */}
+            <div className="flex flex-col items-center gap-3">
+              <motion.div
+                className="relative group"
+                whileHover={{ scale: 1.05 }}
+                animate={{ 
+                  y: [0, -8, 0],
+                }}
+                transition={{
+                  y: {
+                    duration: 2,
+                    repeat: Infinity,
+                    repeatType: "reverse"
+                  }
+                }}
               >
-                <span className="relative z-10 flex items-center gap-2">
-                  <Rocket className="w-5 h-5" />
-                  Register Now
-                </span>
-                <span className="absolute inset-0 bg-white/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
-              </Button>
+                <Button 
+                  className="h-14 px-10 bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent text-white rounded-full text-lg font-medium transition-all overflow-hidden group"
+                  onClick={() => window.open('https://forms.gle/RgFmduC1seRnN4F5A', '_blank')}
+                >
+                  <span className="relative z-10 flex items-center gap-2">
+                    <Rocket className="w-5 h-5" />
+                    Register Now
+                  </span>
+                  <span className="absolute inset-0 bg-white/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
+                </Button>
+                
+                {/* Enhanced button glow effect */}
+                <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full opacity-70 group-hover:opacity-100 blur-md transition duration-300 group-hover:blur-xl -z-10"></div>
+                <div className="absolute -inset-px bg-gradient-to-r from-white/50 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition duration-300 -z-5"></div>
+              </motion.div>
               
-              {/* Enhanced button glow effect */}
-              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full opacity-70 group-hover:opacity-100 blur-md transition duration-300 group-hover:blur-xl -z-10"></div>
-              <div className="absolute -inset-px bg-gradient-to-r from-white/50 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition duration-300 -z-5"></div>
-            </motion.div>
+              {/* Event Date Badge Below Registration Button */}
+              <div className="flex items-center gap-2 py-2 px-4 bg-black/70 text-white rounded-full border border-white/10 shadow-md">
+                <Calendar className="w-4 h-4" />
+                <span className="text-sm font-medium">July 5-6, 2025</span>
+              </div>
+            </div>
           </motion.div>
         </div>
       </div>

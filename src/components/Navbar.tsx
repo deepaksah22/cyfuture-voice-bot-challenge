@@ -38,8 +38,8 @@ const Navbar = () => {
           onClick={() => setMobileMenuOpen(false)}
         >
           <img 
-            src="/lovable-uploads/e79a9902-b32a-4d7e-a707-c24e9def20ae.png" 
-            alt="Cyfuture AI Hackathon 1.0" 
+            src="/lovable-uploads/f5be76c4-1ecc-4494-81cf-26a4b4bf00ac.png" 
+            alt="Cyfuture AI Hackathon" 
             className="h-10 md:h-12" 
           />
         </Link>
@@ -84,8 +84,8 @@ const Navbar = () => {
       >
         <div className="flex flex-col items-center justify-center h-full space-y-8 p-4">
           <img 
-            src="/lovable-uploads/e79a9902-b32a-4d7e-a707-c24e9def20ae.png" 
-            alt="Cyfuture AI Hackathon 1.0" 
+            src="/lovable-uploads/f5be76c4-1ecc-4494-81cf-26a4b4bf00ac.png" 
+            alt="Cyfuture AI Hackathon" 
             className="h-12 mb-4" 
           />
           <MobileNavLink href="#about" onClick={() => setMobileMenuOpen(false)}>About</MobileNavLink>
