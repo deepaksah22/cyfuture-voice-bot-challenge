@@ -5,7 +5,7 @@ import { BriefcaseIcon, Users, Lightbulb, GraduationCap } from "lucide-react";
 
 const EligibilitySection = () => {
   return (
-    <section id="eligibility" className="py-10 px-4 bg-black relative overflow-hidden">
+    <section id="eligibility" className="py-10 px-4 bg-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -15,7 +15,7 @@ const EligibilitySection = () => {
           className="mb-12 text-center"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-amber-400 mb-4">Eligibility Criteria</h2>
-          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+          <p className="text-xl text-black/80 max-w-3xl mx-auto">
             Participation is open exclusively to <span className="text-amber-400 font-semibold">Indian residents</span> who are <span className="text-amber-400 font-semibold">18 years or older</span> at the time of registration.
           </p>
         </motion.div>
@@ -27,7 +27,7 @@ const EligibilitySection = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             viewport={{ once: true }}
           >
-            <Card className="h-full border border-amber-800/40 bg-black/60 backdrop-blur-sm overflow-hidden group relative">
+            <Card className="h-full border border-amber-800/40 bg-white backdrop-blur-sm overflow-hidden group relative">
               <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <CardContent className="p-8">
                 <div className="flex items-center gap-4 mb-4">
@@ -36,7 +36,7 @@ const EligibilitySection = () => {
                   </div>
                   <h3 className="text-2xl font-bold text-amber-400">Working Professionals</h3>
                 </div>
-                <p className="text-white/90">
+                <p className="text-black/80">
                   Step up and apply your expertise to create AI-driven solutions that address pressing social challenges and spark innovation.
                 </p>
               </CardContent>
@@ -49,7 +49,7 @@ const EligibilitySection = () => {
             transition={{ duration: 0.5, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            <Card className="h-full border border-amber-800/40 bg-black/60 backdrop-blur-sm overflow-hidden group relative">
+            <Card className="h-full border border-amber-800/40 bg-white backdrop-blur-sm overflow-hidden group relative">
               <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <CardContent className="p-8">
                 <div className="flex items-center gap-4 mb-4">
@@ -58,7 +58,7 @@ const EligibilitySection = () => {
                   </div>
                   <h3 className="text-2xl font-bold text-amber-400">Social Entrepreneurs</h3>
                 </div>
-                <p className="text-white/90">
+                <p className="text-black/80">
                   Bring your vision to life by leveraging AI to create scalable, impactful solutions for underserved communities.
                 </p>
               </CardContent>
@@ -71,7 +71,7 @@ const EligibilitySection = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <Card className="h-full border border-amber-800/40 bg-black/60 backdrop-blur-sm overflow-hidden group relative">
+            <Card className="h-full border border-amber-800/40 bg-white backdrop-blur-sm overflow-hidden group relative">
               <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <CardContent className="p-8">
                 <div className="flex items-center gap-4 mb-4">
@@ -80,7 +80,7 @@ const EligibilitySection = () => {
                   </div>
                   <h3 className="text-2xl font-bold text-amber-400">Technologists</h3>
                 </div>
-                <p className="text-white/90">
+                <p className="text-black/80">
                   Use your technical skills to develop cutting-edge AI solutions that make a tangible difference in real-world problems.
                 </p>
               </CardContent>
@@ -93,7 +93,7 @@ const EligibilitySection = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <Card className="h-full border border-amber-800/40 bg-black/60 backdrop-blur-sm overflow-hidden group relative">
+            <Card className="h-full border border-amber-800/40 bg-white backdrop-blur-sm overflow-hidden group relative">
               <div className="absolute inset-0 bg-gradient-to-br from-amber-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <CardContent className="p-8">
                 <div className="flex items-center gap-4 mb-4">
@@ -102,7 +102,7 @@ const EligibilitySection = () => {
                   </div>
                   <h3 className="text-2xl font-bold text-amber-400">Students</h3>
                 </div>
-                <p className="text-white/90">
+                <p className="text-black/80">
                   Dive into hands-on experience and collaborate with experts to create AI solutions that drive social good.
                 </p>
               </CardContent>
@@ -110,7 +110,7 @@ const EligibilitySection = () => {
           </motion.div>
         </div>
 
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-gradient-to-r from-purple-700/30 to-amber-600/30 blur-[100px] -z-10"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full bg-gradient-to-r from-purple-700/10 to-amber-600/10 blur-[100px] -z-10"></div>
       </div>
     </section>
   );

@@ -1,6 +1,7 @@
+
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -27,12 +28,6 @@ const Footer = () => {
                 <Mail className="h-5 w-5 text-primary mr-3" />
                 <a href="mailto:hackathon@cyfuture.com" className="text-foreground/80 hover:text-primary transition-colors">
                   hackathon@cyfuture.com
-                </a>
-              </div>
-              <div className="flex items-center">
-                <Phone className="h-5 w-5 text-primary mr-3" />
-                <a href="tel:+919821764691" className="text-foreground/80 hover:text-primary transition-colors">
-                  +91 9821764691
                 </a>
               </div>
             </div>
