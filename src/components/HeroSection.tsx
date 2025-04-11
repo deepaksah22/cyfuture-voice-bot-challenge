@@ -53,7 +53,7 @@ const HeroSection = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-3xl md:text-5xl lg:text-6xl font-bold mb-5 max-w-4xl bg-clip-text text-transparent bg-gradient-to-r from-cyfuture-primary via-cyfuture-secondary to-cyfuture-accent"
+              className="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 max-w-4xl bg-clip-text text-transparent bg-gradient-to-r from-cyfuture-primary via-cyfuture-secondary to-cyfuture-accent"
             >
               Innovate with Intelligence: Solving Industry Challenges with Cyfuture AI Hackathon
             </motion.h1>
@@ -64,8 +64,25 @@ const HeroSection = () => {
               transition={{ duration: 0.5, delay: 0.2 }}
               className="text-lg md:text-xl text-foreground/80 mb-6 max-w-3xl"
             >
-              Develop cutting-edge AI solutions for real-world problems and present your project at the Grand AI Hackathon by Cyfuture. Win prizes up to ₹5 Lakhs, plus startup opportunities with revenue-sharing, cloud hosting, marketing support, and seed funding up to ₹50 Lakhs.
+              Develop cutting-edge AI solutions for real-world problems and present your project at the Grand Finale at Cyfuture infront of jury members and investors. Win prizes up to ₹5 Lakhs, plus startup opportunities with revenue-sharing, cloud hosting, marketing support, and seed funding up to ₹50 Lakhs.
             </motion.p>
+            
+            {/* Event Date Badge on Left Side */}
+            <motion.div
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: 0.3 }}
+              className="flex flex-wrap items-center gap-3 mb-6"
+            >
+              <div className="flex items-center gap-2 py-2 px-4 bg-black/70 text-white rounded-full border border-white/10 shadow-md">
+                <Calendar className="w-4 h-4" />
+                <span className="text-sm font-medium">Demo Day: July 5-6, 2025</span>
+              </div>
+              <div className="flex items-center gap-2 py-2 px-4 bg-black/70 text-white rounded-full border border-white/10 shadow-md">
+                <MapPin className="w-4 h-4" />
+                <span className="text-sm font-medium">Cyfuture Premise, Noida</span>
+              </div>
+            </motion.div>
           </div>
           
           {/* Right Side with Countdown and Register Button */}
@@ -87,50 +104,36 @@ const HeroSection = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 to-blue-700/20 rounded-2xl blur-lg -z-10"></div>
             </div>
             
-            {/* Enhanced Register Now Button with Date Below */}
-            <div className="flex flex-col items-center gap-3">
-              <motion.div
-                className="relative group"
-                whileHover={{ scale: 1.05 }}
-                animate={{ 
-                  y: [0, -8, 0],
-                }}
-                transition={{
-                  y: {
-                    duration: 2,
-                    repeat: Infinity,
-                    repeatType: "reverse"
-                  }
-                }}
+            {/* Enhanced Register Now Button */}
+            <motion.div
+              className="relative group"
+              whileHover={{ scale: 1.05 }}
+              animate={{ 
+                y: [0, -8, 0],
+              }}
+              transition={{
+                y: {
+                  duration: 2,
+                  repeat: Infinity,
+                  repeatType: "reverse"
+                }
+              }}
+            >
+              <Button 
+                className="h-14 px-10 bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent text-white rounded-full text-lg font-medium transition-all overflow-hidden group"
+                onClick={() => window.open('https://forms.gle/RgFmduC1seRnN4F5A', '_blank')}
               >
-                <Button 
-                  className="h-14 px-10 bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent text-white rounded-full text-lg font-medium transition-all overflow-hidden group"
-                  onClick={() => window.open('https://forms.gle/RgFmduC1seRnN4F5A', '_blank')}
-                >
-                  <span className="relative z-10 flex items-center gap-2">
-                    <Rocket className="w-5 h-5" />
-                    Register Now
-                  </span>
-                  <span className="absolute inset-0 bg-white/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
-                </Button>
-                
-                {/* Enhanced button glow effect */}
-                <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full opacity-70 group-hover:opacity-100 blur-md transition duration-300 group-hover:blur-xl -z-10"></div>
-                <div className="absolute -inset-px bg-gradient-to-r from-white/50 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition duration-300 -z-5"></div>
-              </motion.div>
+                <span className="relative z-10 flex items-center gap-2">
+                  <Rocket className="w-5 h-5" />
+                  Register Now
+                </span>
+                <span className="absolute inset-0 bg-white/20 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300"></span>
+              </Button>
               
-              {/* Event Date Badge Below Registration Button */}
-              <div className="flex flex-col items-center gap-1">
-                <div className="flex items-center gap-2 py-2 px-4 bg-black/70 text-white rounded-full border border-white/10 shadow-md">
-                  <Calendar className="w-4 h-4" />
-                  <span className="text-sm font-medium">Demo Day: July 5-6, 2025</span>
-                </div>
-                <div className="flex items-center gap-2 py-2 px-4 bg-black/70 text-white rounded-full border border-white/10 shadow-md mt-2">
-                  <MapPin className="w-4 h-4" />
-                  <span className="text-sm font-medium">Cyfuture Premise, Noida</span>
-                </div>
-              </div>
-            </div>
+              {/* Enhanced button glow effect */}
+              <div className="absolute -inset-1 bg-gradient-to-r from-cyan-400 to-blue-500 rounded-full opacity-70 group-hover:opacity-100 blur-md transition duration-300 group-hover:blur-xl -z-10"></div>
+              <div className="absolute -inset-px bg-gradient-to-r from-white/50 to-transparent rounded-full opacity-0 group-hover:opacity-100 transition duration-300 -z-5"></div>
+            </motion.div>
           </motion.div>
         </div>
       </div>

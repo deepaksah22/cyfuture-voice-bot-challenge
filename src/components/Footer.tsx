@@ -15,7 +15,7 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-foreground/80 mb-6 max-w-md">
-              Join us for an immersive 24-hour hackathon experience to build the next generation of AI-powered voice bots that will transform customer service operations.
+              Join us for an immersive 24-hour hackathon experience to develop innovative AI solutions that address real-world challenges across various industry sectors.
             </p>
             <div className="space-y-3">
               <div className="flex items-start">

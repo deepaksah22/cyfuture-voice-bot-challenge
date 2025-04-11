@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -32,7 +31,7 @@ const TimelineSection = () => {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-4xl md:text-5xl font-bold mb-5 bg-clip-text text-transparent bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent"
           >
-            Hackathon Roadmap
+            The Journey
           </motion.h2>
           
           <motion.p
@@ -104,23 +103,7 @@ const TimelineSection = () => {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Problem Statement Clarity (25%): Clear identification of the problem being solved</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Innovation & Novelty (25%): Uniqueness and creativity of the proposed solution</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Technical Feasibility (20%): Whether the solution can be technically implemented</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Market Potential (15%): Commercial viability and scalability</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Team Composition (15%): Skillset diversity and relevance to the project</span>
+                    <span>Realising Soon</span>
                   </li>
                 </ul>
               </div>
@@ -143,27 +126,7 @@ const TimelineSection = () => {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Functionality (25%): Working solution that fulfills the stated objectives</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Technical Implementation (25%): Quality of code, architecture, and use of AI technologies</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span>User Experience (15%): Usability, interface design, and user journey</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Innovation and Creativity (15%): Unique approaches and creative problem-solving</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Presentation and Demo (10%): Clarity of explanation and effective demonstration</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Business Potential (10%): Scalability, market potential, and business viability</span>
+                    <span>Realising Soon</span>
                   </li>
                 </ul>
               </div>
