@@ -63,23 +63,6 @@ const HeroSection = () => {
         <div className="flex flex-col md:flex-row items-start gap-8 mb-3">
           {/* Left Side with Event Date Badge and Hero Content */}
           <div className="w-full md:w-3/5">            
-            {/* Event Date Badge on Left Side */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-              className="flex flex-wrap items-center gap-3 mb-6"
-            >
-              <div className="flex items-center gap-2 py-2 px-4 bg-black/70 text-white rounded-full border border-white/10 shadow-md">
-                <Calendar className="w-4 h-4" />
-                <span className="text-sm font-medium">Demo Day: July 5-6, 2025</span>
-              </div>
-              <div className="flex items-center gap-2 py-2 px-4 bg-black/70 text-white rounded-full border border-white/10 shadow-md">
-                <MapPin className="w-4 h-4" />
-                <span className="text-sm font-medium">Cyfuture Premise, Noida</span>
-              </div>
-            </motion.div>
-            
             {/* Previous Hero Content */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -91,19 +74,25 @@ const HeroSection = () => {
                 Cyfuture AI Hackathon 2025
               </h1>
               <p className="text-lg md:text-xl text-foreground/80 mb-6 max-w-2xl">
-                Join the ultimate AI hackathon experience where innovation meets opportunity. 
-                Showcase your skills, collaborate with like-minded innovators, and build 
-                groundbreaking solutions.
+                Develop cutting-edge AI solutions for real-world problems and present your project at the Grand AI Hackathon by Cyfuture. Win prizes up to ₹5 Lakhs, plus startup opportunities with revenue-sharing, cloud hosting, marketing support, and seed funding up to ₹50 Lakhs.
               </p>
-              <div className="flex flex-wrap gap-4">
-                <Button 
-                  className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white hover:shadow-lg transition-all"
-                  onClick={() => window.open('https://forms.gle/RgFmduC1seRnN4F5A', '_blank')}
-                >
-                  <Rocket className="mr-2 h-4 w-4" />
-                  Register Now
-                </Button>
-              </div>
+              
+              {/* Event Date Badge below intro explanation */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.3 }}
+                className="flex flex-wrap items-center gap-3 mb-6"
+              >
+                <div className="flex items-center gap-2 py-2 px-4 bg-black/70 text-white rounded-full border border-white/10 shadow-md">
+                  <Calendar className="w-4 h-4" />
+                  <span className="text-sm font-medium">Demo Day: July 5-6, 2025</span>
+                </div>
+                <div className="flex items-center gap-2 py-2 px-4 bg-black/70 text-white rounded-full border border-white/10 shadow-md">
+                  <MapPin className="w-4 h-4" />
+                  <span className="text-sm font-medium">Cyfuture Premise, Noida</span>
+                </div>
+              </motion.div>
             </motion.div>
           </div>
           
@@ -180,4 +169,3 @@ const CountdownItem = ({ value, label }: { value: number, label: string }) => {
 };
 
 export default HeroSection;
-
