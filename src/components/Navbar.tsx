@@ -38,9 +38,9 @@ const Navbar = () => {
           onClick={() => setMobileMenuOpen(false)}
         >
           <img 
-            src="/lovable-uploads/de9b3980-e28f-45e1-a108-56e073fa024e.png" 
+            src="/lovable-uploads/bebed7e0-c034-4678-a0c9-afcb04555504.png" 
             alt="Cyfuture AI Hackathon" 
-            className="h-10 md:h-12" 
+            className="h-14 md:h-16" 
           />
         </Link>
 
@@ -55,7 +55,7 @@ const Navbar = () => {
           <NavLink href="#sponsors">Sponsors</NavLink>
           <NavLink href="#faq">FAQ</NavLink>
           <Button 
-            className="bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent text-white font-medium px-6 py-2 rounded-full shadow-sm hover:shadow-md transition-all"
+            className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-medium px-6 py-2 rounded-full shadow-sm hover:shadow-md transition-all"
             onClick={handleRegisterClick}
           >
             Register Now
@@ -85,9 +85,9 @@ const Navbar = () => {
       >
         <div className="flex flex-col items-center justify-center h-full space-y-8 p-4">
           <img 
-            src="/lovable-uploads/de9b3980-e28f-45e1-a108-56e073fa024e.png" 
+            src="/lovable-uploads/bebed7e0-c034-4678-a0c9-afcb04555504.png" 
             alt="Cyfuture AI Hackathon" 
-            className="h-12 mb-4" 
+            className="h-16 mb-4" 
           />
           <MobileNavLink href="#about" onClick={() => setMobileMenuOpen(false)}>About</MobileNavLink>
           <MobileNavLink href="#eligibility" onClick={() => setMobileMenuOpen(false)}>Eligibility</MobileNavLink>
@@ -98,7 +98,7 @@ const Navbar = () => {
           <MobileNavLink href="#sponsors" onClick={() => setMobileMenuOpen(false)}>Sponsors</MobileNavLink>
           <MobileNavLink href="#faq" onClick={() => setMobileMenuOpen(false)}>FAQ</MobileNavLink>
           <Button 
-            className="w-full bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent text-white font-medium px-8 py-3 rounded-full shadow-sm hover:shadow-md transition-all"
+            className="w-full bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-medium px-8 py-3 rounded-full shadow-sm hover:shadow-md transition-all"
             onClick={() => {
               setMobileMenuOpen(false);
               handleRegisterClick();

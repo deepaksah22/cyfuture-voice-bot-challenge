@@ -46,27 +46,23 @@ const HeroSection = () => {
       </div>
 
       <div className="max-w-7xl mx-auto">
+        {/* Banner Image */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="w-full mb-8 rounded-xl overflow-hidden shadow-lg"
+        >
+          <img 
+            src="/lovable-uploads/03e8c020-e7c2-4377-88c6-526d37eed64c.png" 
+            alt="Cyfuture AI Hackathon 2025" 
+            className="w-full h-auto object-cover"
+          />
+        </motion.div>
+
         <div className="flex flex-col md:flex-row items-center gap-6 mb-3">
-          {/* Left Side with Text Content */}
-          <div className="w-full md:w-3/5">
-            <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="text-3xl md:text-4xl lg:text-5xl font-bold mb-5 max-w-4xl bg-clip-text text-transparent bg-gradient-to-r from-cyfuture-primary via-cyfuture-secondary to-cyfuture-accent"
-            >
-              Innovate with Intelligence: Solving Industry Challenges with Cyfuture AI Hackathon
-            </motion.h1>
-            
-            <motion.p
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="text-lg md:text-xl text-foreground/80 mb-6 max-w-3xl"
-            >
-              Develop cutting-edge AI solutions for real-world problems and present your project at the Grand Finale at Cyfuture infront of jury members and investors. Win prizes up to ₹5 Lakhs, plus startup opportunities with revenue-sharing, cloud hosting, marketing support, and seed funding up to ₹50 Lakhs.
-            </motion.p>
-            
+          {/* Left Side with Event Date Badge */}
+          <div className="w-full md:w-3/5">            
             {/* Event Date Badge on Left Side */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
