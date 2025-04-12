@@ -17,7 +17,7 @@ const EligibilitySection = () => {
           viewport={{ once: true }}
           className="mb-12 text-center"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-600">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent">
             Eligibility Criteria
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto">
@@ -27,19 +27,14 @@ const EligibilitySection = () => {
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            viewport={{ once: true }}
-          >
+          <div>
             <Card className="h-full bg-white shadow-lg border-0 overflow-hidden group relative hover:shadow-xl transition-all duration-300">
-              <div className="absolute h-1 top-0 inset-x-0 bg-gradient-to-r from-cyan-500 to-blue-600"></div>
+              <div className="absolute h-1 top-0 inset-x-0 bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent"></div>
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <CardContent className="p-8">
                 <div className="flex items-center gap-5 mb-5">
-                  <div className="p-3 rounded-full bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
-                    <BriefcaseIcon className="h-8 w-8 text-blue-600" />
+                  <div className="p-3 rounded-full bg-gradient-to-r from-cyfuture-primary/20 to-cyfuture-accent/20 flex items-center justify-center">
+                    <BriefcaseIcon className="h-8 w-8 text-cyfuture-primary" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-800">Working Professionals</h3>
                 </div>
@@ -49,21 +44,16 @@ const EligibilitySection = () => {
                 </p>
               </CardContent>
             </Card>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            viewport={{ once: true }}
-          >
+          <div>
             <Card className="h-full bg-white shadow-lg border-0 overflow-hidden group relative hover:shadow-xl transition-all duration-300">
-              <div className="absolute h-1 top-0 inset-x-0 bg-gradient-to-r from-cyan-500 to-blue-600"></div>
+              <div className="absolute h-1 top-0 inset-x-0 bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent"></div>
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <CardContent className="p-8">
                 <div className="flex items-center gap-5 mb-5">
-                  <div className="p-3 rounded-full bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
-                    <Users className="h-8 w-8 text-blue-600" />
+                  <div className="p-3 rounded-full bg-gradient-to-r from-cyfuture-primary/20 to-cyfuture-accent/20 flex items-center justify-center">
+                    <Users className="h-8 w-8 text-cyfuture-primary" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-800">Social Entrepreneurs</h3>
                 </div>
@@ -73,21 +63,16 @@ const EligibilitySection = () => {
                 </p>
               </CardContent>
             </Card>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.3 }}
-            viewport={{ once: true }}
-          >
+          <div>
             <Card className="h-full bg-white shadow-lg border-0 overflow-hidden group relative hover:shadow-xl transition-all duration-300">
-              <div className="absolute h-1 top-0 inset-x-0 bg-gradient-to-r from-cyan-500 to-blue-600"></div>
+              <div className="absolute h-1 top-0 inset-x-0 bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent"></div>
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <CardContent className="p-8">
                 <div className="flex items-center gap-5 mb-5">
-                  <div className="p-3 rounded-full bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
-                    <Lightbulb className="h-8 w-8 text-blue-600" />
+                  <div className="p-3 rounded-full bg-gradient-to-r from-cyfuture-primary/20 to-cyfuture-accent/20 flex items-center justify-center">
+                    <Lightbulb className="h-8 w-8 text-cyfuture-primary" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-800">Technologists</h3>
                 </div>
@@ -97,21 +82,16 @@ const EligibilitySection = () => {
                 </p>
               </CardContent>
             </Card>
-          </motion.div>
+          </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
+          <div>
             <Card className="h-full bg-white shadow-lg border-0 overflow-hidden group relative hover:shadow-xl transition-all duration-300">
-              <div className="absolute h-1 top-0 inset-x-0 bg-gradient-to-r from-cyan-500 to-blue-600"></div>
+              <div className="absolute h-1 top-0 inset-x-0 bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent"></div>
               <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               <CardContent className="p-8">
                 <div className="flex items-center gap-5 mb-5">
-                  <div className="p-3 rounded-full bg-gradient-to-r from-cyan-400/20 to-blue-500/20 flex items-center justify-center">
-                    <GraduationCap className="h-8 w-8 text-blue-600" />
+                  <div className="p-3 rounded-full bg-gradient-to-r from-cyfuture-primary/20 to-cyfuture-accent/20 flex items-center justify-center">
+                    <GraduationCap className="h-8 w-8 text-cyfuture-primary" />
                   </div>
                   <h3 className="text-2xl font-bold text-gray-800">Students</h3>
                 </div>
@@ -121,7 +101,7 @@ const EligibilitySection = () => {
                 </p>
               </CardContent>
             </Card>
-          </motion.div>
+          </div>
         </div>
       </div>
     </section>

@@ -55,7 +55,7 @@ const HeroSection = () => {
         >
           <img 
             src="/lovable-uploads/03e8c020-e7c2-4377-88c6-526d37eed64c.png" 
-            alt="Cyfuture AI Hackathon 2025" 
+            alt="Cyfuture AI Hackathon 1.0" 
             className="w-full h-auto object-cover"
           />
         </motion.div>
@@ -71,10 +71,10 @@ const HeroSection = () => {
               className="mb-8"
             >
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent">
-                Cyfuture AI Hackathon 2025
+                Cyfuture AI Hackathon 1.0
               </h1>
               <p className="text-lg md:text-xl text-foreground/80 mb-6 max-w-2xl">
-                Develop cutting-edge AI solutions for real-world problems and present your project at the Grand AI Hackathon by Cyfuture. Win prizes up to ₹5 Lakhs, plus startup opportunities with revenue-sharing, cloud hosting, marketing support, and seed funding up to ₹50 Lakhs.
+                Develop cutting-edge AI solutions for real-world problems and present your project at the Grand finale day at Cyfuture in presence of jury members & Invertors. Win prizes up to ₹5 Lakhs, plus startup opportunities in revenue-sharing model, incubation support, cloud hosting, marketing support, and seed funding up to ₹50 Lakhs.
               </p>
               
               {/* Event Date Badge below intro explanation */}
@@ -115,7 +115,7 @@ const HeroSection = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500/20 to-blue-700/20 rounded-2xl blur-lg -z-10"></div>
             </div>
             
-            {/* Enhanced Register Now Button */}
+            {/* Enhanced Register Now Button with glossy left-to-right effect */}
             <motion.div
               className="relative group"
               whileHover={{ scale: 1.05 }}
