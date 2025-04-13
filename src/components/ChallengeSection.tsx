@@ -1,32 +1,7 @@
-// Updated ChallengeSection.tsx
-
 import { motion } from "framer-motion";
-import {
-  Card,
-  CardContent,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import {
-  Sparkles,
-  Phone,
-  HeadphonesIcon,
-  Bot,
-  Braces,
-  Cpu,
-  HeartPulse,
-  Coins,
-  Leaf,
-  GraduationCap,
-  Lightbulb,
-  UserCog,
-} from "lucide-react";
-import {
-  Tabs,
-  TabsContent,
-  TabsList,
-  TabsTrigger,
-} from "@/components/ui/tabs";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Sparkles, Phone, HeadphonesIcon, Bot, Braces, Cpu, HeartPulse, Coins, Leaf, GraduationCap, Lightbulb, Users } from "lucide-react";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const ChallengeSection = () => {
   const fadeInUpVariants = {
@@ -37,8 +12,8 @@ const ChallengeSection = () => {
       transition: {
         delay: 0.1 * i,
         duration: 0.5,
-      },
-    }),
+      }
+    })
   };
 
   return (
@@ -52,42 +27,32 @@ const ChallengeSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5 }}
-            className="text-3xl md:text-4xl font-bold mb-6"
+            className="text-3xl md:text-4xl font-bold mb-6 text-blue-600"
           >
             Challenge Tracks
           </motion.h2>
         </div>
 
         <Tabs defaultValue="callcenter" className="mb-16">
-          <TabsList className="grid grid-cols-2 md:grid-cols-5 max-w-5xl mx-auto mb-8">
-            <TabsTrigger value="callcenter">Call Centers</TabsTrigger>
-            <TabsTrigger value="hr">HR</TabsTrigger>
-            <TabsTrigger value="finance">Finance</TabsTrigger>
-            <TabsTrigger value="healthcare">Healthcare</TabsTrigger>
-            <TabsTrigger value="education">Education</TabsTrigger>
+          <TabsList className="grid grid-cols-2 md:grid-cols-6 max-w-5xl mx-auto mb-8">
+            <TabsTrigger value="callcenter" className="text-blue-600">Call Centers</TabsTrigger>
+            <TabsTrigger value="hr" className="text-blue-600">HR</TabsTrigger>
+            <TabsTrigger value="finance" className="text-blue-600">Finance</TabsTrigger>
+            <TabsTrigger value="healthcare" className="text-blue-600">Healthcare</TabsTrigger>
+            <TabsTrigger value="sustainability" className="text-blue-600">Sustainability</TabsTrigger>
+            <TabsTrigger value="education" className="text-blue-600">Education</TabsTrigger>
           </TabsList>
 
           <TabsContent value="callcenter">
             <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
               <h3 className="text-2xl font-bold mb-6 flex items-center">
-                <HeadphonesIcon className="h-6 w-6 text-primary mr-3" />
+                <Phone className="h-6 w-6 text-primary mr-3" />
                 Call Centers
               </h3>
-              <div className="space-y-4 text-foreground/90">
-                <ul className="list-disc list-inside space-y-2">
-                  <li>
-                    Build AI-based grievance redressal and ticket classification
-                    system using voice and text.
-                  </li>
-                  <li>
-                    Develop a voicebot for L1 query handling with live agent
-                    handoff and knowledge base support.
-                  </li>
-                  <li>
-                    Design an automated call summarizer with sentiment analysis
-                    and intent detection to reduce agent workload.
-                  </li>
-                </ul>
+              <div className="space-y-6 text-foreground/90">
+                <p>1. Automate L1 support using AI-powered Voicebots and Chatbots to resolve basic customer queries.</p>
+                <p>2. Build an intelligent grievance redressal system that classifies, routes, and responds to complaints in real time.</p>
+                <p>3. Use NLP to summarize and tag support calls for training and quality enhancement.</p>
               </div>
             </div>
           </TabsContent>
@@ -95,45 +60,18 @@ const ChallengeSection = () => {
           <TabsContent value="hr">
             <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
               <h3 className="text-2xl font-bold mb-6 flex items-center">
-                <UserCog className="h-6 w-6 text-primary mr-3" />
+                <Users className="h-6 w-6 text-primary mr-3" />
                 HR
               </h3>
-              <div className="space-y-4 text-foreground/90">
-                <ul className="list-disc list-inside space-y-2">
-                  <li>
-                    Build an AI chatbot/voicebot to screen resumes, shortlist
-                    candidates, and engage them through automated
-                    conversations.
-                  </li>
-                  <li>
-                    Create an AI tool to search and match resumes from the web
-                    for job openings, reducing dependency on job portals.
-                  </li>
-                  <li>
-                    Identify high-potential employees using AI and recommend
-                    personalized leadership plans.
-                  </li>
-                  <li>
-                    Build a dashboard integrating real-time data for
-                    performance, feedback, and appraisal.
-                  </li>
-                  <li>
-                    Develop a gamified learning platform to enhance employee
-                    engagement and skill building.
-                  </li>
-                  <li>
-                    Analyze employee profiles and training records to identify
-                    skill gaps and recommend upskilling.
-                  </li>
-                  <li>
-                    Create a wellness platform to track employee health
-                    activities and recommend improvement plans.
-                  </li>
-                  <li>
-                    Design a centralized HR dashboard for actionable insights on
-                    attrition, hiring pipeline, and engagement.
-                  </li>
-                </ul>
+              <div className="space-y-6 text-foreground/90">
+                <p>1. AI chatbot/voicebot for resume screening, top-10 profile shortlisting, and candidate interactions.</p>
+                <p>2. AI tool for sourcing resumes from open web platforms to reduce reliance on job portals.</p>
+                <p>3. AI-driven identification of high-potential employees with personalized leadership plans.</p>
+                <p>4. AI dashboard for appraisal process with real-time inputs and feedback.</p>
+                <p>5. Gamified learning platform for better training completion and engagement.</p>
+                <p>6. Skill gap analysis and personalized upskilling recommendations using AI.</p>
+                <p>7. Wellness tracking and mental health check-in platform with AI recommendations.</p>
+                <p>8. Centralized HR dashboard with AI-powered insights from attendance, exits, engagement surveys, etc.</p>
               </div>
             </div>
           </TabsContent>
@@ -144,21 +82,10 @@ const ChallengeSection = () => {
                 <Coins className="h-6 w-6 text-primary mr-3" />
                 Finance
               </h3>
-              <div className="space-y-4 text-foreground/90">
-                <ul className="list-disc list-inside space-y-2">
-                  <li>
-                    Automate invoice data extraction from uploaded documents
-                    using OCR + AI and support bulk uploads.
-                  </li>
-                  <li>
-                    Build an AI tool to reconcile purchase records with GST
-                    portal data and categorize discrepancies.
-                  </li>
-                  <li>
-                    Design a system for fraud detection and anomaly tracking in
-                    financial transactions using AI.
-                  </li>
-                </ul>
+              <div className="space-y-6 text-foreground/90">
+                <p>1. Automate data extraction from invoices and enable bulk uploading for efficient processing.</p>
+                <p>2. AI-based GST input reconciliation tool that categorizes invoices and provides match reports.</p>
+                <p>3. Explore other AI-driven solutions to optimize financial operations and reduce manual workload.</p>
               </div>
             </div>
           </TabsContent>
@@ -169,12 +96,24 @@ const ChallengeSection = () => {
                 <HeartPulse className="h-6 w-6 text-primary mr-3" />
                 Healthcare
               </h3>
-              <div className="space-y-4 text-foreground/90">
-                <ul className="list-disc list-inside space-y-2">
-                  <li>Use AI to assist in preliminary diagnosis based on symptoms.</li>
-                  <li>Design a chatbot to guide patients in appointment scheduling and FAQs.</li>
-                  <li>Create an AI tool for extracting and organizing EMR/EHR data.</li>
-                </ul>
+              <div className="space-y-6 text-foreground/90">
+                <p>1. Build an AI-based assistant for symptom analysis, triage, and doctor recommendations.</p>
+                <p>2. Develop predictive models for hospital readmissions and patient risk scores.</p>
+                <p>3. Automate clinical documentation using voice recognition and NLP.</p>
+              </div>
+            </div>
+          </TabsContent>
+
+          <TabsContent value="sustainability">
+            <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
+              <h3 className="text-2xl font-bold mb-6 flex items-center">
+                <Leaf className="h-6 w-6 text-primary mr-3" />
+                Sustainability
+              </h3>
+              <div className="space-y-6 text-foreground/90">
+                <p>1. Use AI to optimize energy usage and reduce carbon footprint in industrial and urban areas.</p>
+                <p>2. Build smart waste management systems using real-time sensors and predictive AI models.</p>
+                <p>3. Develop AI tools for monitoring and predicting environmental impact metrics.</p>
               </div>
             </div>
           </TabsContent>
@@ -185,19 +124,18 @@ const ChallengeSection = () => {
                 <GraduationCap className="h-6 w-6 text-primary mr-3" />
                 Education
               </h3>
-              <div className="space-y-4 text-foreground/90">
-                <ul className="list-disc list-inside space-y-2">
-                  <li>Develop AI tutors that can help with personalized learning paths.</li>
-                  <li>Build automated grading and feedback generation systems.</li>
-                  <li>Design tools for detecting student stress and recommending interventions.</li>
-                </ul>
+              <div className="space-y-6 text-foreground/90">
+                <p>1. Personalized AI tutors for concept clarification and learning reinforcement.</p>
+                <p>2. Automated test paper generation and grading systems.</p>
+                <p>3. Use AI to identify at-risk students and suggest interventions to educators.</p>
               </div>
             </div>
           </TabsContent>
         </Tabs>
 
-        <div className="text-center text-muted-foreground italic mb-12">
-          Participants are also free to propose innovative AI solutions beyond the listed domains.
+        <div className="text-center text-xl font-semibold text-purple-600 mb-12">
+          <p className="text-2xl md:text-3xl">Other Domains</p>
+          <p className="mt-2">Participants are encouraged to come up with innovative AI-based solutions in any other domains as well!</p>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -218,9 +156,7 @@ const ChallengeSection = () => {
                   <CardTitle className="text-xl">{feature.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">
-                    {feature.description}
-                  </p>
+                  <p className="text-muted-foreground">{feature.description}</p>
                 </CardContent>
               </Card>
             </motion.div>
@@ -235,39 +171,33 @@ const features = [
   {
     icon: Lightbulb,
     title: "Innovation Focus",
-    description:
-      "Develop novel AI solutions that address real problems faced by industries and demonstrate creative thinking.",
+    description: "Develop novel AI solutions that address real problems faced by industries and demonstrate creative thinking."
   },
   {
     icon: Bot,
     title: "AI-Powered Understanding",
-    description:
-      "Implement advanced machine learning to accurately understand context, data patterns, and user needs.",
+    description: "Implement advanced machine learning to accurately understand context, data patterns, and user needs."
   },
   {
     icon: Phone,
     title: "User-Centered Design",
-    description:
-      "Create solutions that prioritize user experience and make complex technologies accessible to everyday users.",
+    description: "Create solutions that prioritize user experience and make complex technologies accessible to everyday users."
   },
   {
     icon: Braces,
     title: "Technical Feasibility",
-    description:
-      "Build prototypes that demonstrate technical viability and can be implemented within the hackathon timeframe.",
+    description: "Build prototypes that demonstrate technical viability and can be implemented within the hackathon timeframe."
   },
   {
     icon: Cpu,
     title: "Impact Assessment",
-    description:
-      "Showcase how your solution can drive meaningful impact and provide measurable improvements.",
+    description: "Showcase how your solution can drive meaningful impact and provide measurable improvements."
   },
   {
     icon: Sparkles,
     title: "Presentation Quality",
-    description:
-      "Communicate your ideas effectively through clear, compelling presentations that highlight your solution's value.",
-  },
+    description: "Communicate your ideas effectively through clear, compelling presentations that highlight your solution's value."
+  }
 ];
 
 export default ChallengeSection;
