@@ -21,7 +21,7 @@ const Navbar = () => {
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
 
   const handleRegisterClick = () => {
-    window.open('https://forms.gle/RgFmduC1seRnN4F5A', '_blank');
+    window.open('https://forms.gle/cyPZjfLXJQx5cBhFA', '_blank');
   };
 
   return (
