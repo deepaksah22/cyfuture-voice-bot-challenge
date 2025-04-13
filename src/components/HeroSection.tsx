@@ -1,8 +1,8 @@
-
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { ArrowRight } from "lucide-react";
+import { useEffect, useState } from "react";
 
 interface TypewriterEffectProps {
   words: {
@@ -59,6 +59,54 @@ const TypewriterEffect = ({
   return <>{renderWords()}</>;
 };
 
+const CountdownTimer = () => {
+  const targetDate = new Date("2025-07-15T00:00:00");
+  const [timeLeft, setTimeLeft] = useState({
+    days: 0,
+    hours: 0,
+    minutes: 0,
+    seconds: 0
+  });
+
+  useEffect(() => {
+    const calculateTimeLeft = () => {
+      const difference = targetDate.getTime() - new Date().getTime();
+      if (difference > 0) {
+        setTimeLeft({
+          days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+          hours: Math.floor((difference / (1000 * 60 * 60)) % 24),
+          minutes: Math.floor((difference / 1000 / 60) % 60),
+          seconds: Math.floor((difference / 1000) % 60)
+        });
+      }
+    };
+
+    calculateTimeLeft();
+    const timer = setInterval(calculateTimeLeft, 1000);
+    return () => clearInterval(timer);
+  }, []);
+
+  return (
+    <div className="flex justify-center gap-4 md:gap-8 my-8">
+      <TimeUnit value={timeLeft.days} label="Days" />
+      <TimeUnit value={timeLeft.hours} label="Hours" />
+      <TimeUnit value={timeLeft.minutes} label="Minutes" />
+      <TimeUnit value={timeLeft.seconds} label="Seconds" />
+    </div>
+  );
+};
+
+const TimeUnit = ({ value, label }: { value: number, label: string }) => (
+  <div className="flex flex-col items-center">
+    <div className="w-16 h-16 md:w-20 md:h-20 bg-glass backdrop-blur-sm rounded-lg flex items-center justify-center border border-primary/20 shadow-glow">
+      <span className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent">
+        {value.toString().padStart(2, '0')}
+      </span>
+    </div>
+    <span className="text-xs md:text-sm mt-2 text-foreground/70">{label}</span>
+  </div>
+);
+
 const HeroSection = () => {
   const words = [
     {
@@ -103,6 +151,10 @@ const HeroSection = () => {
             <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-2xl mx-auto">
               Build innovative AI solutions for real-world challenges and showcase your project at Cyfuture's Grand Finale before top juries and investors. Win prizes up to ₹5 Lakhs, plus gain startup opportunities with revenue sharing, incubation, cloud hosting, marketing support, and seed funding up to ₹50 Lakhs.
             </p>
+            
+            {/* Countdown Timer */}
+            <CountdownTimer />
+            
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
               <Button
                 size="lg"
@@ -138,14 +190,14 @@ const HeroSection = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2, duration: 0.5 }}
-            className="group"
+            className="group w-full max-w-5xl"
           >
             <div className="overflow-hidden rounded-xl border border-primary/20 shadow-glow bg-black/50 backdrop-blur-sm">
               <div className="p-2">
                 <img
                   src="/lovable-uploads/e79a9902-b32a-4d7e-a707-c24e9def20ae.png"
-                  alt="AI Hackathon"
-                  className="rounded-lg object-cover w-full max-w-4xl mx-auto transform group-hover:scale-[1.02] transition-transform duration-300"
+                  alt="AI Hackathon Banner"
+                  className="rounded-lg object-cover w-full max-w-5xl mx-auto transform group-hover:scale-[1.02] transition-transform duration-300"
                   width={1200}
                   height={675}
                 />
