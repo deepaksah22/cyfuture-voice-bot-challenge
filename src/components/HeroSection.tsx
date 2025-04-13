@@ -204,24 +204,7 @@ const HeroSection = () => {
             </div>
           </motion.div>
           
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.2, duration: 0.5 }}
-            className="group w-full max-w-5xl"
-          >
-            <div className="overflow-hidden rounded-xl border border-primary/20 shadow-glow bg-black/50 backdrop-blur-sm">
-              <div className="p-2">
-                <img
-                  src="/lovable-uploads/e79a9902-b32a-4d7e-a707-c24e9def20ae.png"
-                  alt="AI Hackathon Banner"
-                  className="rounded-lg object-cover w-full max-w-5xl mx-auto transform group-hover:scale-[1.02] transition-transform duration-300"
-                  width={1200}
-                  height={675}
-                />
-              </div>
-            </div>
-          </motion.div>
+  
         </div>
       </div>
     </section>
