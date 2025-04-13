@@ -36,10 +36,12 @@ const ChallengeSection = () => {
         <Tabs defaultValue="callcenter" className="mb-16">
           <TabsList className="grid grid-cols-2 md:grid-cols-5 max-w-4xl mx-auto mb-8">
             <TabsTrigger value="callcenter">Call Centers</TabsTrigger>
+            <TabsTrigger value="HR">HR</TabsTrigger>
             <TabsTrigger value="finance">Finance</TabsTrigger>
             <TabsTrigger value="healthcare">Healthcare</TabsTrigger>
             <TabsTrigger value="sustainability">Sustainability</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
+            <TabsTrigger value="others">Others</TabsTrigger>
           </TabsList>
           
           <TabsContent value="callcenter">
@@ -50,7 +52,20 @@ const ChallengeSection = () => {
               </h3>
               
               <div className="space-y-6 text-foreground/90">
-                <p className="text-xl font-semibold text-center py-8">Releasing Soon</p>
+                <p className="text-xl font-semibold text-center py-8">Releasing Soon...</p>
+              </div>
+            </div>
+          </TabsContent>
+
+          <TabsContent value="HR">
+            <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
+              <h3 className="text-2xl font-bold mb-6 flex items-center">
+                <Phone className="h-6 w-6 text-primary mr-3" />
+                HR
+              </h3>
+              
+              <div className="space-y-6 text-foreground/90">
+                <p className="text-xl font-semibold text-center py-8">Releasing Soon...</p>
               </div>
             </div>
           </TabsContent>
@@ -107,6 +122,18 @@ const ChallengeSection = () => {
             </div>
           </TabsContent>
         </Tabs>
+        <TabsContent value="others">
+            <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
+              <h3 className="text-2xl font-bold mb-6 flex items-center">
+                <Phone className="h-6 w-6 text-primary mr-3" />
+                Others
+              </h3>
+              
+              <div className="space-y-6 text-foreground/90">
+                <p className="text-xl font-semibold text-center py-8">Releasing Soon...</p>
+              </div>
+            </div>
+          </TabsContent>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
