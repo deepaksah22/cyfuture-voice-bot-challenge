@@ -133,7 +133,7 @@ const ChallengeSection = () => {
           </TabsContent>
         </Tabs>
 
-       <div className="text-center text-xl font-semibold bg-gradient-to-r from-blue-500 to-white bg-clip-text text-transparent mb-12">
+       <div className="text-center text-xl font-semibold text-blue-600 mb-12">
   <p className="text-2xl md:text-3xl">Other Domains</p>
   <p className="mt-2">Participants are encouraged to come up with innovative AI-based solutions in any other domains as well!</p>
 </div>
