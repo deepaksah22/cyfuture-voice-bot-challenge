@@ -50,24 +50,7 @@ const ChallengeSection = () => {
               </h3>
               
               <div className="space-y-6 text-foreground/90">
-                <p>
-                  Improve customer service efficiency, reduce wait times, enhance agent performance, or personalize customer interactions using AI technologies.
-                </p>
-                
-                <h4 className="text-xl font-bold mt-6 mb-3">Problem Statement:</h4>
-                
-                <p className="mb-4">
-                  Call centers face challenges with high call volumes, agent burnout, and maintaining service quality. Traditional solutions often lead to customer frustration and operational inefficiencies.
-                </p>
-                
-                <h4 className="text-xl font-bold mt-6 mb-3">Your Challenge:</h4>
-                
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Design AI solutions that can understand natural language and different accents</li>
-                  <li>Create systems to automatically resolve common customer queries</li>
-                  <li>Develop tools to assist agents in real-time during complex interactions</li>
-                  <li>Build analytics dashboards to identify improvement opportunities</li>
-                </ul>
+                <p className="text-xl font-semibold text-center py-8">Releasing Soon</p>
               </div>
             </div>
           </TabsContent>
@@ -80,24 +63,7 @@ const ChallengeSection = () => {
               </h3>
               
               <div className="space-y-6 text-foreground/90">
-                <p>
-                  Streamline fraud detection, optimize investment strategies, automate financial planning, or improve risk assessment through AI innovations.
-                </p>
-                
-                <h4 className="text-xl font-bold mt-6 mb-3">Problem Statement:</h4>
-                
-                <p className="mb-4">
-                  Financial institutions struggle with fraud prevention, personalized financial advice, and making financial services accessible to all demographics, especially students and young adults.
-                </p>
-                
-                <h4 className="text-xl font-bold mt-6 mb-3">Your Challenge:</h4>
-                
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Create AI tools for detecting unusual financial activities</li>
-                  <li>Develop applications that provide personalized financial education</li>
-                  <li>Build systems that simplify financial planning for students</li>
-                  <li>Design solutions that make investing more accessible</li>
-                </ul>
+                <p className="text-xl font-semibold text-center py-8">Releasing Soon</p>
               </div>
             </div>
           </TabsContent>
@@ -110,24 +76,7 @@ const ChallengeSection = () => {
               </h3>
               
               <div className="space-y-6 text-foreground/90">
-                <p>
-                  Enhance patient care, predict disease outbreaks, optimize resource allocation, or simplify medical record management with AI solutions.
-                </p>
-                
-                <h4 className="text-xl font-bold mt-6 mb-3">Problem Statement:</h4>
-                
-                <p className="mb-4">
-                  Healthcare providers face challenges with resource constraints, timely diagnosis, and making healthcare accessible to all. Students often neglect their health due to limited awareness and busy schedules.
-                </p>
-                
-                <h4 className="text-xl font-bold mt-6 mb-3">Your Challenge:</h4>
-                
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Build solutions for mental health support and stress management</li>
-                  <li>Develop systems for early health issue detection</li>
-                  <li>Create applications that improve healthcare accessibility</li>
-                  <li>Design tools to simplify health record management</li>
-                </ul>
+                <p className="text-xl font-semibold text-center py-8">Releasing Soon</p>
               </div>
             </div>
           </TabsContent>
@@ -140,24 +89,7 @@ const ChallengeSection = () => {
               </h3>
               
               <div className="space-y-6 text-foreground/90">
-                <p>
-                  Tackle climate change, optimize energy consumption, reduce waste, or promote eco-friendly practices using AI technologies.
-                </p>
-                
-                <h4 className="text-xl font-bold mt-6 mb-3">Problem Statement:</h4>
-                
-                <p className="mb-4">
-                  Educational institutions and businesses struggle with implementing sustainable practices, reducing carbon footprints, and making environmental initiatives practical and measurable.
-                </p>
-                
-                <h4 className="text-xl font-bold mt-6 mb-3">Your Challenge:</h4>
-                
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Create solutions for tracking and reducing energy consumption</li>
-                  <li>Develop applications that optimize waste management</li>
-                  <li>Build systems that encourage sustainable behaviors</li>
-                  <li>Design tools to measure environmental impact of activities</li>
-                </ul>
+                <p className="text-xl font-semibold text-center py-8">Releasing Soon</p>
               </div>
             </div>
           </TabsContent>
@@ -170,24 +102,7 @@ const ChallengeSection = () => {
               </h3>
               
               <div className="space-y-6 text-foreground/90">
-                <p>
-                  Personalize learning experiences, automate administrative tasks, improve accessibility, or predict student performance with innovative AI solutions.
-                </p>
-                
-                <h4 className="text-xl font-bold mt-6 mb-3">Problem Statement:</h4>
-                
-                <p className="mb-4">
-                  Educational institutions face challenges with personalized learning, identifying at-risk students, and making education accessible to diverse learning styles and needs.
-                </p>
-                
-                <h4 className="text-xl font-bold mt-6 mb-3">Your Challenge:</h4>
-                
-                <ul className="list-disc pl-6 space-y-2">
-                  <li>Design AI tutors that adapt to individual learning paces</li>
-                  <li>Create systems that identify concepts students struggle with</li>
-                  <li>Build tools that make educational content more accessible</li>
-                  <li>Develop applications that streamline administrative tasks</li>
-                </ul>
+                <p className="text-xl font-semibold text-center py-8">Releasing Soon</p>
               </div>
             </div>
           </TabsContent>

@@ -194,6 +194,7 @@ const juryMembers: JuryMember[] = [
     name: "Rana Roy",
     title: "CBO",
     company: "Cyfuture India Pvt Ltd",
+    imageUrl: "/lovable-uploads/de00a99f-166f-44bb-868e-bd769c16388e.png",
     initials: "RR",
     bio: "Business development expert responsible for expanding Cyfuture's market presence and forging strategic partnerships across industries.",
     social: {

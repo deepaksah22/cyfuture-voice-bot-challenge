@@ -95,7 +95,7 @@ const TimelineSection = () => {
                 </div>
                 
                 <p className="text-foreground/80 mb-6">
-                  Teams must submit their project ideas and presentation slides. The top 15 ideas will be selected for the grand finale.
+                  Teams must submit their project ideas, presentation slides, GitHub repository, and demo link. The top 15 ideas will be selected for the grand finale.
                 </p>
                 
                 <h4 className="text-lg font-semibold mb-3">Evaluation Criteria:</h4>
@@ -133,39 +133,6 @@ const TimelineSection = () => {
             </motion.div>
           </TabsContent>
         </Tabs>
-        
-        {/* Event Details Cards */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.5, delay: 0.5 }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-4xl mx-auto mt-10"
-        >
-          <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft flex items-center">
-            <Calendar className="h-6 w-6 text-primary mr-4" />
-            <div>
-              <h3 className="font-medium text-sm text-foreground/60">Date</h3>
-              <p className="font-medium">July 5-6, 2025</p>
-            </div>
-          </div>
-          
-          <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft flex items-center">
-            <Clock className="h-6 w-6 text-primary mr-4" />
-            <div>
-              <h3 className="font-medium text-sm text-foreground/60">Duration</h3>
-              <p className="font-medium">24 Hours</p>
-            </div>
-          </div>
-          
-          <div className="bg-glass rounded-2xl p-6 backdrop-blur-sm shadow-soft flex items-center">
-            <MapPin className="h-6 w-6 text-primary mr-4" />
-            <div>
-              <h3 className="font-medium text-sm text-foreground/60">Venue</h3>
-              <p className="font-medium">Cyfuture India Pvt Ltd, NSEZ, Noida</p>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );
@@ -246,8 +213,8 @@ const timelineEvents = [
   },
   {
     date: "May 25, 2025",
-    title: "Project Submission Phase 1 Deadline",
-    description: "All teams must submit their project ideas and presentation slides for Phase 1 evaluation by this date.",
+    title: "Project Submission Phase 1",
+    description: "All teams must submit their project ideas, presentation slides, GitHub repository, and demo link for Phase 1 evaluation by this date.",
     icon: "submission"
   },
   {
