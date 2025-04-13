@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
           <div className="col-span-1 md:col-span-2">
             <Link to="/" className="inline-block mb-4">
-              <span className="font-display font-bold text-2xl bg-gradient-to-r from-cyfuture-primary to-cyfuture-secondary bg-clip-text text-transparent">
+              <span className="font-display font-bold text-2xl bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent bg-clip-text text-transparent">
                 Cyfuture AI Hackathon
               </span>
             </Link>
@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="font-bold text-lg mb-4">Quick Links</h3>
+            <h3 className="font-bold text-lg mb-4 bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent bg-clip-text text-transparent">Quick Links</h3>
             <ul className="space-y-2">
               <li>
                 <a href="#about" className="text-foreground/80 hover:text-primary transition-colors">
@@ -70,7 +70,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="font-bold text-lg mb-4">Follow Us</h3>
+            <h3 className="font-bold text-lg mb-4 bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent bg-clip-text text-transparent">Follow Us</h3>
             <div className="flex space-x-4 mb-6">
               <a href="#" className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center hover:bg-primary/20 transition-colors">
                 <svg className="h-5 w-5 text-primary" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -93,7 +93,7 @@ const Footer = () => {
                 </svg>
               </a>
             </div>
-            <h3 className="font-bold text-lg mb-4">Subscribe</h3>
+            <h3 className="font-bold text-lg mb-4 bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent bg-clip-text text-transparent">Subscribe</h3>
             <div className="flex">
               <input 
                 type="email" 

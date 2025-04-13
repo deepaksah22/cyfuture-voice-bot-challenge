@@ -12,6 +12,23 @@ const HeroSection = () => {
     seconds: 0
   });
 
+  const [displayedText, setDisplayedText] = useState("");
+  const fullText = "Cyfuture AI Hackathon 1.0";
+
+  useEffect(() => {
+    let index = 0;
+    const timer = setInterval(() => {
+      if (index <= fullText.length) {
+        setDisplayedText(fullText.substring(0, index));
+        index++;
+      } else {
+        clearInterval(timer);
+      }
+    }, 100);
+
+    return () => clearInterval(timer);
+  }, []);
+
   useEffect(() => {
     const calculateTimeLeft = () => {
       const targetDate = new Date("July 5, 2025 00:00:00");
@@ -35,7 +52,7 @@ const HeroSection = () => {
   }, []);
 
   return (
-    <section className="pt-20 pb-6 md:pt-28 md:pb-10 px-4 relative overflow-hidden">
+    <section className="pt-20 pb-6 md:pt-28 md:pb-6 px-4 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-background z-[-1]" />
       
       {/* Animated Background Elements */}
@@ -71,10 +88,10 @@ const HeroSection = () => {
               className="mb-8"
             >
               <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent">
-                Cyfuture AI Hackathon 1.0
+                {displayedText}
               </h1>
               <p className="text-lg md:text-xl text-foreground/80 mb-6 max-w-2xl">
-                Develop cutting-edge AI solutions for real-world problems and present your project at the Grand finale day at Cyfuture in presence of jury members & Invertors. Win prizes up to ₹5 Lakhs, plus startup opportunities in revenue-sharing model, incubation support, cloud hosting, marketing support, and seed funding up to ₹50 Lakhs.
+                Build innovative AI solutions for real-world challenges and showcase your project at Cyfuture's Grand Finale before top juries and investors. Win prizes up to ₹5 Lakhs, plus gain startup opportunities with revenue sharing, incubation, cloud hosting, marketing support, and seed funding up to ₹50 Lakhs.
               </p>
               
               {/* Event Date Badge below intro explanation */}

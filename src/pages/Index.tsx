@@ -47,9 +47,9 @@ const Index = () => {
       <div className="space-y-0">
         <HeroSection />
         <EligibilitySection />
-        <PrizesSection />
-        <TimelineSection />
         <ChallengeSection />
+        <TimelineSection />
+        <PrizesSection />
         <JurySection />
         <SponsorsSection />
         <FaqSection />

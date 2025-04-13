@@ -10,13 +10,7 @@ const EligibilitySection = () => {
     <section id="eligibility" className="section-padding px-4 relative overflow-hidden">
       <div className="absolute inset-0 bg-white z-[-1]" />
       <div className="max-w-7xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="mb-12 text-center"
-        >
+        <div className="mb-12 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent">
             Eligibility Criteria
           </h2>
@@ -24,7 +18,7 @@ const EligibilitySection = () => {
             Participation is open exclusively to <span className="text-blue-600 font-semibold">Indian residents</span>{" "}
             who are <span className="text-blue-600 font-semibold">18 years or older</span> at the time of registration.
           </p>
-        </motion.div>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
           <div>
