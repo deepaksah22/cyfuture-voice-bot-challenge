@@ -136,6 +136,24 @@ const HeroSection = () => {
       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-2/3 h-1/2 bg-gradient-to-t from-background to-transparent z-[-1]" />
       
       <div className="container px-4 md:px-6 mx-auto relative z-10">
+        {/* New Main Banner */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
+          className="w-full max-w-6xl mx-auto mb-12"
+        >
+          <div className="overflow-hidden rounded-xl border border-primary/20 shadow-glow bg-black/50 backdrop-blur-sm">
+            <img
+              src="/lovable-uploads/1517af63-66cc-47cb-91a9-38be34c26bd8.png"
+              alt="Hackathon 2025 Banner"
+              className="w-full rounded-lg object-cover"
+              width={1200}
+              height={400}
+            />
+          </div>
+        </motion.div>
+        
         <div className="flex flex-col items-center text-center space-y-8 md:space-y-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
