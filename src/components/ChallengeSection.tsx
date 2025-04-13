@@ -1,7 +1,31 @@
 import { motion } from "framer-motion";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Sparkles, Phone, HeadphonesIcon, Bot, Braces, Cpu, HeartPulse, Coins, Leaf, GraduationCap, Lightbulb } from "lucide-react";
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  Card,
+  CardContent,
+  CardHeader,
+  CardTitle
+} from "@/components/ui/card";
+import {
+  Sparkles,
+  Phone,
+  HeadphonesIcon,
+  Bot,
+  Braces,
+  Cpu,
+  HeartPulse,
+  Coins,
+  Leaf,
+  GraduationCap,
+  Lightbulb,
+  Users,
+  Globe
+} from "lucide-react";
+import {
+  Tabs,
+  TabsContent,
+  TabsList,
+  TabsTrigger
+} from "@/components/ui/tabs";
 
 const ChallengeSection = () => {
   const fadeInUpVariants = {
@@ -11,7 +35,7 @@ const ChallengeSection = () => {
       y: 0,
       transition: {
         delay: 0.1 * i,
-        duration: 0.5,
+        duration: 0.5
       }
     })
   };
@@ -19,7 +43,7 @@ const ChallengeSection = () => {
   return (
     <section id="challenges" className="section-padding px-4 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-background to-primary/5 z-[-1]" />
-      
+
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <motion.h2
@@ -32,87 +56,47 @@ const ChallengeSection = () => {
             Challenge Tracks
           </motion.h2>
         </div>
-        
+
         <Tabs defaultValue="callcenter" className="mb-16">
-          <TabsList className="grid grid-cols-2 md:grid-cols-5 max-w-4xl mx-auto mb-8">
+          <TabsList className="grid grid-cols-2 md:grid-cols-7 max-w-5xl mx-auto mb-8">
             <TabsTrigger value="callcenter">Call Centers</TabsTrigger>
-           
+            <TabsTrigger value="hr">HR</TabsTrigger> {/* HR moved here */}
             <TabsTrigger value="finance">Finance</TabsTrigger>
             <TabsTrigger value="healthcare">Healthcare</TabsTrigger>
             <TabsTrigger value="sustainability">Sustainability</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
-            
+            <TabsTrigger value="others">Others</TabsTrigger>
           </TabsList>
-          
+
           <TabsContent value="callcenter">
-            <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
-              <h3 className="text-2xl font-bold mb-6 flex items-center">
-                <Phone className="h-6 w-6 text-primary mr-3" />
-                Call Centers
-              </h3>
-              
-              <div className="space-y-6 text-foreground/90">
-                <p className="text-xl font-semibold text-center py-8">Releasing Soon...</p>
-              </div>
-            </div>
+            <ChallengeTabContent icon={Phone} title="Call Centers" />
           </TabsContent>
 
-          
-          
+          <TabsContent value="hr">
+            <ChallengeTabContent icon={Users} title="Human Resources" />
+          </TabsContent>
+
           <TabsContent value="finance">
-            <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
-              <h3 className="text-2xl font-bold mb-6 flex items-center">
-                <Coins className="h-6 w-6 text-primary mr-3" />
-                Finance
-              </h3>
-              
-              <div className="space-y-6 text-foreground/90">
-                <p className="text-xl font-semibold text-center py-8">Releasing Soon</p>
-              </div>
-            </div>
+            <ChallengeTabContent icon={Coins} title="Finance" />
           </TabsContent>
-          
+
           <TabsContent value="healthcare">
-            <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
-              <h3 className="text-2xl font-bold mb-6 flex items-center">
-                <HeartPulse className="h-6 w-6 text-primary mr-3" />
-                Healthcare
-              </h3>
-              
-              <div className="space-y-6 text-foreground/90">
-                <p className="text-xl font-semibold text-center py-8">Releasing Soon</p>
-              </div>
-            </div>
+            <ChallengeTabContent icon={HeartPulse} title="Healthcare" />
           </TabsContent>
-          
+
           <TabsContent value="sustainability">
-            <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
-              <h3 className="text-2xl font-bold mb-6 flex items-center">
-                <Leaf className="h-6 w-6 text-primary mr-3" />
-                Sustainability
-              </h3>
-              
-              <div className="space-y-6 text-foreground/90">
-                <p className="text-xl font-semibold text-center py-8">Releasing Soon</p>
-              </div>
-            </div>
+            <ChallengeTabContent icon={Leaf} title="Sustainability" />
           </TabsContent>
-          
+
           <TabsContent value="education">
-            <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
-              <h3 className="text-2xl font-bold mb-6 flex items-center">
-                <GraduationCap className="h-6 w-6 text-primary mr-3" />
-                Education
-              </h3>
-              
-              <div className="space-y-6 text-foreground/90">
-                <p className="text-xl font-semibold text-center py-8">Releasing Soon</p>
-              </div>
-            </div>
+            <ChallengeTabContent icon={GraduationCap} title="Education" />
+          </TabsContent>
+
+          <TabsContent value="others">
+            <ChallengeTabContent icon={Globe} title="Other Domains" />
           </TabsContent>
         </Tabs>
-        
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
             <motion.div
@@ -142,36 +126,55 @@ const ChallengeSection = () => {
   );
 };
 
+// Reusable content block for each tab
+const ChallengeTabContent = ({ icon: Icon, title }: { icon: any; title: string }) => (
+  <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
+    <h3 className="text-2xl font-bold mb-6 flex items-center">
+      <Icon className="h-6 w-6 text-primary mr-3" />
+      {title}
+    </h3>
+    <div className="space-y-6 text-foreground/90">
+      <p className="text-xl font-semibold text-center py-8">Releasing Soon</p>
+    </div>
+  </div>
+);
+
 const features = [
   {
     icon: Lightbulb,
     title: "Innovation Focus",
-    description: "Develop novel AI solutions that address real problems faced by industries and demonstrate creative thinking."
+    description:
+      "Develop novel AI solutions that address real problems faced by industries and demonstrate creative thinking."
   },
   {
     icon: Bot,
     title: "AI-Powered Understanding",
-    description: "Implement advanced machine learning to accurately understand context, data patterns, and user needs."
+    description:
+      "Implement advanced machine learning to accurately understand context, data patterns, and user needs."
   },
   {
     icon: Phone,
     title: "User-Centered Design",
-    description: "Create solutions that prioritize user experience and make complex technologies accessible to everyday users."
+    description:
+      "Create solutions that prioritize user experience and make complex technologies accessible to everyday users."
   },
   {
     icon: Braces,
     title: "Technical Feasibility",
-    description: "Build prototypes that demonstrate technical viability and can be implemented within the hackathon timeframe."
+    description:
+      "Build prototypes that demonstrate technical viability and can be implemented within the hackathon timeframe."
   },
   {
     icon: Cpu,
     title: "Impact Assessment",
-    description: "Showcase how your solution can drive meaningful impact and provide measurable improvements."
+    description:
+      "Showcase how your solution can drive meaningful impact and provide measurable improvements."
   },
   {
     icon: Sparkles,
     title: "Presentation Quality",
-    description: "Communicate your ideas effectively through clear, compelling presentations that highlight your solution's value."
+    description:
+      "Communicate your ideas effectively through clear, compelling presentations that highlight your solution's value."
   }
 ];
 
