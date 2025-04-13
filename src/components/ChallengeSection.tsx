@@ -1,3 +1,5 @@
+// Updated ChallengeSection.tsx
+
 import { motion } from "framer-motion";
 import {
   Card,
@@ -17,7 +19,7 @@ import {
   Leaf,
   GraduationCap,
   Lightbulb,
-  Users,
+  UserCog,
 } from "lucide-react";
 import {
   Tabs,
@@ -57,25 +59,35 @@ const ChallengeSection = () => {
         </div>
 
         <Tabs defaultValue="callcenter" className="mb-16">
-          <TabsList className="grid grid-cols-2 md:grid-cols-6 max-w-6xl mx-auto mb-8">
+          <TabsList className="grid grid-cols-2 md:grid-cols-5 max-w-5xl mx-auto mb-8">
             <TabsTrigger value="callcenter">Call Centers</TabsTrigger>
             <TabsTrigger value="hr">HR</TabsTrigger>
             <TabsTrigger value="finance">Finance</TabsTrigger>
             <TabsTrigger value="healthcare">Healthcare</TabsTrigger>
-            <TabsTrigger value="sustainability">Sustainability</TabsTrigger>
             <TabsTrigger value="education">Education</TabsTrigger>
           </TabsList>
 
           <TabsContent value="callcenter">
             <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
               <h3 className="text-2xl font-bold mb-6 flex items-center">
-                <Phone className="h-6 w-6 text-primary mr-3" />
+                <HeadphonesIcon className="h-6 w-6 text-primary mr-3" />
                 Call Centers
               </h3>
-              <div className="space-y-6 text-foreground/90">
-                <p className="text-xl font-semibold text-center py-8">
-                  Releasing Soon...
-                </p>
+              <div className="space-y-4 text-foreground/90">
+                <ul className="list-disc list-inside space-y-2">
+                  <li>
+                    Build AI-based grievance redressal and ticket classification
+                    system using voice and text.
+                  </li>
+                  <li>
+                    Develop a voicebot for L1 query handling with live agent
+                    handoff and knowledge base support.
+                  </li>
+                  <li>
+                    Design an automated call summarizer with sentiment analysis
+                    and intent detection to reduce agent workload.
+                  </li>
+                </ul>
               </div>
             </div>
           </TabsContent>
@@ -83,52 +95,43 @@ const ChallengeSection = () => {
           <TabsContent value="hr">
             <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
               <h3 className="text-2xl font-bold mb-6 flex items-center">
-                <Users className="h-6 w-6 text-primary mr-3" />
-                Human Resources
+                <UserCog className="h-6 w-6 text-primary mr-3" />
+                HR
               </h3>
               <div className="space-y-4 text-foreground/90">
-                <p>
-                  <strong>Challenge:</strong> Revolutionizing Human Resources
-                  with AI-powered Talent Management and Workforce Intelligence.
-                </p>
-                <p>
-                  Despite multiple sourcing platforms and traditional HR systems,
-                  recruitment and workforce management continue to face critical
-                  inefficiencies. Your task is to build AI-powered solutions that
-                  address these real-world challenges.
-                </p>
-                <ul className="list-disc pl-5 space-y-2">
+                <ul className="list-disc list-inside space-y-2">
                   <li>
-                    <strong>Resume Screening & Candidate Engagement:</strong>{" "}
-                    Automate resume analysis and engage candidates via AI chatbots.
+                    Build an AI chatbot/voicebot to screen resumes, shortlist
+                    candidates, and engage them through automated
+                    conversations.
                   </li>
                   <li>
-                    <strong>AI Resume Mining:</strong> Use AI to intelligently mine
-                    resumes from open web using Boolean logic.
+                    Create an AI tool to search and match resumes from the web
+                    for job openings, reducing dependency on job portals.
                   </li>
                   <li>
-                    <strong>Identify High-Potential Employees:</strong> Analyze data
-                    to recommend leadership development plans.
+                    Identify high-potential employees using AI and recommend
+                    personalized leadership plans.
                   </li>
                   <li>
-                    <strong>Performance Management:</strong> Create real-time
-                    dashboards for appraisals.
+                    Build a dashboard integrating real-time data for
+                    performance, feedback, and appraisal.
                   </li>
                   <li>
-                    <strong>Gamified HR Tools:</strong> Make training & engagement
-                    fun with AI-driven gamification.
+                    Develop a gamified learning platform to enhance employee
+                    engagement and skill building.
                   </li>
                   <li>
-                    <strong>Skill Gap Detection:</strong> Suggest upskilling paths
-                    using data analysis and AI models.
+                    Analyze employee profiles and training records to identify
+                    skill gaps and recommend upskilling.
                   </li>
                   <li>
-                    <strong>Employee Wellness:</strong> Build platforms that track
-                    well-being and suggest improvements.
+                    Create a wellness platform to track employee health
+                    activities and recommend improvement plans.
                   </li>
                   <li>
-                    <strong>HR Analytics:</strong> Unified dashboards with actionable
-                    AI insights.
+                    Design a centralized HR dashboard for actionable insights on
+                    attrition, hiring pipeline, and engagement.
                   </li>
                 </ul>
               </div>
@@ -141,10 +144,21 @@ const ChallengeSection = () => {
                 <Coins className="h-6 w-6 text-primary mr-3" />
                 Finance
               </h3>
-              <div className="space-y-6 text-foreground/90">
-                <p className="text-xl font-semibold text-center py-8">
-                  Releasing Soon
-                </p>
+              <div className="space-y-4 text-foreground/90">
+                <ul className="list-disc list-inside space-y-2">
+                  <li>
+                    Automate invoice data extraction from uploaded documents
+                    using OCR + AI and support bulk uploads.
+                  </li>
+                  <li>
+                    Build an AI tool to reconcile purchase records with GST
+                    portal data and categorize discrepancies.
+                  </li>
+                  <li>
+                    Design a system for fraud detection and anomaly tracking in
+                    financial transactions using AI.
+                  </li>
+                </ul>
               </div>
             </div>
           </TabsContent>
@@ -155,24 +169,12 @@ const ChallengeSection = () => {
                 <HeartPulse className="h-6 w-6 text-primary mr-3" />
                 Healthcare
               </h3>
-              <div className="space-y-6 text-foreground/90">
-                <p className="text-xl font-semibold text-center py-8">
-                  Releasing Soon
-                </p>
-              </div>
-            </div>
-          </TabsContent>
-
-          <TabsContent value="sustainability">
-            <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
-              <h3 className="text-2xl font-bold mb-6 flex items-center">
-                <Leaf className="h-6 w-6 text-primary mr-3" />
-                Sustainability
-              </h3>
-              <div className="space-y-6 text-foreground/90">
-                <p className="text-xl font-semibold text-center py-8">
-                  Releasing Soon
-                </p>
+              <div className="space-y-4 text-foreground/90">
+                <ul className="list-disc list-inside space-y-2">
+                  <li>Use AI to assist in preliminary diagnosis based on symptoms.</li>
+                  <li>Design a chatbot to guide patients in appointment scheduling and FAQs.</li>
+                  <li>Create an AI tool for extracting and organizing EMR/EHR data.</li>
+                </ul>
               </div>
             </div>
           </TabsContent>
@@ -183,14 +185,20 @@ const ChallengeSection = () => {
                 <GraduationCap className="h-6 w-6 text-primary mr-3" />
                 Education
               </h3>
-              <div className="space-y-6 text-foreground/90">
-                <p className="text-xl font-semibold text-center py-8">
-                  Releasing Soon
-                </p>
+              <div className="space-y-4 text-foreground/90">
+                <ul className="list-disc list-inside space-y-2">
+                  <li>Develop AI tutors that can help with personalized learning paths.</li>
+                  <li>Build automated grading and feedback generation systems.</li>
+                  <li>Design tools for detecting student stress and recommending interventions.</li>
+                </ul>
               </div>
             </div>
           </TabsContent>
         </Tabs>
+
+        <div className="text-center text-muted-foreground italic mb-12">
+          Participants are also free to propose innovative AI solutions beyond the listed domains.
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
