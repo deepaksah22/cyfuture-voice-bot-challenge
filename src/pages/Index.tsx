@@ -46,10 +46,10 @@ const Index = () => {
       <Navbar />
       <div className="space-y-0">
         <HeroSection />
-        <EligibilitySection />
         <ChallengeSection />
-        <TimelineSection />
         <PrizesSection />
+        <EligibilitySection />
+        <TimelineSection />
         <JurySection />
         <SponsorsSection />
         <FaqSection />

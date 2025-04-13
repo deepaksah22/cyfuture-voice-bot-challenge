@@ -28,7 +28,7 @@ const JurySection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-3xl md:text-4xl font-bold mb-6"
+            className="text-3xl md:text-4xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent"
           >
             Meet Our Distinguished Jury
           </motion.h2>
@@ -44,7 +44,7 @@ const JurySection = () => {
           </motion.p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {juryMembers.map((member, index) => (
             <JuryMemberCard key={index} member={member} index={index} />
           ))}
@@ -147,37 +147,47 @@ const JuryMemberCard = ({ member, index }: JuryMemberCardProps) => {
 
 const juryMembers: JuryMember[] = [
   {
-    name: "Anuj Bairathi",
+    name: "Abhai Rathi",
     title: "CEO",
     company: "Cyfuture India Pvt Ltd",
-    initials: "AB",
+    imageUrl: "/lovable-uploads/b513b31b-0d60-4ea6-bec1-da731902f2a3.png",
+    initials: "AR",
     bio: "Leading the innovation and digital transformation initiatives at Cyfuture with a focus on emerging technologies and enterprise solutions.",
     social: {
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com"
+      linkedin: "https://www.linkedin.com/in/abairathi/"
     }
   },
   {
-    name: "Ajai Rai",
-    title: "CTO",
+    name: "Munish Mahajan",
+    title: "CHRO",
     company: "Cyfuture India Pvt Ltd",
-    initials: "AR",
-    bio: "Technology visionary driving the technical strategy and innovation roadmap for Cyfuture's suite of AI and cloud solutions.",
+    imageUrl: "/lovable-uploads/ac025763-8ff8-4c56-960a-e0905ad11a70.png",
+    initials: "MM",
+    bio: "Strategic HR leader driving talent acquisition, employee engagement, and organizational development to support Cyfuture's growth objectives.",
     social: {
-      linkedin: "https://linkedin.com",
-      website: "https://example.com"
+      linkedin: "https://www.linkedin.com/in/munish-mahajan/"
     }
   },
   {
     name: "Ravish Sharma",
     title: "COO",
     company: "Cyfuture India Pvt Ltd",
+    imageUrl: "/lovable-uploads/d8a767f9-359a-4b3a-ab9d-a0e6eefb5569.png",
     initials: "RS",
     bio: "Operations leader overseeing the execution and delivery of Cyfuture's services and ensuring operational excellence across the organization.",
     social: {
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com",
-      website: "https://example.com"
+      linkedin: "https://www.linkedin.com/in/ravishsharma83/"
+    }
+  },
+  {
+    name: "Ajai Rai",
+    title: "CTO",
+    company: "Cyfuture India Pvt Ltd",
+    imageUrl: "/lovable-uploads/6dda99ce-985b-4288-b6f0-5981c3101bd6.png",
+    initials: "AR",
+    bio: "Technology visionary driving the technical strategy and innovation roadmap for Cyfuture's suite of AI and cloud solutions.",
+    social: {
+      linkedin: "https://www.linkedin.com/in/ajai-rai-a786a2a/"
     }
   },
   {
@@ -187,8 +197,7 @@ const juryMembers: JuryMember[] = [
     initials: "RR",
     bio: "Business development expert responsible for expanding Cyfuture's market presence and forging strategic partnerships across industries.",
     social: {
-      linkedin: "https://linkedin.com",
-      twitter: "https://twitter.com"
+      linkedin: "https://www.linkedin.com/in/rana-roy-b08bb017/"
     }
   }
 ];
