@@ -147,7 +147,7 @@ const JuryMemberCard = ({ member, index }: JuryMemberCardProps) => {
 
 const juryMembers: JuryMember[] = [
   {
-    name: "Abhai Rathi",
+    name: "Anuj Bairathi",
     title: "CEO",
     company: "Cyfuture India Pvt Ltd",
     imageUrl: "/lovable-uploads/b513b31b-0d60-4ea6-bec1-da731902f2a3.png",
