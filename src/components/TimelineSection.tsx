@@ -91,7 +91,7 @@ const TimelineSection = () => {
                   <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
                     <FileText className="h-5 w-5 text-primary" />
                   </div>
-                  <h3 className="text-2xl font-bold">Phase 1: Project Submission</h3>
+                  <h3 className="text-2xl font-bold">Phase 1: Idea Submission</h3>
                 </div>
                 
                 <p className="text-foreground/80 mb-6">
@@ -103,7 +103,38 @@ const TimelineSection = () => {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Realising Soon</span>
+                    <div>
+                      <span className="font-medium">Innovation and Originality (25%)</span>
+                      <p className="text-sm text-foreground/70">Uniqueness and novelty of the proposed solution</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <div>
+                      <span className="font-medium">Technical Feasibility (25%)</span>
+                      <p className="text-sm text-foreground/70">Viability of implementation within the hackathon timeframe</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <div>
+                      <span className="font-medium">Problem-Solution Fit (20%)</span>
+                      <p className="text-sm text-foreground/70">How well the solution addresses the chosen challenge</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <div>
+                      <span className="font-medium">Potential Impact (20%)</span>
+                      <p className="text-sm text-foreground/70">Expected benefits and scale of impact</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <div>
+                      <span className="font-medium">Presentation Quality (10%)</span>
+                      <p className="text-sm text-foreground/70">Clarity and organization of the idea presentation</p>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -114,7 +145,7 @@ const TimelineSection = () => {
                   <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
                     <Trophy className="h-5 w-5 text-primary" />
                   </div>
-                  <h3 className="text-2xl font-bold">Grand Finale Evaluation Criteria</h3>
+                  <h3 className="text-2xl font-bold">Grand Finale Evaluation</h3>
                 </div>
                 
                 <p className="text-foreground/80 mb-6">
@@ -126,7 +157,45 @@ const TimelineSection = () => {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
-                    <span>Realising Soon</span>
+                    <div>
+                      <span className="font-medium">Functionality (25%)</span>
+                      <p className="text-sm text-foreground/70">Working solution that fulfills the stated objectives</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <div>
+                      <span className="font-medium">Technical Implementation (25%)</span>
+                      <p className="text-sm text-foreground/70">Quality of code, architecture, and use of AI technologies</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <div>
+                      <span className="font-medium">User Experience (15%)</span>
+                      <p className="text-sm text-foreground/70">Usability, interface design, and user journey</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <div>
+                      <span className="font-medium">Innovation and Creativity (15%)</span>
+                      <p className="text-sm text-foreground/70">Unique approaches and creative problem-solving</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <div>
+                      <span className="font-medium">Business Potential (10%)</span>
+                      <p className="text-sm text-foreground/70">Scalability, market potential, and business viability</p>
+                    </div>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <CheckCircle2 className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
+                    <div>
+                      <span className="font-medium">Presentation and Demo (10%)</span>
+                      <p className="text-sm text-foreground/70">Clarity of explanation and effective demonstration</p>
+                    </div>
                   </li>
                 </ul>
               </div>

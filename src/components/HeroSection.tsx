@@ -60,7 +60,7 @@ const TypewriterEffect = ({
 };
 
 const CountdownTimer = () => {
-  const targetDate = new Date("2025-07-15T00:00:00");
+  const targetDate = new Date("2025-04-25T00:00:00"); // Registration deadline date
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -87,11 +87,14 @@ const CountdownTimer = () => {
   }, []);
 
   return (
-    <div className="flex justify-center gap-4 md:gap-8 my-8">
-      <TimeUnit value={timeLeft.days} label="Days" />
-      <TimeUnit value={timeLeft.hours} label="Hours" />
-      <TimeUnit value={timeLeft.minutes} label="Minutes" />
-      <TimeUnit value={timeLeft.seconds} label="Seconds" />
+    <div className="space-y-2">
+      <h3 className="text-lg text-center text-foreground/80">Registration Deadline</h3>
+      <div className="flex justify-center gap-4 md:gap-8">
+        <TimeUnit value={timeLeft.days} label="Days" />
+        <TimeUnit value={timeLeft.hours} label="Hours" />
+        <TimeUnit value={timeLeft.minutes} label="Minutes" />
+        <TimeUnit value={timeLeft.seconds} label="Seconds" />
+      </div>
     </div>
   );
 };
@@ -145,9 +148,9 @@ const HeroSection = () => {
         >
           <div className="overflow-hidden rounded-xl border border-primary/20 shadow-glow bg-black/50 backdrop-blur-sm">
             <img
-              src="/lovable-uploads/1517af63-66cc-47cb-91a9-38be34c26bd8.png"
+              src="/lovable-uploads/934fd4a4-6bae-4e6e-bfab-25eafef627da.png"
               alt="Hackathon 2025 Banner"
-              className="w-full rounded-lg object-cover"
+              className="w-full h-auto rounded-lg object-cover"
               width={1200}
               height={400}
             />
