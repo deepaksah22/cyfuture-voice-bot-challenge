@@ -7,7 +7,7 @@ const JurySection = () => {
   return (
     <section id="jury" className="section-padding px-4 relative">
       <div className="absolute inset-0 bg-gradient-to-b from-background to-primary/5 z-[-1]" />
-
+      
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <motion.div
@@ -21,7 +21,7 @@ const JurySection = () => {
               Expert Panel
             </span>
           </motion.div>
-
+          
           <motion.h2
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -31,7 +31,7 @@ const JurySection = () => {
           >
             Meet Our Distinguished Jury
           </motion.h2>
-
+          
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -42,7 +42,7 @@ const JurySection = () => {
             Our panel of industry experts will evaluate your solutions and provide valuable feedback to help you succeed.
           </motion.p>
         </div>
-
+        
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
           {juryMembers.map((member, index) => (
             <JuryMemberCard key={index} member={member} index={index} />
@@ -92,16 +92,16 @@ const JuryMemberCard = ({ member, index }: JuryMemberCardProps) => {
               </AvatarFallback>
             )}
           </Avatar>
-
+          
           <h3 className="text-xl font-bold text-center">{member.name}</h3>
           <p className="text-foreground/80 text-center mb-1">{member.title}</p>
           <p className="text-primary font-medium text-center">{member.company}</p>
         </div>
-
+        
         <p className="text-foreground/80 text-sm mb-4 text-center">
           {member.bio}
         </p>
-
+        
         <div className="flex justify-center gap-2">
           {member.social.linkedin && (
             <Button
@@ -114,7 +114,7 @@ const JuryMemberCard = ({ member, index }: JuryMemberCardProps) => {
               <span className="sr-only">LinkedIn</span>
             </Button>
           )}
-
+          
           {member.social.twitter && (
             <Button
               variant="outline"
@@ -126,7 +126,7 @@ const JuryMemberCard = ({ member, index }: JuryMemberCardProps) => {
               <span className="sr-only">Twitter</span>
             </Button>
           )}
-
+          
           {member.social.website && (
             <Button
               variant="outline"
@@ -145,17 +145,8 @@ const JuryMemberCard = ({ member, index }: JuryMemberCardProps) => {
 };
 
 const juryMembers: JuryMember[] = [
-  {
-    name: "Anuj Bairathi",
-    title: "CEO",
-    company: "Cyfuture India Pvt Ltd",
-    imageUrl: "/lovable-uploads/b513b31b-0d60-4ea6-bec1-da731902f2a3.png",
-    initials: "AR",
-    bio: "Leading the innovation and digital transformation initiatives at Cyfuture with a focus on emerging technologies and enterprise solutions.",
-    social: {
-      linkedin: "https://www.linkedin.com/in/abairathi/"
-    }
-  },
+  
+  
   {
     name: "Sachin Sharma",
     title: "Head of Engineering",
@@ -165,6 +156,17 @@ const juryMembers: JuryMember[] = [
     bio: "Engineering leader from IIT Roorkee with extensive experience in driving technological innovation and digital transformation.",
     social: {
       linkedin: "https://www.linkedin.com/in/trulysachin/"
+    }
+  },
+  {
+    name: "Anuj Bairathi",
+    title: "CEO",
+    company: "Cyfuture India Pvt Ltd",
+    imageUrl: "/lovable-uploads/b513b31b-0d60-4ea6-bec1-da731902f2a3.png",
+    initials: "AR",
+    bio: "Leading the innovation and digital transformation initiatives at Cyfuture with a focus on emerging technologies and enterprise solutions.",
+    social: {
+      linkedin: "https://www.linkedin.com/in/abairathi/"
     }
   },
   {
