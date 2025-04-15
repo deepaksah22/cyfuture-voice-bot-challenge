@@ -145,8 +145,6 @@ const JuryMemberCard = ({ member, index }: JuryMemberCardProps) => {
 };
 
 const juryMembers: JuryMember[] = [
-  
-  
   {
     name: "Sachin Sharma",
     title: "Head of Engineering",
