@@ -60,7 +60,7 @@ const TypewriterEffect = ({
 };
 
 const CountdownTimer = () => {
-  const targetDate = new Date("2025-04-25T00:00:00"); // Registration deadline date
+  const targetDate = new Date("2025-05-20T00:00:00"); // Updated registration deadline
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -87,8 +87,7 @@ const CountdownTimer = () => {
   }, []);
 
   return (
-    <div className="space-y-2">
-      <h3 className="text-lg text-center text-foreground/80">Registration Deadline</h3>
+    <div className="space-y-2 mb-12"> {/* Added more bottom margin */}
       <div className="flex justify-center gap-4 md:gap-8">
         <TimeUnit value={timeLeft.days} label="Days" />
         <TimeUnit value={timeLeft.hours} label="Hours" />
@@ -131,7 +130,7 @@ const HeroSection = () => {
   ];
 
   return (
-    <section className="py-24 md:py-28 lg:py-36 relative overflow-hidden">
+    <section className="py-16 md:py-20 lg:py-24 relative overflow-hidden"> {/* Reduced vertical padding */}
       {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-radial from-primary/5 to-transparent z-[-1]" />
       <div className="absolute top-1/4 -left-24 w-96 h-96 bg-primary/10 rounded-full filter blur-3xl opacity-50 animate-blob" />
@@ -157,7 +156,7 @@ const HeroSection = () => {
           </div>
         </motion.div>
         
-        <div className="flex flex-col items-center text-center space-y-8 md:space-y-12">
+        <div className="flex flex-col items-center text-center space-y-6 md:space-y-8"> {/* Reduced spacing */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -169,7 +168,7 @@ const HeroSection = () => {
                 <TypewriterEffect words={words} />
               </h1>
             </div>
-            <p className="text-lg md:text-xl text-foreground/80 mb-8 max-w-2xl mx-auto">
+            <p className="text-lg md:text-xl text-foreground/80 mb-6 max-w-2xl mx-auto">
               Build innovative AI solutions for real-world challenges and showcase your project at Cyfuture's Grand Finale before top juries and investors. Win prizes up to ₹5 Lakhs, plus gain startup opportunities with revenue sharing, incubation, cloud hosting, marketing support, and seed funding up to ₹50 Lakhs.
             </p>
             
