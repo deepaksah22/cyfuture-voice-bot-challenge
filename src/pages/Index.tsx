@@ -26,7 +26,7 @@ const Index = () => {
           const targetElement = document.getElementById(targetId);
           if (targetElement) {
             window.scrollTo({
-              top: targetElement.offsetTop - 80,
+              top: targetElement.offsetTop - 30,
               behavior: 'smooth'
             });
           }
