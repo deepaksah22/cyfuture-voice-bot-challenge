@@ -91,7 +91,7 @@ const TimelineSection = () => {
                   <div className="h-10 w-10 rounded-full bg-primary/10 flex items-center justify-center">
                     <FileText className="h-5 w-5 text-primary" />
                   </div>
-                  <h3 className="text-2xl font-bold">Phase 1: Idea Submission</h3>
+                  <h3 className="text-2xl font-bold">Phase 1: Project Submission</h3>
                 </div>
                 
                 <p className="text-foreground/80 mb-6">
