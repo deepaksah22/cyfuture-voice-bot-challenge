@@ -1,4 +1,3 @@
-
 {
   "hackathonInfo": {
     "name": "Cyfuture AI Hackathon 1.0",
@@ -14,27 +13,27 @@
     "domains": [
       {
         "name": "Call Centers",
-        "description": "Improve customer service efficiency, reduce wait times, enhance agent performance, or personalize customer interactions."
+        "description": "1. AI-Powered L1 Automation: Design intelligent voicebots and chatbots to resolve basic customer queries autonomously.\n2. Smart Grievance Management: Develop a real-time complaint classification and routing system for efficient redressal.\n3. Call Intelligence via NLP: Leverage natural language processing to summarize and tag support calls for training and quality analysis."
+      },
+      {
+        "name": "Human Resources (HR)",
+        "description": "1. AI for Resume Screening: Build a chatbot/voicebot to screen resumes, shortlist top candidates, and manage initial interactions.\n2. Smart Talent Sourcing: Create an AI tool to extract candidate profiles from open web platforms, minimizing reliance on job portals.\n3. Leadership Potential Identifier: Develop a system to detect high-potential employees and recommend personalized growth paths.\n4. AI-Driven Appraisals: Create a real-time feedback and performance appraisal dashboard powered by AI insights.\n5. Gamified Learning Platform: Build an engaging, gamified LMS to enhance training participation and completion.\n6. AI-Based Skill Gap Analysis: Design a system to identify skill gaps and suggest tailored upskilling recommendations.\n7. Employee Wellness Tracker: Implement an AI-powered platform for mental health check-ins and wellness suggestions.\n8. Unified HR Insights Dashboard: Build a centralized dashboard offering actionable insights from HR data (attendance, exits, surveys, etc.)."
       },
       {
         "name": "Finance",
-        "description": "Streamline fraud detection, optimize investment strategies, automate financial planning, or improve risk assessment."
+        "description": "1. Automated Invoice Processing: Create a tool to extract data from invoices and enable bulk upload for streamlined processing.\n2. GST Reconciliation Assistant: Build an AI-based system to categorize invoices and generate GST match reports.\n3. Smart Financial Operations: Propose AI solutions to enhance efficiency and reduce manual intervention in finance workflows."
       },
       {
         "name": "Healthcare",
-        "description": "Enhance patient care, predict disease outbreaks, optimize resource allocation, or simplify medical record management."
+        "description": "1. AI Symptom Checker: Build a virtual assistant for symptom analysis, triage, and doctor recommendations.\n2. Predictive Patient Risk Models: Develop tools to forecast hospital readmissions and calculate patient risk scores.\n3. Automated Clinical Documentation: Use voice recognition and NLP to generate accurate clinical notes automatically."
       },
       {
         "name": "Sustainability",
-        "description": "Tackle climate change, optimize energy consumption, reduce waste, or promote eco-friendly practices."
+        "description": "1. Energy Optimization via AI: Develop models to monitor and reduce energy consumption and carbon footprint in various sectors.\n2. Smart Waste Management: Build predictive waste management systems using sensors and AI algorithms.\n3. Environmental Impact Analytics: Create tools for real-time monitoring and forecasting of key sustainability metrics."
       },
       {
         "name": "Education",
-        "description": "Personalize learning experiences, automate administrative tasks, improve accessibility, or predict student performance."
-      },
-      {
-        "name": "Other Industries",
-        "description": "Propose an innovative AI solution for an industry of your choice (e.g., retail, logistics, entertainment) that solves a pressing problem or creates new opportunities."
+        "description": "1. Personalized AI Tutors: Design intelligent tutors for real-time doubt solving and adaptive learning.\n2. Automated Assessment Tools: Build systems for generating and grading tests automatically.\n3. Student Risk Prediction: Use AI to identify at-risk students and recommend timely interventions."
       }
     ]
   },
