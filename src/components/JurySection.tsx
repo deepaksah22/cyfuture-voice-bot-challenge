@@ -145,17 +145,7 @@ const JuryMemberCard = ({ member, index }: JuryMemberCardProps) => {
 };
 
 const juryMembers: JuryMember[] = [
-  {
-    name: "Sachin Sharma",
-    title: "Head of Engineering",
-    company: "Publicis Sapient",
-    imageUrl: "/lovable-uploads/ce0af48f-e736-4ece-8ce1-4e14cd731e89.png",
-    initials: "SS",
-    bio: "Engineering leader from IIT Roorkee with extensive experience in driving technological innovation and digital transformation.",
-    social: {
-      linkedin: "https://www.linkedin.com/in/trulysachin/"
-    }
-  },
+  
   {
     name: "Anuj Bairathi",
     title: "CEO",
@@ -167,6 +157,18 @@ const juryMembers: JuryMember[] = [
       linkedin: "https://www.linkedin.com/in/abairathi/"
     }
   },
+  {
+    name: "Sachin Sharma",
+    title: "Head of Engineering",
+    company: "Publicis Sapient",
+    imageUrl: "/lovable-uploads/ce0af48f-e736-4ece-8ce1-4e14cd731e89.png",
+    initials: "SS",
+    bio: "Engineering leader from IIT Roorkee with extensive experience in driving technological innovation and digital transformation.",
+    social: {
+      linkedin: "https://www.linkedin.com/in/trulysachin/"
+    }
+  },
+  
   {
     name: "Munish Mahajan",
     title: "CHRO",
