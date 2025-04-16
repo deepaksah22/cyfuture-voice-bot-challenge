@@ -14,10 +14,18 @@ const EligibilitySection = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent">
             Eligibility Criteria
           </h2>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
-            Participation is open exclusively to <span className="text-blue-600 font-semibold">Indian residents</span>{" "}
-            who are <span className="text-blue-600 font-semibold">18 years or older</span> at the time of registration.
-          </p>
+          <p className="text-base md:text-lg text-foreground/80 text-center">
+  Participation is open exclusively to{" "}
+  <span className="text-blue-600 font-semibold">Indian residents</span>{" "}
+  who are{" "}
+  <span className="text-blue-600 font-semibold">18 years or older</span> at the time of registration.{" "}
+  The{" "}
+  <span className="font-semibold text-blue-600">Team Leader</span> must register on behalf of the entire team, 
+  which should consist of a minimum of{" "}
+  <span className="font-semibold text-blue-600">2 members</span> and a maximum of{" "}
+  <span className="font-semibold text-blue-600">4 members</span>, including the leader.
+</p>
+
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
