@@ -1,6 +1,18 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Sparkles, Phone, HeadphonesIcon, Bot, Braces, Cpu, HeartPulse, Coins, Leaf, GraduationCap, Lightbulb, Users } from "lucide-react";
+import {
+  Sparkles,
+  Phone,
+  Users,
+  Coins,
+  HeartPulse,
+  Leaf,
+  GraduationCap,
+  Lightbulb,
+  Bot,
+  Braces,
+  Cpu,
+} from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 const ChallengeSection = () => {
@@ -12,8 +24,8 @@ const ChallengeSection = () => {
       transition: {
         delay: 0.1 * i,
         duration: 0.5,
-      }
-    })
+      },
+    }),
   };
 
   return (
@@ -35,12 +47,24 @@ const ChallengeSection = () => {
 
         <Tabs defaultValue="callcenter" className="mb-16">
           <TabsList className="grid grid-cols-2 md:grid-cols-6 max-w-5xl mx-auto mb-8">
-            <TabsTrigger value="callcenter" className="text-blue-600">Call Centers</TabsTrigger>
-            <TabsTrigger value="hr" className="text-blue-600">HR</TabsTrigger>
-            <TabsTrigger value="finance" className="text-blue-600">Finance</TabsTrigger>
-            <TabsTrigger value="healthcare" className="text-blue-600">Healthcare</TabsTrigger>
-            <TabsTrigger value="sustainability" className="text-blue-600">Sustainability</TabsTrigger>
-            <TabsTrigger value="education" className="text-blue-600">Education</TabsTrigger>
+            <TabsTrigger value="callcenter" className="text-blue-600">
+              Call Centers
+            </TabsTrigger>
+            <TabsTrigger value="hr" className="text-blue-600">
+              HR
+            </TabsTrigger>
+            <TabsTrigger value="finance" className="text-blue-600">
+              Finance
+            </TabsTrigger>
+            <TabsTrigger value="healthcare" className="text-blue-600">
+              Healthcare
+            </TabsTrigger>
+            <TabsTrigger value="sustainability" className="text-blue-600">
+              Sustainability
+            </TabsTrigger>
+            <TabsTrigger value="education" className="text-blue-600">
+              Education
+            </TabsTrigger>
           </TabsList>
 
           <TabsContent value="callcenter">
@@ -50,9 +74,19 @@ const ChallengeSection = () => {
                 Call Centers
               </h3>
               <div className="space-y-6 text-foreground/90">
-                <p>1. Automate L1 support using AI-powered Voicebots and Chatbots to resolve basic customer queries.</p>
-                <p>2. Build an intelligent grievance redressal system that classifies, routes, and responds to complaints in real time.</p>
-                <p>3. Use NLP to summarize and tag support calls for training and quality enhancement.</p>
+                <p>
+                  1. AI-Powered L1 Automation: Design intelligent voicebots and
+                  chatbots to resolve basic customer queries autonomously.
+                </p>
+                <p>
+                  2. Smart Grievance Management: Develop a real-time complaint
+                  classification and routing system for efficient redressal.
+                </p>
+                <p>
+                  3. Call Intelligence via NLP: Leverage natural language
+                  processing to summarize and tag support calls for training and
+                  quality analysis.
+                </p>
               </div>
             </div>
           </TabsContent>
@@ -64,14 +98,42 @@ const ChallengeSection = () => {
                 HR
               </h3>
               <div className="space-y-6 text-foreground/90">
-                <p>1. AI chatbot/voicebot for resume screening, top-10 profile shortlisting, and candidate interactions.</p>
-                <p>2. AI tool for sourcing resumes from open web platforms to reduce reliance on job portals.</p>
-                <p>3. AI-driven identification of high-potential employees with personalized leadership plans.</p>
-                <p>4. AI dashboard for appraisal process with real-time inputs and feedback.</p>
-                <p>5. Gamified learning platform for better training completion and engagement.</p>
-                <p>6. Skill gap analysis and personalized upskilling recommendations using AI.</p>
-                <p>7. Wellness tracking and mental health check-in platform with AI recommendations.</p>
-                <p>8. Centralized HR dashboard with AI-powered insights from attendance, exits, engagement surveys, etc.</p>
+                <p>
+                  1. AI for Resume Screening: Build a chatbot/voicebot to screen
+                  resumes, shortlist top candidates, and manage initial
+                  interactions.
+                </p>
+                <p>
+                  2. Smart Talent Sourcing: Create an AI tool to extract candidate
+                  profiles from open web platforms, minimizing reliance on job
+                  portals.
+                </p>
+                <p>
+                  3. Leadership Potential Identifier: Develop a system to detect
+                  high-potential employees and recommend personalized growth
+                  paths.
+                </p>
+                <p>
+                  4. AI-Driven Appraisals: Create a real-time feedback and
+                  performance appraisal dashboard powered by AI insights.
+                </p>
+                <p>
+                  5. Gamified Learning Platform: Build an engaging, gamified LMS
+                  to enhance training participation and completion.
+                </p>
+                <p>
+                  6. AI-Based Skill Gap Analysis: Design a system to identify
+                  skill gaps and suggest tailored upskilling recommendations.
+                </p>
+                <p>
+                  7. Employee Wellness Tracker: Implement an AI-powered platform
+                  for mental health check-ins and wellness suggestions.
+                </p>
+                <p>
+                  8. Unified HR Insights Dashboard: Build a centralized dashboard
+                  offering actionable insights from HR data (attendance, exits,
+                  surveys, etc.).
+                </p>
               </div>
             </div>
           </TabsContent>
@@ -83,9 +145,18 @@ const ChallengeSection = () => {
                 Finance
               </h3>
               <div className="space-y-6 text-foreground/90">
-                <p>1. Automate data extraction from invoices and enable bulk uploading for efficient processing.</p>
-                <p>2. AI-based GST input reconciliation tool that categorizes invoices and provides match reports.</p>
-                <p>3. Explore other AI-driven solutions to optimize financial operations and reduce manual workload.</p>
+                <p>
+                  1. Automated Invoice Processing: Create a tool to extract data
+                  from invoices and enable bulk upload for streamlined processing.
+                </p>
+                <p>
+                  2. GST Reconciliation Assistant: Build an AI-based system to
+                  categorize invoices and generate GST match reports.
+                </p>
+                <p>
+                  3. Smart Financial Operations: Propose AI solutions to enhance
+                  efficiency and reduce manual intervention in finance workflows.
+                </p>
               </div>
             </div>
           </TabsContent>
@@ -97,9 +168,18 @@ const ChallengeSection = () => {
                 Healthcare
               </h3>
               <div className="space-y-6 text-foreground/90">
-                <p>1. Build an AI-based assistant for symptom analysis, triage, and doctor recommendations.</p>
-                <p>2. Develop predictive models for hospital readmissions and patient risk scores.</p>
-                <p>3. Automate clinical documentation using voice recognition and NLP.</p>
+                <p>
+                  1. AI Symptom Checker: Build a virtual assistant for symptom
+                  analysis, triage, and doctor recommendations.
+                </p>
+                <p>
+                  2. Predictive Patient Risk Models: Develop tools to forecast
+                  hospital readmissions and calculate patient risk scores.
+                </p>
+                <p>
+                  3. Automated Clinical Documentation: Use voice recognition and
+                  NLP to generate accurate clinical notes automatically.
+                </p>
               </div>
             </div>
           </TabsContent>
@@ -111,9 +191,19 @@ const ChallengeSection = () => {
                 Sustainability
               </h3>
               <div className="space-y-6 text-foreground/90">
-                <p>1. Use AI to optimize energy usage and reduce carbon footprint in industrial and urban areas.</p>
-                <p>2. Build smart waste management systems using real-time sensors and predictive AI models.</p>
-                <p>3. Develop AI tools for monitoring and predicting environmental impact metrics.</p>
+                <p>
+                  1. Energy Optimization via AI: Develop models to monitor and
+                  reduce energy consumption and carbon footprint in various
+                  sectors.
+                </p>
+                <p>
+                  2. Smart Waste Management: Build predictive waste management
+                  systems using sensors and AI algorithms.
+                </p>
+                <p>
+                  3. Environmental Impact Analytics: Create tools for real-time
+                  monitoring and forecasting of key sustainability metrics.
+                </p>
               </div>
             </div>
           </TabsContent>
@@ -125,19 +215,30 @@ const ChallengeSection = () => {
                 Education
               </h3>
               <div className="space-y-6 text-foreground/90">
-                <p>1. Personalized AI tutors for concept clarification and learning reinforcement.</p>
-                <p>2. Automated test paper generation and grading systems.</p>
-                <p>3. Use AI to identify at-risk students and suggest interventions to educators.</p>
+                <p>
+                  1. Personalized AI Tutors: Design intelligent tutors for
+                  real-time doubt solving and adaptive learning.
+                </p>
+                <p>
+                  2. Automated Assessment Tools: Build systems for generating and
+                  grading tests automatically.
+                </p>
+                <p>
+                  3. Student Risk Prediction: Use AI to identify at-risk students
+                  and recommend timely interventions.
+                </p>
               </div>
             </div>
           </TabsContent>
         </Tabs>
 
-       <div className="text-center text-xl font-semibold text-blue-600 mb-12">
-  <p className="text-2xl md:text-3xl">Other Domains</p>
-  <p className="mt-2">Participants are encouraged to come up with innovative AI-based solutions in any other domains as well!</p>
-</div>
-
+        <div className="text-center text-xl font-semibold text-blue-600 mb-12">
+          <p className="text-2xl md:text-3xl">Other Domains</p>
+          <p className="mt-2">
+            Participants are encouraged to come up with innovative AI-based
+            solutions in any other domains as well!
+          </p>
+        </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {features.map((feature, index) => (
@@ -172,33 +273,39 @@ const features = [
   {
     icon: Lightbulb,
     title: "Innovation Focus",
-    description: "Develop novel AI solutions that address real problems faced by industries and demonstrate creative thinking."
+    description:
+      "Develop novel AI solutions that address real problems faced by industries and demonstrate creative thinking.",
   },
   {
     icon: Bot,
     title: "AI-Powered Understanding",
-    description: "Implement advanced machine learning to accurately understand context, data patterns, and user needs."
+    description:
+      "Implement advanced machine learning to accurately understand context, data patterns, and user needs.",
   },
   {
     icon: Phone,
     title: "User-Centered Design",
-    description: "Create solutions that prioritize user experience and make complex technologies accessible to everyday users."
+    description:
+      "Create solutions that prioritize user experience and make complex technologies accessible to everyday users.",
   },
   {
     icon: Braces,
     title: "Technical Feasibility",
-    description: "Build prototypes that demonstrate technical viability and can be implemented within the hackathon timeframe."
+    description:
+      "Build prototypes that demonstrate technical viability and can be implemented within the hackathon timeframe.",
   },
   {
     icon: Cpu,
     title: "Impact Assessment",
-    description: "Showcase how your solution can drive meaningful impact and provide measurable improvements."
+    description:
+      "Showcase how your solution can drive meaningful impact and provide measurable improvements.",
   },
   {
     icon: Sparkles,
     title: "Presentation Quality",
-    description: "Communicate your ideas effectively through clear, compelling presentations that highlight your solution's value."
-  }
+    description:
+      "Communicate your ideas effectively through clear, compelling presentations that highlight your solution's value.",
+  },
 ];
 
 export default ChallengeSection;
