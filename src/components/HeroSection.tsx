@@ -87,8 +87,20 @@ const CountdownTimer = () => {
   }, []);
 
   return (
-    <div className="space-y-2 mb-12">
-      <div className="flex justify-center gap-4 md:gap-8">
+    <div className="space-y-4 mb-12">
+      {/* Important Dates moved above timer */}
+      <div className="text-sm md:text-base text-center text-foreground mb-6">
+        <div className="bg-white/80 dark:bg-white/10 backdrop-blur-md border border-border rounded-lg px-8 py-4 inline-block shadow-md">
+          <p className="mb-2 text-gray-900 dark:text-gray-100 font-medium">
+            <span className="font-semibold">Registration Deadline:</span> 20 May 2025
+          </p>
+          <p className="text-gray-900 dark:text-gray-100 font-medium">
+            <span className="font-semibold">🏁 Event Days:</span> 5–6 July 2025
+          </p>
+        </div>
+      </div>
+      {/* Increased timer width */}
+      <div className="flex justify-center gap-6 md:gap-10">
         <TimeUnit value={timeLeft.days} label="Days" />
         <TimeUnit value={timeLeft.hours} label="Hours" />
         <TimeUnit value={timeLeft.minutes} label="Minutes" />
@@ -100,12 +112,13 @@ const CountdownTimer = () => {
 
 const TimeUnit = ({ value, label }: { value: number, label: string }) => (
   <div className="flex flex-col items-center">
-    <div className="w-16 h-16 md:w-20 md:h-20 bg-glass backdrop-blur-sm rounded-lg flex items-center justify-center border border-primary/20 shadow-glow">
-      <span className="text-2xl md:text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent">
+    {/* Increased size and improved text visibility */}
+    <div className="w-20 h-20 md:w-24 md:h-24 bg-glass backdrop-blur-sm rounded-lg flex items-center justify-center border border-primary/20 shadow-glow">
+      <span className="text-3xl md:text-4xl font-bold text-white bg-clip-text bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent">
         {value.toString().padStart(2, '0')}
       </span>
     </div>
-    <span className="text-xs md:text-sm mt-2 text-foreground/70">{label}</span>
+    <span className="text-sm md:text-base mt-3 text-white/90">{label}</span>
   </div>
 );
 
@@ -138,7 +151,7 @@ const HeroSection = () => {
       <div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-2/3 h-1/2 bg-gradient-to-t from-background to-transparent z-[-1]" />
 
       <div className="container px-4 md:px-6 mx-auto relative z-10">
-        {/* New Main Banner */}
+        {/* Main Banner */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -170,19 +183,7 @@ const HeroSection = () => {
               Build innovative AI solutions for real-world challenges and showcase your project at Cyfuture's Grand Finale before top juries and investors. Win prizes up to ₹5 Lakhs, plus gain startup opportunities with revenue sharing, incubation, cloud hosting, marketing support, and seed funding up to ₹50 Lakhs.
             </p>
 
-            {/* Important Dates */}
-            <div className="text-sm md:text-base text-center text-foreground mb-6">
-              <div className="bg-white/80 dark:bg-white/10 backdrop-blur-md border border-border rounded-lg px-6 py-3 inline-block shadow-md">
-                <p className="mb-1">
-                  <span className="font-semibold">Registration Deadline:</span> 20 May 2025
-                </p>
-                <p>
-                  <span className="font-semibold">🏁 Event Days:</span> 5–6 July 2025
-                </p>
-              </div>
-            </div>
-
-            {/* Countdown */}
+            {/* Countdown with dates above */}
             <CountdownTimer />
 
             {/* Buttons */}
