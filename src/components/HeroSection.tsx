@@ -21,24 +21,22 @@ const TypewriterEffect = ({
   const renderWords = () => {
     return (
       <div className={cn("inline-block", className)}>
-        {words.map((word, idx) => {
-          return (
-            <motion.span
-              key={`${word}-${idx}`}
-              className={cn("text-white/80 dark:text-white/80", word.className)}
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{
-                duration: 0.8,
-                delay: idx / 5,
-                ease: [0.16, 1, 0.3, 1],
-              }}
-            >
-              {word.text}
-              {idx < words.length - 1 && " "}
-            </motion.span>
-          );
-        })}
+        {words.map((word, idx) => (
+          <motion.span
+            key={`${word}-${idx}`}
+            className={cn("text-white/80 dark:text-white/80", word.className)}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{
+              duration: 0.8,
+              delay: idx / 5,
+              ease: [0.16, 1, 0.3, 1],
+            }}
+          >
+            {word.text}
+            {idx < words.length - 1 && " "}
+          </motion.span>
+        ))}
         <motion.span
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -60,7 +58,7 @@ const TypewriterEffect = ({
 };
 
 const CountdownTimer = () => {
-  const targetDate = new Date("2025-05-20T00:00:00"); // Registration Deadline
+  const targetDate = new Date("2025-05-20T00:00:00");
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -135,6 +133,7 @@ const HeroSection = () => {
 
   return (
     <section className="py-16 md:py-20 lg:py-24 relative overflow-hidden">
+      {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-radial from-primary/5 to-transparent z-[-1]" />
       <div className="absolute top-1/4 -left-24 w-96 h-96 bg-primary/10 rounded-full filter blur-3xl opacity-50 animate-blob" />
       <div className="absolute bottom-1/4 -right-24 w-96 h-96 bg-accent/10 rounded-full filter blur-3xl opacity-50 animate-blob animation-delay-2000" />
@@ -178,14 +177,35 @@ const HeroSection = () => {
               marketing support, and seed funding up to ₹50 Lakhs.
             </p>
 
+            {/* Constantly Visible Important Dates */}
+            <div className="text-sm md:text-base text-center text-white/80 mb-6">
+              <div className="bg-glass backdrop-blur-md border border-white/10 rounded-lg px-6 py-3 inline-block shadow-md">
+                <p className="mb-1">
+                  <span className="font-semibold text-white">
+                    🗓 Registration Deadline:
+                  </span>{" "}
+                  20 May 2025
+                </p>
+                <p>
+                  <span className="font-semibold text-white">🏁 Event Days:</span>{" "}
+                  5–6 July 2025
+                </p>
+              </div>
+            </div>
+
+            {/* Countdown */}
             <CountdownTimer />
 
+            {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
               <Button
                 size="lg"
                 className="w-full sm:w-auto relative group overflow-hidden rounded-full bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent hover:from-cyfuture-accent hover:to-cyfuture-primary"
                 onClick={() =>
-                  window.open("https://forms.gle/VZow2H73JxZG5tx96", "_blank")
+                  window.open(
+                    "https://forms.gle/VZow2H73JxZG5tx96",
+                    "_blank"
+                  )
                 }
               >
                 <span className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shimmer" />
@@ -211,29 +231,6 @@ const HeroSection = () => {
                 Learn More
               </Button>
             </div>
-
-            {/* 🗓️ Important Dates */}
-            <motion.div
-              initial={{ opacity: 0, y: 10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 }}
-              className="mt-6 text-sm md:text-base text-center text-white/80"
-            >
-              <div className="bg-glass backdrop-blur-md border border-white/10 rounded-lg px-6 py-3 inline-block shadow-md">
-                <p className="mb-1">
-                  <span className="font-semibold text-white">
-                    🗓 Registration Deadline:
-                  </span>{" "}
-                  20 May 2025
-                </p>
-                <p>
-                  <span className="font-semibold text-white">
-                    🏁 Event Day:
-                  </span>{" "}
-                  5–6 July 2025
-                </p>
-              </div>
-            </motion.div>
           </motion.div>
         </div>
       </div>
@@ -242,4 +239,3 @@ const HeroSection = () => {
 };
 
 export default HeroSection;
-
