@@ -1,4 +1,3 @@
-
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
@@ -17,43 +16,49 @@ const Index = () => {
     const handleAnchorClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
       const isAnchor = target.tagName === 'A' && target.getAttribute('href')?.startsWith('#');
-      
+
       if (isAnchor) {
         e.preventDefault();
         const targetId = target.getAttribute('href')?.substring(1);
-        
         if (targetId) {
           const targetElement = document.getElementById(targetId);
           if (targetElement) {
             window.scrollTo({
               top: targetElement.offsetTop - 30,
-              behavior: 'smooth'
+              behavior: 'smooth',
             });
           }
         }
       }
     };
 
-    document.addEventListener('click', handleAnchorClick);
-    
+    document.addEventListener("click", handleAnchorClick);
     return () => {
-      document.removeEventListener('click', handleAnchorClick);
+      document.removeEventListener("click", handleAnchorClick);
     };
   }, []);
 
   return (
     <div className="min-h-screen bg-background text-foreground relative overflow-hidden">
       <Navbar />
-      <div className="space-y-0">
-        <HeroSection />
-        <PrizesSection />
-        <EligibilitySection />
-        <ChallengeSection />
-        <TimelineSection />
-        <JurySection />
-        <SponsorsSection />
-        <FaqSection />
-      </div>
+
+      {/* Instead of space-y-0, use direct stacking and spacing per section */}
+      <HeroSection />
+      <div className="my-10" />
+      <PrizesSection />
+      <div className="my-10" />
+      <EligibilitySection />
+      <div className="my-10" />
+      <ChallengeSection />
+      <div className="my-10" />
+      <TimelineSection />
+      <div className="my-10" />
+      <JurySection />
+      <div className="my-10" />
+      <SponsorsSection />
+      <div className="my-10" />
+      <FaqSection />
+
       <Footer />
     </div>
   );
