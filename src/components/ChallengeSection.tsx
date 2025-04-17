@@ -47,7 +47,7 @@ const ChallengeSection = () => {
 
         <Tabs defaultValue="callcenter" className="mb-16">
           <TabsList className="grid grid-cols-2 md:grid-cols-6 max-w-5xl mx-auto mb-8">
-            <TabsTrigger value="callcenter" className="text-blue-600">
+            <TabsTrigger value="callcenter" className="text-blue W-600">
               Call Centers
             </TabsTrigger>
             <TabsTrigger value="hr" className="text-blue-600">
@@ -75,17 +75,19 @@ const ChallengeSection = () => {
               </h3>
               <div className="space-y-6 text-foreground/90">
                 <p>
-                  1. AI-Powered L1 Automation: Design intelligent voicebots and
-                  chatbots to resolve basic customer queries autonomously.
+                  <span className="font-bold">1. AI-Powered L1 Automation:</span>{" "}
+                  Design intelligent voicebots and chatbots to resolve basic
+                  customer queries autonomously.
                 </p>
                 <p>
-                  2. Smart Grievance Management: Develop a real-time complaint
-                  classification and routing system for efficient redressal.
+                  <span className="font-bold">2. Smart Grievance Management:</span>{" "}
+                  Develop a real-time complaint classification and routing system
+                  for efficient redressal.
                 </p>
                 <p>
-                  3. Call Intelligence via NLP: Leverage natural language
-                  processing to summarize and tag support calls for training and
-                  quality analysis.
+                  <span className="font-bold">3. Call Intelligence via NLP:</span>{" "}
+                  Leverage natural language processing to summarize and tag support
+                  calls for training and quality analysis.
                 </p>
               </div>
             </div>
@@ -99,40 +101,44 @@ const ChallengeSection = () => {
               </h3>
               <div className="space-y-6 text-foreground/90">
                 <p>
-                  1. AI for Resume Screening: Build a chatbot/voicebot to screen
-                  resumes, shortlist top candidates, and manage initial
-                  interactions.
+                  <span className="font-bold">1. AI for Resume Screening:</span>{" "}
+                  Build a chatbot/voicebot to screen resumes, shortlist top
+                  candidates, and manage initial interactions.
                 </p>
                 <p>
-                  2. Smart Talent Sourcing: Create an AI tool to extract candidate
-                  profiles from open web platforms, minimizing reliance on job
-                  portals.
+                  <span className="font-bold">2. Smart Talent Sourcing:</span>{" "}
+                  Create an AI tool to extract candidate profiles from open web
+                  platforms, minimizing reliance on job portals.
                 </p>
                 <p>
-                  3. Leadership Potential Identifier: Develop a system to detect
-                  high-potential employees and recommend personalized growth
-                  paths.
+                  <span className="font-bold">3. Leadership Potential Identifier:</span>{" "}
+                  Develop a system to detect high-potential employees and recommend
+                  personalized growth paths.
                 </p>
                 <p>
-                  4. AI-Driven Appraisals: Create a real-time feedback and
-                  performance appraisal dashboard powered by AI insights.
+                  <span className="font-bold">4. AI-Driven Appraisals:</span>{" "}
+                  Create a real-time feedback and performance appraisal dashboard
+                  powered by AI insights.
                 </p>
                 <p>
-                  5. Gamified Learning Platform: Build an engaging, gamified LMS
-                  to enhance training participation and completion.
+                  <span className="font-bold">5. Gamified Learning Platform:</span>{" "}
+                  Build an engaging, gamified LMS to enhance training participation
+                  and completion.
                 </p>
                 <p>
-                  6. AI-Based Skill Gap Analysis: Design a system to identify
-                  skill gaps and suggest tailored upskilling recommendations.
+                  <span className="font-bold">6. AI-Based Skill Gap Analysis:</span>{" "}
+                  Design a system to identify skill gaps and suggest tailored
+                  upskilling recommendations.
                 </p>
                 <p>
-                  7. Employee Wellness Tracker: Implement an AI-powered platform
-                  for mental health check-ins and wellness suggestions.
+                  <span className="font-bold">7. Employee Wellness Tracker:</span>{" "}
+                  Implement an AI-powered platform for mental health check-ins and
+                  wellness suggestions.
                 </p>
                 <p>
-                  8. Unified HR Insights Dashboard: Build a centralized dashboard
-                  offering actionable insights from HR data (attendance, exits,
-                  surveys, etc.).
+                  <span className="font-bold">8. Unified HR Insights Dashboard:</span>{" "}
+                  Build a centralized dashboard offering actionable insights from
+                  HR data (attendance, exits, surveys, etc.).
                 </p>
               </div>
             </div>
@@ -146,16 +152,19 @@ const ChallengeSection = () => {
               </h3>
               <div className="space-y-6 text-foreground/90">
                 <p>
-                  1. Automated Invoice Processing: Create a tool to extract data
-                  from invoices and enable bulk upload for streamlined processing.
+                  <span className="font-bold">1. Automated Invoice Processing:</span>{" "}
+                  Create a tool to extract data from invoices and enable bulk
+                  upload for streamlined processing.
                 </p>
                 <p>
-                  2. GST Reconciliation Assistant: Build an AI-based system to
-                  categorize invoices and generate GST match reports.
+                  <span className="font-bold">2. GST Reconciliation Assistant:</span>{" "}
+                  Build an AI-based system to categorize invoices and generate GST
+                  match reports.
                 </p>
                 <p>
-                  3. Smart Financial Operations: Propose AI solutions to enhance
-                  efficiency and reduce manual intervention in finance workflows.
+                  <span className="font-bold">3. Smart Financial Operations:</span>{" "}
+                  Propose AI solutions to enhance efficiency and reduce manual
+                  intervention in finance workflows.
                 </p>
               </div>
             </div>
@@ -169,16 +178,19 @@ const ChallengeSection = () => {
               </h3>
               <div className="space-y-6 text-foreground/90">
                 <p>
-                  1. AI Symptom Checker: Build a virtual assistant for symptom
-                  analysis, triage, and doctor recommendations.
+                  <span className="font-bold">1. AI Symptom Checker:</span> Build
+                  a virtual assistant for symptom analysis, triage, and doctor
+                  recommendations.
                 </p>
                 <p>
-                  2. Predictive Patient Risk Models: Develop tools to forecast
-                  hospital readmissions and calculate patient risk scores.
+                  <span className="font-bold">2. Predictive Patient Risk Models:</span>{" "}
+                  Develop tools to forecast hospital readmissions and calculate
+                  patient risk scores.
                 </p>
                 <p>
-                  3. Automated Clinical Documentation: Use voice recognition and
-                  NLP to generate accurate clinical notes automatically.
+                  <span className="font-bold">3. Automated Clinical Documentation:</span>{" "}
+                  Use voice recognition and NLP to generate accurate clinical
+                  notes automatically.
                 </p>
               </div>
             </div>
@@ -192,17 +204,19 @@ const ChallengeSection = () => {
               </h3>
               <div className="space-y-6 text-foreground/90">
                 <p>
-                  1. Energy Optimization via AI: Develop models to monitor and
-                  reduce energy consumption and carbon footprint in various
-                  sectors.
+                  <span className="font-bold">1. Energy Optimization via AI:</span>{" "}
+                  Develop models to monitor and reduce energy consumption and
+                  carbon footprint in various sectors.
                 </p>
                 <p>
-                  2. Smart Waste Management: Build predictive waste management
-                  systems using sensors and AI algorithms.
+                  <span className="font-bold">2. Smart Waste Management:</span>{" "}
+                  Build predictive waste management systems using sensors and AI
+                  algorithms.
                 </p>
                 <p>
-                  3. Environmental Impact Analytics: Create tools for real-time
-                  monitoring and forecasting of key sustainability metrics.
+                  <span className="font-bold">3. Environmental Impact Analytics:</span>{" "}
+                  Create tools for real-time monitoring and forecasting of key
+                  sustainability metrics.
                 </p>
               </div>
             </div>
@@ -216,16 +230,18 @@ const ChallengeSection = () => {
               </h3>
               <div className="space-y-6 text-foreground/90">
                 <p>
-                  1. Personalized AI Tutors: Design intelligent tutors for
-                  real-time doubt solving and adaptive learning.
+                  <span className="font-bold">1. Personalized AI Tutors:</span>{" "}
+                  Design intelligent tutors for real-time doubt solving and
+                  adaptive learning.
                 </p>
                 <p>
-                  2. Automated Assessment Tools: Build systems for generating and
-                  grading tests automatically.
+                  <span className="font-bold">2. Automated Assessment Tools:</span>{" "}
+                  Build systems for generating and grading tests automatically.
                 </p>
                 <p>
-                  3. Student Risk Prediction: Use AI to identify at-risk students
-                  and recommend timely interventions.
+                  <span className="font-bold">3. Student Risk Prediction:</span>{" "}
+                  Use AI to identify at-risk students and recommend timely
+                  interventions.
                 </p>
               </div>
             </div>
