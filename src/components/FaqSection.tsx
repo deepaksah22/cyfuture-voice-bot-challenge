@@ -93,7 +93,7 @@ const FaqSection = () => {
 const faqItems = [
   {
     question: "Who can participate in the Cyfuture AI Hackathon?",
-    answer: "The hackathon is open to students, professionals, and AI enthusiasts. Participants can form teams of 2-4 members. We welcome individuals with diverse skill sets including AI/ML, software development, UX/UI design, and business acumen."
+    answer: "The hackathon is open to students, professionals, and AI enthusiasts. Participants can form teams of 2-5 members. We welcome individuals with diverse skill sets including AI/ML, software development, UX/UI design, and business acumen."
   },
   {
     question: "Is there any registration fee?",
