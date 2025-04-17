@@ -15,35 +15,35 @@ const Index = () => {
     // Smooth scrolling for anchor links
     const handleAnchorClick = (e: MouseEvent) => {
       const target = e.target as HTMLElement;
-      const isAnchor = target.tagName === 'A' && target.getAttribute('href')?.startsWith('#');
-      
+      const isAnchor = target.tagName === "A" && target.getAttribute("href")?.startsWith("#");
+
       if (isAnchor) {
         e.preventDefault();
-        const targetId = target.getAttribute('href')?.substring(1);
-        
+        const targetId = target.getAttribute("href")?.substring(1);
+
         if (targetId) {
           const targetElement = document.getElementById(targetId);
           if (targetElement) {
             window.scrollTo({
               top: targetElement.offsetTop - 30,
-              behavior: 'smooth'
+              behavior: "smooth",
             });
           }
         }
       }
     };
 
-    document.addEventListener('click', handleAnchorClick);
-    
+    document.addEventListener("click", handleAnchorClick);
+
     return () => {
-      document.removeEventListener('click', handleAnchorClick);
+      document.removeEventListener("click", handleAnchorClick);
     };
   }, []);
 
   return (
-    <div className="min-h-screen bg-background text-foreground relative overflow-hidden">
+    <div className="min-h-screen bg-background text-foreground relative overflow-hidden m-0 p-0">
       <Navbar />
-      <div className="space-y-0 [&>section]:my-0">
+      <main className="space-y-0 [&>section]:my-0 m-0 p-0">
         <HeroSection />
         <PrizesSection />
         <EligibilitySection />
@@ -52,7 +52,7 @@ const Index = () => {
         <JurySection />
         <SponsorsSection />
         <FaqSection />
-      </div>
+      </main>
       <Footer />
     </div>
   );
