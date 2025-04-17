@@ -23,7 +23,7 @@ const EligibilitySection = () => {
   <span className="font-semibold text-blue-600">Team Leader</span> must register on behalf of the entire team, 
   which should consist of a minimum of{" "}
   <span className="font-semibold text-blue-600">2 members</span> and a maximum of{" "}
-  <span className="font-semibold text-blue-600">4 members</span>, including the leader.
+  <span className="font-semibold text-blue-600">5 members</span>, including the leader.
 </p>
 
         </div>
