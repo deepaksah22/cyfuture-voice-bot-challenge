@@ -293,31 +293,31 @@ const timelineEvents = [
     icon: "selection"
   },
   {
-    date: "July 5, 2025 - 10:00 AM",
+    date: "July 4, 2025 - 10:00 AM",
     title: "Hackathon Kick-off",
     description: "The 24-hour hackathon begins! Selected teams gather at Cyfuture India Pvt Ltd, NSEZ, Noida for the opening ceremony.",
     icon: "kickoff"
   },
   {
-    date: "July 5-6, 2025",
+    date: "July 4-5, 2025",
     title: "Hacking Period",
     description: "Teams work on their solutions for 24 hours straight. Mentors will be available to provide guidance and support.",
     icon: "hacking"
   },
   {
-    date: "July 6, 2025 - 10:00 AM",
+    date: "July 5, 2025 - 10:00 AM",
     title: "Project Submission",
     description: "All teams must submit their final projects, including code, documentation, and presentation materials.",
     icon: "project"
   },
   {
-    date: "July 6, 2025 - 11:00 AM",
+    date: "July 5, 2025 - 11:00 AM",
     title: "Presentations & Judging",
     description: "Teams present their solutions to a panel of judges from Cyfuture and industry experts.",
     icon: "judging"
   },
   {
-    date: "July 6, 2025 - 4:00 PM",
+    date: "July 5, 2025 - 4:00 PM",
     title: "Awards Ceremony",
     description: "Winners will be announced and prizes will be awarded during the closing ceremony.",
     icon: "awards"
