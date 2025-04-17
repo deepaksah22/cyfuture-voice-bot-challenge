@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <Link to="/" className="inline-block mb-4">
               <span className="font-display font-bold text-2xl bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent bg-clip-text text-transparent">
-                Cyfuture AI Hackathon
+                Cyfuture AI Hackathon 1.0
               </span>
             </Link>
             <p className="text-foreground/80 mb-6 max-w-md">
@@ -26,8 +26,8 @@ const Footer = () => {
               </div>
               <div className="flex items-center">
                 <Mail className="h-5 w-5 text-primary mr-3" />
-                <a href="mailto:hackathon@cyfuture.com" className="text-foreground/80 hover:text-primary transition-colors">
-                  hackathon@cyfuture.com
+                <a href="mailto:hackathon@cyfuture.cloud" className="text-foreground/80 hover:text-primary transition-colors">
+                  hackathon@cyfuture.cloud
                 </a>
               </div>
             </div>
