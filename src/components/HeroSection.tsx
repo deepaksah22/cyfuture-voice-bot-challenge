@@ -177,7 +177,7 @@ const HeroSection = () => {
                   <span className="font-semibold">Registration Deadline:</span> 20 May 2025
                 </p>
                 <p>
-                  <span className="font-semibold">🏁 Event Days:</span> 5–6 July 2025
+                  <span className="font-semibold">🏁 Event Days:</span> 4–5 July 2025
                 </p>
               </div>
             </div>
