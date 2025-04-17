@@ -133,7 +133,6 @@ const HeroSection = () => {
 
   return (
     <section className="py-16 md:py-20 lg:py-24 relative overflow-hidden">
-      {/* Background Elements */}
       <div className="absolute inset-0 bg-gradient-radial from-primary/5 to-transparent z-[-1]" />
       <div className="absolute top-1/4 -left-24 w-96 h-96 bg-primary/10 rounded-full filter blur-3xl opacity-50 animate-blob" />
       <div className="absolute bottom-1/4 -right-24 w-96 h-96 bg-accent/10 rounded-full filter blur-3xl opacity-50 animate-blob animation-delay-2000" />
@@ -164,11 +163,9 @@ const HeroSection = () => {
             transition={{ duration: 0.5 }}
             className="max-w-3xl mx-auto text-center"
           >
-            <div>
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 inline-block">
-                <TypewriterEffect words={words} />
-              </h1>
-            </div>
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-bold mb-6 inline-block">
+              <TypewriterEffect words={words} />
+            </h1>
             <p className="text-lg md:text-xl text-foreground/80 mb-6 max-w-2xl mx-auto">
               Build innovative AI solutions for real-world challenges and
               showcase your project at Cyfuture's Grand Finale before top
@@ -177,35 +174,16 @@ const HeroSection = () => {
               marketing support, and seed funding up to ₹50 Lakhs.
             </p>
 
-            {/* Constantly Visible Important Dates */}
-            <div className="text-sm md:text-base text-center text-white/80 mb-6">
-              <div className="bg-glass backdrop-blur-md border border-white/10 rounded-lg px-6 py-3 inline-block shadow-md">
-                <p className="mb-1">
-                  <span className="font-semibold text-white">
-                    🗓 Registration Deadline:
-                  </span>{" "}
-                  20 May 2025
-                </p>
-                <p>
-                  <span className="font-semibold text-white">🏁 Event Days:</span>{" "}
-                  5–6 July 2025
-                </p>
-              </div>
-            </div>
-
             {/* Countdown */}
             <CountdownTimer />
 
             {/* Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto">
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center max-w-md mx-auto mb-4">
               <Button
                 size="lg"
                 className="w-full sm:w-auto relative group overflow-hidden rounded-full bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent hover:from-cyfuture-accent hover:to-cyfuture-primary"
                 onClick={() =>
-                  window.open(
-                    "https://forms.gle/VZow2H73JxZG5tx96",
-                    "_blank"
-                  )
+                  window.open("https://forms.gle/VZow2H73JxZG5tx96", "_blank")
                 }
               >
                 <span className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 group-hover:animate-shimmer" />
@@ -230,6 +208,18 @@ const HeroSection = () => {
               >
                 Learn More
               </Button>
+            </div>
+
+            {/* Important Dates */}
+            <div className="text-sm md:text-base text-center text-foreground mb-4">
+              <div className="bg-white/80 dark:bg-white/10 backdrop-blur-md border border-border rounded-lg px-6 py-3 inline-block shadow-md">
+                <p className="mb-1">
+                  <span className="font-semibold">🗓 Registration Deadline:</span> 20 May 2025
+                </p>
+                <p>
+                  <span className="font-semibold">🏁 Event Days:</span> 5–6 July 2025
+                </p>
+              </div>
             </div>
           </motion.div>
         </div>
