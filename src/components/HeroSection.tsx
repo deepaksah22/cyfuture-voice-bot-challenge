@@ -169,17 +169,7 @@ const HeroSection = () => {
             <p className="text-lg md:text-xl text-foreground/80 mb-6 max-w-2xl mx-auto">
               Build innovative AI solutions for real-world challenges and showcase your project at Cyfuture's Grand Finale before top juries and investors. Win prizes up to ₹5 Lakhs, plus gain startup opportunities with revenue sharing, incubation, cloud hosting, marketing support, and seed funding up to ₹50 Lakhs.
             </p>
-
-            {/* Important Dates */}
-            <div className="text-sm md:text-base text-center text-foreground mb-6">
-              <div className="bg-white/80 dark:bg-white/10 backdrop-blur-md border border-border rounded-lg px-6 py-3 inline-block shadow-md">
-                <p className="mb-1">
-                  <span className="font-semibold">Registration Deadline:</span> 20 May 2025
-                </p>
-                <p>
-                  <span className="font-semibold">🏁 Event Days:</span> 4–5 July 2025
-                </p>
-              </div>
+            
             </div>
 
             {/* Countdown */}
