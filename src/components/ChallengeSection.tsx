@@ -12,6 +12,12 @@ import {
   Bot,
   Braces,
   Cpu,
+  Tractor,
+  ShoppingCart,
+  Factory,
+  Truck,
+  Gavel,
+  Zap,
 } from "lucide-react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
@@ -46,8 +52,8 @@ const ChallengeSection = () => {
         </div>
 
         <Tabs defaultValue="callcenter" className="mb-16">
-          <TabsList className="grid grid-cols-2 md:grid-cols-6 max-w-5xl mx-auto mb-8">
-            <TabsTrigger value="callcenter" className="text-blue W-600">
+          <TabsList className="grid grid-cols-2 md:grid-cols-6 lg:grid-cols-12 max-w-5xl mx-auto mb-8">
+            <TabsTrigger value="callcenter" className="text-blue-600">
               Call Centers
             </TabsTrigger>
             <TabsTrigger value="hr" className="text-blue-600">
@@ -64,6 +70,24 @@ const ChallengeSection = () => {
             </TabsTrigger>
             <TabsTrigger value="education" className="text-blue-600">
               Education
+            </TabsTrigger>
+            <TabsTrigger value="agriculture" className="text-blue-600">
+              Agriculture
+            </TabsTrigger>
+            <TabsTrigger value="ecommerce" className="text-blue-600">
+              E-commerce
+            </TabsTrigger>
+            <TabsTrigger value="manufacturing" className="text-blue-600">
+              Manufacturing
+            </TabsTrigger>
+            <TabsTrigger value="transport" className="text-blue-600">
+              Transport
+            </TabsTrigger>
+            <TabsTrigger value="legal" className="text-blue-600">
+              Legal
+            </TabsTrigger>
+            <TabsTrigger value="power" className="text-blue-600">
+              Power & Energy
             </TabsTrigger>
           </TabsList>
 
@@ -157,7 +181,7 @@ const ChallengeSection = () => {
                   upload for streamlined processing.
                 </p>
                 <p>
-                  <span className="font-bold">2. GST Reconciliation Assistant:</span>{" "}
+                  удалось бы сделать, чтобы пользователь мог выбирать язык интерфейса? <span className="font-bold">2. GST Reconciliation Assistant:</span>{" "}
                   Build an AI-based system to categorize invoices and generate GST
                   match reports.
                 </p>
@@ -242,6 +266,144 @@ const ChallengeSection = () => {
                   <span className="font-bold">3. Student Risk Prediction:</span>{" "}
                   Use AI to identify at-risk students and recommend timely
                   interventions.
+                </p>
+              </div>
+            </div>
+          </TabsContent>
+
+          <TabsContent value="agriculture">
+            <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
+              <h3 className="text-2xl font-bold mb-6 flex items-center">
+                <Tractor className="h-6 w-6 text-primary mr-3" />
+                Agriculture
+              </h3>
+              <div className="space-y-6 text-foreground/90">
+                <p>
+                  <span className="font-bold">1. Crop Health Monitoring:</span>{" "}
+                  Develop AI-driven tools to analyze satellite/drone imagery for early detection of crop diseases.
+                </p>
+                <p>
+                  <span className="font-bold">2. Precision Farming Assistant:</span>{" "}
+                  Build a system to optimize irrigation and fertilizer use based on soil and weather data.
+                </p>
+                <p>
+                  <span className="font-bold">3. Yield Prediction Models:</span>{" "}
+                  Create predictive models to forecast crop yields using historical and real-time data.
+                </p>
+              </div>
+            </div>
+          </TabsContent>
+
+          <TabsContent value="ecommerce">
+            <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
+              <h3 className="text-2xl font-bold mb-6 flex items-center">
+                <ShoppingCart className="h-6 w-6 text-primary mr-3" />
+                E-commerce & Retail
+              </h3>
+              <div className="space-y-6 text-foreground/90">
+                <p>
+                  <span className="font-bold">1. Personalized Product Recommendations:</span>{" "}
+                  Design AI algorithms to suggest products based on user behavior and preferences.
+                </p>
+                <p>
+                  <span className="font-bold">2. Inventory Optimization:</span>{" "}
+                  Build a system to predict demand and manage stock levels efficiently.
+                </p>
+                <p>
+                  <span className="font-bold">3. AI Chatbot for Customer Support:</span>{" "}
+                  Develop a conversational AI to handle customer queries and returns.
+                </p>
+              </div>
+            </div>
+          </TabsContent>
+
+          <TabsContent value="manufacturing">
+            <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
+              <h3 className="text-2xl font-bold mb-6 flex items-center">
+                <Factory className="h-6 w-6 text-primary mr-3" />
+                Manufacturing
+              </h3>
+              <div className="space-y-6 text-foreground/90">
+                <p>
+                  <span className="font-bold">1. Predictive Maintenance:</span>{" "}
+                  Create AI models to predict equipment failures and schedule maintenance.
+                </p>
+                <p>
+                  <span className="font-bold">2. Quality Control Automation:</span>{" "}
+                  Develop computer vision systems to detect defects in manufactured goods.
+                </p>
+                <p>
+                  <span className="font-bold">3. Supply Chain Optimization:</span>{" "}
+                  Build AI tools to streamline supply chain logistics and reduce costs.
+                </p>
+              </div>
+            </div>
+          </TabsContent>
+
+          <TabsContent value="transport">
+            <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
+              <h3 className="text-2xl font-bold mb-6 flex items-center">
+                <Truck className="h-6 w-6 text-primary mr-3" />
+                Transport & Logistics
+              </h3>
+              <div className="space-y-6 text-foreground/90">
+                <p>
+                  <span className="font-bold">1. Route Optimization:</span>{" "}
+                  Develop AI algorithms to optimize delivery routes for time and fuel efficiency.
+                </p>
+                <p>
+                  <span className="font-bold">2. Fleet Management System:</span>{" "}
+                  Build a system to monitor vehicle health and driver performance in real-time.
+                </p>
+                <p>
+                  <span className="font-bold">3. Demand Forecasting:</span>{" "}
+                  Create models to predict transportation demand for better resource allocation.
+                </p>
+              </div>
+            </div>
+          </TabsContent>
+
+          <TabsContent value="legal">
+            <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
+              <h3 className="text-2xl font-bold mb-6 flex items-center">
+                <Gavel className="h-6 w-6 text-primary mr-3" />
+                Legal
+              </h3>
+              <div className="space-y-6 text-foreground/90">
+                <p>
+                  <span className="font-bold">1. Contract Analysis Tool:</span>{" "}
+                  Build an AI system to extract key clauses and risks from legal documents.
+                </p>
+                <p>
+                  <span className="font-bold">2. Legal Research Assistant:</span>{" "}
+                  Develop a tool to summarize case laws and provide relevant precedents.
+                </p>
+                <p>
+                  <span className="font-bold">3. Compliance Monitoring:</span>{" "}
+                  Create an AI solution to track regulatory changes and ensure compliance.
+                </p>
+              </div>
+            </div>
+          </TabsContent>
+
+          <TabsContent value="power">
+            <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
+              <h3 className="text-2xl font-bold mb-6 flex items-center">
+                <Zap className="h-6 w-6 text-primary mr-3" />
+                Power & Energy
+              </h3>
+              <div className="space-y-6 text-foreground/90">
+                <p>
+                  <span className="font-bold">1. Energy Consumption Forecasting:</span>{" "}
+                  Develop AI models to predict energy demand for efficient grid management.
+                </p>
+                <p>
+                  <span className="font-bold">2. Renewable Energy Optimization:</span>{" "}
+                  Build systems to optimize solar/wind energy production based on weather data.
+                </p>
+                <p>
+                  <span className="font-bold">3. Smart Grid Monitoring:</span>{" "}
+                  Create AI tools to detect and resolve grid anomalies in real-time.
                 </p>
               </div>
             </div>
