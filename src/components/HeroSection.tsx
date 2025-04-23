@@ -170,7 +170,10 @@ const HeroSection = () => {
               showcase your project at Cyfuture's Grand Finale before top
               juries and investors. Win prizes up to ₹5 Lakhs, plus gain startup
               opportunities with revenue sharing, incubation, cloud hosting,
-              marketing support, and seed funding up to ₹50 Lakhs.
+              marketing support, and <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent">funding support up to ₹1 Crore</span>.
+            </p>
+            <p className="text-lg md:text-xl text-foreground/80 mb-6 max-w-2xl mx-auto">
+              Registration will be closed on <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent">Closing Date for Registration – 31st May</span>.
             </p>
           </motion.div>
 
