@@ -54,7 +54,7 @@ const TypewriterEffect = ({
 };
 
 const CountdownTimer = () => {
-  const targetDate = new Date("2025-05-20T00:00:00");
+  const targetDate = new Date("2025-05-31T23:59:59");
   const [timeLeft, setTimeLeft] = useState({
     days: 0,
     hours: 0,
@@ -173,7 +173,7 @@ const HeroSection = () => {
               marketing support, and <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent">funding support up to ₹1 Crore</span>.
             </p>
             <p className="text-lg md:text-xl text-foreground/80 mb-6 max-w-2xl mx-auto">
-              Registration will be closed on <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent">Closing Date for Registration – 31st May</span>.
+              Registration will be closed on <span className="font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyfuture-primary to-cyfuture-accent">Closing Date for Registration – 31st May 2025</span>.
             </p>
           </motion.div>
 
