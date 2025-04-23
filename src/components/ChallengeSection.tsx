@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import {
   Sparkles,
   Phone,
@@ -279,16 +279,16 @@ const ChallengeSection = () => {
               </h3>
               <div className="space-y-6 text-foreground/90">
                 <p>
-                  <span className="font-bold">1. Crop Health Monitoring:</span>{" "}
-                  Develop AI-driven tools to analyze satellite/drone imagery for early detection of crop diseases.
+                  <span className="font-bold">1. Crop Yield Prediction:</span>{" "}
+                  Develop AI models to forecast crop yields using satellite imagery, weather, and soil data for data-driven farming decisions.
                 </p>
                 <p>
-                  <span className="font-bold">2. Precision Farming Assistant:</span>{" "}
-                  Build a system to optimize irrigation and fertilizer use based on soil and weather data.
+                  <span className="font-bold">2. Autonomous Farming Bots:</span>{" "}
+                  Create AI-powered robots or drones for tasks like planting, harvesting, or monitoring crop health to enhance efficiency.
                 </p>
                 <p>
-                  <span className="font-bold">3. Yield Prediction Models:</span>{" "}
-                  Create predictive models to forecast crop yields using historical and real-time data.
+                  <span className="font-bold">3. Sustainable Farming Assistant:</span>{" "}
+                  Build a tool to optimize resource use (water, fertilizers) and promote sustainable practices for environmentally friendly agriculture.
                 </p>
               </div>
             </div>
@@ -302,16 +302,16 @@ const ChallengeSection = () => {
               </h3>
               <div className="space-y-6 text-foreground/90">
                 <p>
-                  <span className="font-bold">1. Personalized Product Recommendations:</span>{" "}
-                  Design AI algorithms to suggest products based on user behavior and preferences.
+                  <span className="font-bold">1. Hyper-Personalized Recommendations:</span>{" "}
+                  Design AI algorithms to deliver tailored product suggestions based on user behavior, preferences, and trends.
                 </p>
                 <p>
-                  <span className="font-bold">2. Inventory Optimization:</span>{" "}
-                  Build a system to predict demand and manage stock levels efficiently.
+                  <span className="font-bold">2. Smart Review Analysis:</span>{" "}
+                  Develop an NLP-based system to analyze customer reviews, extract sentiments, and provide actionable insights for businesses.
                 </p>
                 <p>
-                  <span className="font-bold">3. AI Chatbot for Customer Support:</span>{" "}
-                  Develop a conversational AI to handle customer queries and returns.
+                  <span className="font-bold">3. Seamless Inventory Management:</span>{" "}
+                  Create an AI tool to predict demand, optimize stock levels, and reduce overstock or stockouts for efficient retail operations.
                 </p>
               </div>
             </div>
@@ -325,16 +325,16 @@ const ChallengeSection = () => {
               </h3>
               <div className="space-y-6 text-foreground/90">
                 <p>
-                  <span className="font-bold">1. Predictive Maintenance:</span>{" "}
-                  Create AI models to predict equipment failures and schedule maintenance.
+                  <span className="font-bold">1. Predictive Machine Monitoring:</span>{" "}
+                  Build AI models to monitor equipment health and predict maintenance needs to minimize downtime.
                 </p>
                 <p>
-                  <span className="font-bold">2. Quality Control Automation:</span>{" "}
-                  Develop computer vision systems to detect defects in manufactured goods.
+                  <span className="font-bold">2. Smart Production Optimization:</span>{" "}
+                  Develop systems to streamline manufacturing processes, optimize resource use, and enhance production efficiency.
                 </p>
                 <p>
-                  <span className="font-bold">3. Supply Chain Optimization:</span>{" "}
-                  Build AI tools to streamline supply chain logistics and reduce costs.
+                  <span className="font-bold">3. Quality Assurance with AI:</span>{" "}
+                  Create computer vision tools to detect defects in real-time, ensuring high-quality output in manufacturing.
                 </p>
               </div>
             </div>
@@ -348,16 +348,16 @@ const ChallengeSection = () => {
               </h3>
               <div className="space-y-6 text-foreground/90">
                 <p>
-                  <span className="font-bold">1. Route Optimization:</span>{" "}
-                  Develop AI algorithms to optimize delivery routes for time and fuel efficiency.
+                  <span className="font-bold">1. AI-Driven Route Optimization:</span>{" "}
+                  Develop algorithms to optimize delivery routes, reducing fuel costs and improving delivery times.
                 </p>
                 <p>
-                  <span className="font-bold">2. Fleet Management System:</span>{" "}
-                  Build a system to monitor vehicle health and driver performance in real-time.
+                  <span className="font-bold">2. Real-Time Delivery Tracking:</span>{" "}
+                  Build an AI system to provide accurate, real-time tracking updates for customers and logistics managers.
                 </p>
                 <p>
-                  <span className="font-bold">3. Demand Forecasting:</span>{" "}
-                  Create models to predict transportation demand for better resource allocation.
+                  <span className="font-bold">3. Logistics Demand Forecasting:</span>{" "}
+                  Create predictive models to anticipate transportation needs and optimize fleet operations for efficiency.
                 </p>
               </div>
             </div>
@@ -371,16 +371,16 @@ const ChallengeSection = () => {
               </h3>
               <div className="space-y-6 text-foreground/90">
                 <p>
-                  <span className="font-bold">1. Contract Analysis Tool:</span>{" "}
-                  Build an AI system to extract key clauses and risks from legal documents.
+                  <span className="font-bold">1. Smart Contract Analyzer:</span>{" "}
+                  Develop an AI tool to extract key terms, identify risks, and summarize legal contracts efficiently.
                 </p>
                 <p>
-                  <span className="font-bold">2. Legal Research Assistant:</span>{" "}
-                  Develop a tool to summarize case laws and provide relevant precedents.
+                  <span className="font-bold">2. Virtual Legal Assistant:</span>{" "}
+                  Build a conversational AI to answer basic legal queries and guide users through legal processes.
                 </p>
                 <p>
-                  <span className="font-bold">3. Compliance Monitoring:</span>{" "}
-                  Create an AI solution to track regulatory changes and ensure compliance.
+                  <span className="font-bold">3. Case Outcome Prediction:</span>{" "}
+                  Create a system to analyze case data and predict potential outcomes, aiding legal professionals in strategy.
                 </p>
               </div>
             </div>
@@ -394,16 +394,16 @@ const ChallengeSection = () => {
               </h3>
               <div className="space-y-6 text-foreground/90">
                 <p>
-                  <span className="font-bold">1. Energy Consumption Forecasting:</span>{" "}
-                  Develop AI models to predict energy demand for efficient grid management.
+                  <span className="font-bold">1. Smart Grid Optimizer:</span>{" "}
+                  Develop AI systems to monitor and optimize energy distribution in real-time for efficient grid management.
                 </p>
                 <p>
-                  <span className="font-bold">2. Renewable Energy Optimization:</span>{" "}
-                  Build systems to optimize solar/wind energy production based on weather data.
+                  <span className="font-bold">2. Renewable Energy Forecasting:</span>{" "}
+                  Build models to predict solar or wind energy production based on weather and historical data.
                 </p>
                 <p>
-                  <span className="font-bold">3. Smart Grid Monitoring:</span>{" "}
-                  Create AI tools to detect and resolve grid anomalies in real-time.
+                  <span className="font-bold">3. Carbon Footprint Tracker:</span>{" "}
+                  Create an AI tool to monitor and suggest ways to reduce carbon emissions for sustainable energy practices.
                 </p>
               </div>
             </div>
@@ -411,10 +411,9 @@ const ChallengeSection = () => {
         </Tabs>
 
         <div className="text-center text-xl font-semibold text-blue-600 mb-12">
-          <p className="text-2xl md:text-3xl">Other Domains</p>
-          <p className="mt-2">
-            Participants are encouraged to come up with innovative AI-based
-            solutions in any other domains as well!
+          <p className="text-2xl md:text-3xl">Additional Domains</p>
+          <p className="mt  mt-2">
+            Unleash your creativity and develop innovative AI solutions for any industry or challenge to drive impactful change!
           </p>
         </div>
 
