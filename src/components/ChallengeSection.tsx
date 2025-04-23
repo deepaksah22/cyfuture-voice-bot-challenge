@@ -51,10 +51,10 @@ const ChallengeSection = () => {
           </motion.h2>
         </div>
 
-        <Tabs defaultValue="callcenter" className="mb-16">
-          <TabsList className="grid grid-cols-2 md:grid-cols-6 lg:grid-cols-12 max-w-5xl mx-auto mb-8">
-            <TabsTrigger value="callcenter" className="text-blue-600">
-              Call Centers
+        <Tabs defaultValue="customercare" className="mb-16">
+          <TabsList className="grid grid-cols-2 md:grid-cols-6 gap-2 max-w-5xl mx-auto mb-8">
+            <TabsTrigger value="customercare" className="text-blue-600">
+              Customer Care
             </TabsTrigger>
             <TabsTrigger value="hr" className="text-blue-600">
               HR
@@ -91,11 +91,11 @@ const ChallengeSection = () => {
             </TabsTrigger>
           </TabsList>
 
-          <TabsContent value="callcenter">
+          <TabsContent value="customercare">
             <div className="bg-glass rounded-3xl p-8 md:p-12 shadow-glass backdrop-blur-md">
               <h3 className="text-2xl font-bold mb-6 flex items-center">
                 <Phone className="h-6 w-6 text-primary mr-3" />
-                Call Centers
+                Customer Care
               </h3>
               <div className="space-y-6 text-foreground/90">
                 <p>
@@ -181,7 +181,7 @@ const ChallengeSection = () => {
                   upload for streamlined processing.
                 </p>
                 <p>
-                  удалось бы сделать, чтобы пользователь мог выбирать язык интерфейса? <span className="font-bold">2. GST Reconciliation Assistant:</span>{" "}
+                  <span className="font-bold">2. GST Reconciliation Assistant:</span>{" "}
                   Build an AI-based system to categorize invoices and generate GST
                   match reports.
                 </p>
